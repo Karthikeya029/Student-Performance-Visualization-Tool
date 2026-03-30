@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>EduTrack — Login</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#0d0f1a;--paper:#f4f2ee;--accent:#3b5bdb;--orange:#f76707;--green:#2f9e44;--muted:#6b7280;--border:#e2ddd6;--card:#fff}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.bg{position:fixed;inset:0;z-index:0;background-image:linear-gradient(rgba(59,91,219,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(59,91,219,.05) 1px,transparent 1px);background-size:44px 44px}
+.blob{position:fixed;border-radius:50%;filter:blur(90px);opacity:.2;z-index:0}
+.b1{width:520px;height:520px;background:#3b5bdb;top:-160px;right:-120px}
+.b2{width:440px;height:440px;background:#f76707;bottom:-120px;left:-100px}
+.wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;max-width:920px;width:92%;min-height:560px;background:var(--card);border-radius:24px;box-shadow:0 32px 80px rgba(13,15,26,.13),0 0 0 1px var(--border);overflow:hidden;animation:up .55s cubic-bezier(.16,1,.3,1) both}
+@keyframes up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+/* Left */
+.left{background:var(--ink);padding:52px 44px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.left::before{content:'';position:absolute;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(59,91,219,.4),transparent 70%);top:-90px;right:-90px}
+.logo{display:flex;align-items:center;gap:10px}
+.lm{width:36px;height:36px;background:var(--accent);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:18px;color:#fff}
+.lt{font-family:'Syne',sans-serif;font-weight:700;font-size:18px;color:#fff}
+.tagline{position:relative;z-index:1}
+.tagline h1{font-family:'Syne',sans-serif;font-size:34px;font-weight:800;color:#fff;line-height:1.15;margin-bottom:14px}
+.tagline h1 span{color:var(--orange)}
+.tagline p{color:rgba(255,255,255,.5);font-size:14px;line-height:1.65}
+.roles{display:flex;flex-direction:column;gap:10px;position:relative;z-index:1}
+.role-chip{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}
+.role-chip .icon{font-size:20px}
+.role-chip .info strong{display:block;font-size:13px;font-weight:600;color:#fff}
+.role-chip .info span{font-size:11px;color:rgba(255,255,255,.45)}
+/* Right */
+.right{padding:52px 44px;display:flex;flex-direction:column;justify-content:center}
+.fh{margin-bottom:28px}
+.fh h2{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:var(--ink);margin-bottom:5px}
+.fh p{color:var(--muted);font-size:14px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:13px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.field input{width:100%;padding:12px 16px;border:2px solid var(--border);border-radius:10px;font-family:'DM Sans',sans-serif;font-size:15px;color:var(--ink);background:var(--paper);outline:none;transition:border-color .2s}
+.field input:focus{border-color:var(--accent);background:#fff}
+.err{background:rgba(224,49,49,.08);border:1px solid rgba(224,49,49,.25);border-radius:8px;padding:10px 14px;font-size:13px;color:#e03131;margin-bottom:16px;display:none}
+.err.show{display:block}
+.btn{width:100%;padding:14px;background:var(--accent);color:#fff;border:none;border-radius:10px;font-family:'Syne',sans-serif;font-size:16px;font-weight:700;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.btn:hover{background:#2f4cc5;transform:translateY(-1px);box-shadow:0 8px 20px rgba(59,91,219,.3)}
+.hint{margin-top:20px;font-size:12px;color:var(--muted);background:rgba(107,114,128,.07);border-radius:8px;padding:10px 12px;line-height:1.7}
+.hint strong{color:var(--ink)}
+@media(max-width:620px){.wrap{grid-template-columns:1fr}.left{display:none}.right{padding:36px 26px}}
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="blob b1"></div><div class="blob b2"></div>
+<div class="wrap">
+  <div class="left">
+    <div class="logo"><div class="lm">E</div><span class="lt">EduTrack</span></div>
+    <div class="tagline">
+      <h1>Three Roles.<br><span>One Platform.</span></h1>
+      <p>Coordinators manage classes. Teachers track their subject. Students view their journey.</p>
+    </div>
+    <div class="roles">
+      <div class="role-chip"><span class="icon">🎓</span><div class="info"><strong>Coordinator</strong><span>Full class management · All subjects</span></div></div>
+      <div class="role-chip"><span class="icon">👨‍🏫</span><div class="info"><strong>Teacher</strong><span>Own subject · All 4 classes</span></div></div>
+      <div class="role-chip"><span class="icon">📚</span><div class="info"><strong>Student</strong><span>Personal performance · Charts</span></div></div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="fh"><h2>Sign In</h2><p>Enter your credentials to continue</p></div>
+    <div class="err" id="err"></div>
+    <form onsubmit="doLogin(event)">
+      <div class="field"><label>Username</label><input id="u" placeholder="e.g. coord_cs1 / teacher_maths / cs1001" required/></div>
+      <div class="field"><label>Password</label><input id="p" type="password" placeholder="password" required/></div>
+      <button class="btn" id="btn">Sign In →</button>
+    </form>
+    <div class="hint">
+      <strong>Demo accounts (all use password: <code>password</code>)</strong><br>
+      Coordinators: <code>coord_cs1</code> <code>coord_cs2</code> <code>coord_cs3</code> <code>coord_cs4</code><br>
+      Teachers: <code>teacher_maths</code> <code>teacher_science</code> <code>teacher_english</code> <code>teacher_history</code> <code>teacher_cs</code><br>
+      Students: <code>cs1001</code> <code>cs2001</code> <code>cs3001</code> <code>cs4001</code>
+    </div>
+  </div>
+</div>
+<script>
+async function doLogin(e){
+  e.preventDefault();
+  const btn=document.getElementById('btn'), err=document.getElementById('err');
+  btn.textContent='Signing in…'; btn.disabled=true; err.classList.remove('show');
+  try{
+    const r=await fetch('/api/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:document.getElementById('u').value.trim(),password:document.getElementById('p').value})});
+    const d=await r.json();
+    if(!r.ok) throw new Error(d.error);
+    localStorage.setItem('token',d.token); localStorage.setItem('role',d.role);
+    localStorage.setItem('name',d.name);   localStorage.setItem('userClass',d.class||'');
+    localStorage.setItem('subject',d.subject||''); localStorage.setItem('studentId',d.studentId||'');
+    if(d.role==='coordinator') window.location.href='/coordinator';
+    else if(d.role==='teacher') window.location.href='/teacher';
+    else window.location.href='/student';
+  }catch(ex){
+    err.textContent=ex.message||'Login failed'; err.classList.add('show');
+    btn.textContent='Sign In →'; btn.disabled=false;
+  }
+}
+</script>
+</body>
+</html>

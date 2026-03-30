@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>EduTrack — Student</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#0d0f1a;--paper:#f4f2ee;--accent:#3b5bdb;--orange:#f76707;--green:#2f9e44;--muted:#6b7280;--border:#e2ddd6;--card:#fff}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);min-height:100vh}
+.topbar{background:var(--ink);padding:0 28px;height:62px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.tlogo{display:flex;align-items:center;gap:10px}
+.lm{width:30px;height:30px;background:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#fff}
+.lt{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:#fff}
+.tnav{display:flex;gap:4px}
+.tni{padding:7px 14px;border-radius:7px;border:none;background:none;color:rgba(255,255,255,.6);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;transition:all .15s}
+.tni:hover{background:rgba(255,255,255,.08);color:#fff}.tni.active{background:var(--accent);color:#fff}
+.tuser{display:flex;align-items:center;gap:10px}
+.notif-btn{position:relative;width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,.08);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;transition:background .15s}
+.notif-btn:hover{background:rgba(255,255,255,.15)}
+.notif-badge{position:absolute;top:-4px;right:-4px;min-width:17px;height:17px;background:#e03131;border-radius:100px;font-size:10px;font-weight:700;color:#fff;display:none;align-items:center;justify-content:center;padding:0 4px;animation:popIn .25s cubic-bezier(.16,1,.3,1)}
+.notif-badge.show{display:flex}
+@keyframes popIn{from{transform:scale(0)}to{transform:scale(1)}}
+.av{width:30px;height:30px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff}
+.un{font-size:13px;font-weight:500;color:rgba(255,255,255,.8)}
+.blog{padding:6px 12px;border-radius:6px;background:rgba(255,255,255,.07);border:none;color:rgba(255,255,255,.5);font-size:12px;cursor:pointer;transition:all .15s}
+.blog:hover{background:rgba(224,49,49,.2);color:#ff6b6b}
+.main{padding:28px;max-width:1200px;margin:0 auto}
+.page{display:none}.page.active{display:block}
+/* Hero */
+.hero{background:var(--ink);border-radius:18px;padding:28px 32px;display:flex;align-items:center;gap:22px;margin-bottom:22px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(59,91,219,.3),transparent 70%);right:-80px;top:-80px}
+.hav{width:68px;height:68px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:#fff;flex-shrink:0;z-index:1}
+.hinfo{z-index:1}.hinfo h2{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:#fff}
+.hinfo p{color:rgba(255,255,255,.5);font-size:13px;margin-top:3px}
+.hstats{display:flex;gap:28px;margin-left:auto;z-index:1}
+.hst{text-align:center}.hst .hv{font-family:'Syne',sans-serif;font-size:24px;font-weight:800;color:#fff;transition:all .4s}
+.hst .hl{font-size:10px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.07em;margin-top:2px}
+/* Subject tiles */
+.stiles{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:20px}
+.stile{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center;transition:all .2s}
+.stile.flash{animation:tileflash .7s ease}
+@keyframes tileflash{0%,100%{background:var(--card)}40%{background:rgba(59,91,219,.07)}}
+.stile .sn{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:7px}
+.stile .sv{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;margin-bottom:3px}
+.stile .ss{font-size:11px;color:var(--muted)}
+/* Cards */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.g31{display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-bottom:18px}
+.card{background:var(--card);border-radius:14px;padding:22px;border:1px solid var(--border)}
+.ct{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;margin-bottom:18px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.badge{font-size:10px;font-weight:500;padding:3px 9px;border-radius:100px;background:rgba(59,91,219,.1);color:var(--accent);font-family:'DM Sans',sans-serif}
+/* Table */
+.tbl-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse}
+th{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);padding:0 14px 12px;text-align:left;border-bottom:2px solid var(--border)}
+td{padding:13px 14px;font-size:14px;border-bottom:1px solid var(--border);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(59,91,219,.02)}
+tr.row-flash td{animation:rflash .9s ease}
+@keyframes rflash{0%,100%{background:transparent}35%{background:rgba(59,91,219,.08)}}
+/* Mark chip */
+.mc{display:inline-flex;align-items:center;justify-content:center;width:42px;height:28px;border-radius:6px;font-size:13px;font-weight:700}
+.mc-hi{background:rgba(47,158,68,.12);color:#2f9e44}
+.mc-ok{background:rgba(59,91,219,.1);color:#3b5bdb}
+.mc-lo{background:rgba(224,49,49,.12);color:#e03131}
+/* Grade badge */
+.grade-badge{display:inline-flex;align-items:center;justify-content:center;padding:4px 12px;border-radius:6px;font-size:13px;font-weight:800;letter-spacing:.02em}
+.g-Ap{background:rgba(47,158,68,.12);color:#2f9e44}
+.g-A{background:rgba(64,192,87,.12);color:#2f9e44}
+.g-B{background:rgba(59,91,219,.1);color:#3b5bdb}
+.g-C{background:rgba(247,103,7,.1);color:#f76707}
+.g-D{background:rgba(253,126,20,.1);color:#fd7e14}
+.g-F{background:rgba(224,49,49,.14);color:#e03131;font-weight:900}
+/* Avg pill */
+.avpill{display:inline-flex;align-items:center;justify-content:center;padding:4px 14px;border-radius:100px;font-size:13px;font-weight:700;background:var(--accent);color:#fff}
+/* Empty state */
+.empty{text-align:center;padding:48px 20px;color:var(--muted)}
+.empty .ei{font-size:40px;margin-bottom:12px}
+.empty p{font-size:14px}
+/* Compare */
+.crow{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.cname{width:110px;font-weight:500;font-size:12px}
+.bwrap{flex:1;background:var(--border);border-radius:100px;height:7px;overflow:hidden}
+.bfill{height:100%;border-radius:100px;transition:width .5s ease}
+.bval{width:32px;text-align:right;font-size:12px;font-weight:600;color:var(--muted)}
+.rank-hero{background:var(--card);border-radius:14px;padding:22px;border:1px solid var(--border);text-align:center}
+.rank-num{font-family:'Syne',sans-serif;font-size:52px;font-weight:800;color:var(--accent)}
+.rank-label{font-size:13px;color:var(--muted);margin-top:4px}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="tlogo"><div class="lm">E</div><span class="lt">EduTrack</span></div>
+  <nav class="tnav">
+    <button class="tni active" onclick="nav('home',this)">📊 Overview</button>
+    <button class="tni" onclick="nav('marks',this)">📝 My Marks</button>
+    <button class="tni" onclick="nav('charts',this)">📈 Charts</button>
+    <button class="tni" onclick="nav('compare',this)">🏆 Class Rank</button>
+  </nav>
+  <div class="tuser">
+    <button class="notif-btn" id="notif-toggle-btn" onclick="toggleNotifPanel()">
+      🔔<span class="notif-badge" id="notif-badge"></span>
+    </button>
+    <div class="av" id="sav">S</div>
+    <span class="un" id="sname">Student</span>
+    <button class="blog" onclick="logout()">Sign Out</button>
+  </div>
+</header>
+
+<!-- Notification Panel -->
+<div id="notif-panel" style="position:fixed;top:0;right:-360px;width:340px;height:100vh;background:#fff;border-left:1px solid var(--border);box-shadow:-8px 0 32px rgba(0,0,0,.1);z-index:600;display:flex;flex-direction:column;transition:right .3s cubic-bezier(.16,1,.3,1)">
+  <div style="padding:18px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0">
+    <span style="font-family:'Syne',sans-serif;font-weight:700;font-size:16px">Notifications</span>
+    <div style="display:flex;gap:10px;align-items:center">
+      <button onclick="markAllRead()" style="font-size:12px;color:var(--muted);background:none;border:none;cursor:pointer;font-family:'DM Sans',sans-serif">Mark all read</button>
+      <button onclick="closeNotif()" style="background:none;border:none;font-size:20px;cursor:pointer;color:#9ca3af;line-height:1">×</button>
+    </div>
+  </div>
+  <div id="notif-list" style="overflow-y:auto;flex:1;padding:8px 0">
+    <div style="padding:32px 20px;text-align:center;color:#9ca3af;font-size:13px">No notifications yet</div>
+  </div>
+</div>
+<div id="notif-overlay" onclick="closeNotif()" style="position:fixed;inset:0;background:rgba(0,0,0,.15);z-index:599;display:none"></div>
+
+<main class="main">
+<!-- HOME -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <div class="hav" id="h-init">S</div>
+    <div class="hinfo"><h2 id="h-name">Loading…</h2><p id="h-class">Class · ID</p></div>
+    <div class="hstats">
+      <div class="hst"><div class="hv" id="h-avg">—</div><div class="hl">Average</div></div>
+      <div class="hst"><div class="hv" id="h-grade">—</div><div class="hl">Grade</div></div>
+      <div class="hst"><div class="hv" id="h-att">—</div><div class="hl">Attendance</div></div>
+    </div>
+  </div>
+  <div class="stiles" id="stiles"></div>
+  <div class="g31">
+    <div class="card"><div class="ct">Exam Progress <span class="badge">Line</span></div><canvas id="h-line" height="200"></canvas></div>
+    <div class="card"><div class="ct">Strengths <span class="badge">Radar</span></div><canvas id="h-radar" height="200"></canvas></div>
+  </div>
+</div>
+
+<!-- MARKS -->
+<div class="page" id="page-marks">
+  <div class="card">
+    <div class="ct">My Marks</div>
+    <div id="marks-body">
+      <div class="empty"><div class="ei">📋</div><p>No marks recorded yet</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- CHARTS -->
+<div class="page" id="page-charts">
+  <div class="g2">
+    <div class="card"><div class="ct">Exam-wise Scores <span class="badge">Line</span></div><canvas id="c-line" height="230"></canvas></div>
+    <div class="card"><div class="ct">Subject Averages <span class="badge">Bar</span></div><canvas id="c-bar" height="230"></canvas></div>
+  </div>
+  <div class="card"><div class="ct">Final Exam Radar</div>
+    <div style="max-width:380px;margin:0 auto"><canvas id="c-radar" height="300"></canvas></div>
+  </div>
+</div>
+
+<!-- CLASS RANK -->
+<div class="page" id="page-compare">
+  <div class="g2" style="margin-bottom:18px">
+    <div class="rank-hero"><div class="rank-num" id="rank-num">—</div><div class="rank-label" id="rank-label">Your rank in class</div></div>
+    <div class="card"><div class="ct">You vs Class Average</div>
+      <div style="display:flex;gap:16px;font-size:12px;margin-bottom:14px">
+        <span style="display:flex;align-items:center;gap:6px"><span style="width:10px;height:10px;border-radius:3px;background:var(--accent);display:inline-block"></span>You</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="width:10px;height:10px;border-radius:3px;background:var(--orange);display:inline-block"></span>Class Avg</span>
+      </div>
+      <div id="comp-bars"></div>
+    </div>
+  </div>
+  <div class="card"><div class="ct">Class Leaderboard</div>
+    <div class="tbl-wrap"><table id="rank-table">
+      <thead><tr><th>Rank</th><th>Name</th><th>Average</th><th>Grade</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </div>
+</div>
+</main>
+
+<script src="js/charts.js"></script>
+<script>
+const token = localStorage.getItem('token');
+const sname = localStorage.getItem('name');
+const sid   = localStorage.getItem('studentId');
+const scls  = localStorage.getItem('userClass');
+if (!token || localStorage.getItem('role') !== 'student') window.location.href = '/';
+document.getElementById('sname').textContent = sname;
+document.getElementById('sav').textContent   = (sname || 'S')[0].toUpperCase();
+
+let vizData = null, activePage = 'home';
+let notifications = [];
+
+// ── Grade badge helper ────────────────────────────────────────────
+function gradeBadge(g) {
+  const cls = {'A+':'g-Ap','A':'g-A','B':'g-B','C':'g-C','D':'g-D','F':'g-F'}[g] || 'g-C';
+  return `<span class="grade-badge ${cls}">${g}</span>`;
+}
+
+// ── Mark chip helper ──────────────────────────────────────────────
+function markChip(v) {
+  const cls = v >= 80 ? 'mc-hi' : v < 60 ? 'mc-lo' : 'mc-ok';
+  return `<span class="mc ${cls}">${v}</span>`;
+}
+
+// ── Socket.IO ─────────────────────────────────────────────────────
+const socket = io();
+
+socket.on('connect', () => {
+  // Register into personal room 'student:CS1001'
+  socket.emit('register', { role: 'student', studentId: sid, userClass: scls });
+  // Fetch any stored notifications that arrived while offline
+  fetchStoredNotifications();
+});
+
+socket.on('reconnect', () => {
+  socket.emit('register', { role: 'student', studentId: sid, userClass: scls });
+  fetchStoredNotifications();
+});
+
+// Bell notification — arrives via personal room 'student:CS1001'
+socket.on('notification', (data) => {
+  addNotification(
+    data.icon    || '🔔',
+    data.title   || 'Notification',
+    data.message || '',
+    data.type    || 'info'
+  );
+});
+
+// Live marks refresh — charts & table update automatically
+socket.on('marks_updated', async () => {
+  await refreshViz();
+  if (activePage === 'home')    renderHome();
+  if (activePage === 'marks')   renderMarks();
+  if (activePage === 'charts')  renderCharts();
+  if (activePage === 'compare') renderCompare();
+  document.querySelectorAll('.stile').forEach(t => {
+    t.classList.remove('flash'); void t.offsetWidth; t.classList.add('flash');
+  });
+});
+
+// Live attendance refresh
+socket.on('attendance_updated', async (d) => {
+  if (vizData && vizData.student) vizData.student.attendance = d.attendance;
+  const el = document.getElementById('h-att');
+  if (el) el.textContent = d.attendance + '%';
+});
+
+// Fetch stored notifications from server (catches any missed while offline)
+async function fetchStoredNotifications() {
+  try {
+    const list = await api('/api/marks/notifications');
+    if (!list || !list.length) return;
+    // Add only ones not already shown (avoid duplicates)
+    const existingIds = new Set(notifications.map(n => String(n.id)));
+    let newCount = 0;
+    // list is newest first — add in reverse so newest ends on top
+    for (let i = list.length - 1; i >= 0; i--) {
+      const n = list[i];
+      if (!existingIds.has(String(n.id))) {
+        notifications.push({
+          id:      n.id,
+          icon:    n.icon    || '🔔',
+          title:   n.title   || 'Notification',
+          message: n.message || '',
+          time:    new Date(n.timestamp || Date.now()),
+          read:    n.read    || false,
+          type:    n.type    || 'info'
+        });
+        newCount++;
+      }
+    }
+    if (newCount > 0) {
+      // Sort newest first
+      notifications.sort((a, b) => new Date(b.time) - new Date(a.time));
+      renderNotifications();
+      const unread = notifications.filter(x => !x.read).length;
+      const badge  = document.getElementById('notif-badge');
+      if (badge) {
+        badge.textContent = unread > 99 ? '99+' : unread;
+        badge.classList.toggle('show', unread > 0);
+      }
+    }
+  } catch (e) {
+    // Silent fail — notifications are a bonus feature, not critical
+    console.log('Could not fetch stored notifications:', e.message);
+  }
+}
+
+// ── Notifications ─────────────────────────────────────────────────
+function addNotification(icon, title, message, type) {
+  const n = { id: Date.now() + '_' + Math.random(), icon, title, message, type: type||'info', time: new Date(), read: false };
+  notifications.unshift(n);
+  if (notifications.length > 50) notifications.pop();
+  renderNotifications();
+  const unread = notifications.filter(x => !x.read).length;
+  const badge  = document.getElementById('notif-badge');
+  if (badge) {
+    badge.textContent = unread > 99 ? '99+' : unread;
+    badge.classList.toggle('show', unread > 0);
+  }
+  // Show toast popup for real-time notifications
+  const toastType = (type === 'performance_alert' || type === 'attendance_alert') ? 'warn' : 'ok';
+  showToast(icon + ' <strong>' + title + '</strong><br><span style="font-size:12px;opacity:.85">' + message + '</span>', toastType, 5000);
+}
+
+function renderNotifications() {
+  const el = document.getElementById('notif-list');
+  if (!notifications.length) {
+    el.innerHTML = '<div style="padding:32px 20px;text-align:center;color:#9ca3af;font-size:13px">No notifications yet</div>';
+    return;
+  }
+  el.innerHTML = notifications.map(n => `
+    <div onclick="readOne(${n.id})" style="padding:14px 20px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .15s;${n.read?'':'background:rgba(59,91,219,.04);border-left:3px solid var(--accent)'}">
+      <div style="display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:20px;flex-shrink:0">${n.icon}</span>
+        <div>
+          <div style="font-weight:600;font-size:13px;color:var(--ink);margin-bottom:3px">${n.title}</div>
+          <div style="font-size:12px;color:var(--muted);line-height:1.45;margin-bottom:3px">${n.message}</div>
+          <div style="font-size:11px;color:#9ca3af">${fmtAgo(n.time)}</div>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+function readOne(id) {
+  const n = notifications.find(x => x.id === id);
+  if (n) n.read = true;
+  renderNotifications();
+  const unread = notifications.filter(x => !x.read).length;
+  document.getElementById('notif-badge').textContent = unread;
+  document.getElementById('notif-badge').classList.toggle('show', unread > 0);
+}
+
+function markAllRead() {
+  notifications.forEach(n => n.read = true);
+  renderNotifications();
+  document.getElementById('notif-badge').classList.remove('show');
+}
+
+function toggleNotifPanel() {
+  const p   = document.getElementById('notif-panel');
+  const open = p.style.right === '0px';
+  p.style.right = open ? '-360px' : '0px';
+  document.getElementById('notif-overlay').style.display = open ? 'none' : 'block';
+}
+
+function closeNotif() {
+  document.getElementById('notif-panel').style.right = '-360px';
+  document.getElementById('notif-overlay').style.display = 'none';
+}
+
+// ── Navigation ────────────────────────────────────────────────────
+function nav(p, el) {
+  activePage = p;
+  document.querySelectorAll('.page').forEach(x => x.classList.remove('active'));
+  document.querySelectorAll('.tni').forEach(x => x.classList.remove('active'));
+  document.getElementById('page-' + p).classList.add('active');
+  el.classList.add('active');
+  if (p === 'home')    renderHome();
+  if (p === 'marks')   renderMarks();
+  if (p === 'charts')  renderCharts();
+  if (p === 'compare') renderCompare();
+}
+
+async function refreshViz() {
+  try { vizData = await api('/api/marks/visualize/student/' + sid); }
+  catch (e) { console.error('refreshViz failed:', e.message); }
+}
+
+// ── Render helpers ────────────────────────────────────────────────
+
+function renderHome() {
+  if (!vizData) return;
+  const { student, lineData, barData, radarData } = vizData;
+
+  document.getElementById('h-init').textContent  = student.name[0].toUpperCase();
+  document.getElementById('h-name').textContent  = student.name;
+  document.getElementById('h-class').textContent = 'Class ' + student.class + ' · ' + student.id;
+  document.getElementById('h-att').textContent   = student.attendance + '%';
+
+  if (barData && barData.length) {
+    const avgAll = Math.round((barData.reduce((s, d) => s + d.average, 0) / barData.length) * 10) / 10;
+    document.getElementById('h-avg').textContent   = avgAll;
+    document.getElementById('h-grade').textContent = student.grade || calcGrade(avgAll);
+
+    document.getElementById('stiles').innerHTML = barData.map((d, i) => `
+      <div class="stile">
+        <div class="sn">${d.subject.split(' ')[0]}</div>
+        <div class="sv" style="color:${PALETTE[i]}">${d.average}</div>
+        <div class="ss">/ 100</div>
+      </div>`).join('');
+
+    mkChart('h-line', {
+      type: 'line',
+      data: { labels: EXAMS, datasets: lineData.map((d, i) => ({ label: d.label, data: d.data, borderColor: PALETTE[i], backgroundColor: PALETTE[i]+'18', tension: .35, fill: false, pointRadius: 4 })) },
+      options: { responsive: true, scales: { y: { min: 0, max: 100, grid: { color: '#f0ece6' } }, x: { grid: { display: false } } }, plugins: { legend: { position: 'bottom', labels: { font: { size: 10 } } } } }
+    });
+    mkChart('h-radar', {
+      type: 'radar',
+      data: { labels: radarData.map(d => d.subject), datasets: [{ data: radarData.map(d => d.score), borderColor: '#3b5bdb', backgroundColor: 'rgba(59,91,219,.15)', pointBackgroundColor: '#3b5bdb', pointRadius: 4 }] },
+      options: { responsive: true, scales: { r: { min: 0, max: 100, ticks: { display: false }, grid: { color: '#e2ddd6' } } }, plugins: { legend: { display: false } } }
+    });
+  } else {
+    document.getElementById('h-avg').textContent   = '—';
+    document.getElementById('h-grade').textContent = 'N/A';
+    document.getElementById('stiles').innerHTML    = '<div style="grid-column:1/-1;text-align:center;color:var(--muted);font-size:13px;padding:16px">No marks recorded yet</div>';
+  }
+}
+
+function renderMarks() {
+  if (!vizData) return;
+  const { lineData } = vizData;
+
+  // Build marks from lineData (source of truth from API)
+  // lineData = [{label: 'Mathematics', data: [85,90,78,92]}, ...]
+  if (!lineData || !lineData.length) {
+    document.getElementById('marks-body').innerHTML = `
+      <div class="empty"><div class="ei">📋</div><p>No marks recorded yet.<br>Your marks will appear here once your teacher adds them.</p></div>`;
+    return;
+  }
+
+  const rows = lineData.map(d => {
+    const arr = d.data;
+    const avg = Math.round((arr.reduce((a, b) => a + b, 0) / arr.length) * 10) / 10;
+    const grade = calcGrade(avg);
+    return `<tr>
+      <td><strong>${d.label}</strong></td>
+      ${arr.map(v => `<td>${markChip(v)}</td>`).join('')}
+      <td><span class="avpill">${avg}</span></td>
+      <td>${gradeBadge(grade)}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('marks-body').innerHTML = `
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Unit Test 1</th>
+            <th>Mid Term</th>
+            <th>Unit Test 2</th>
+            <th>Final</th>
+            <th>Average</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+function renderCharts() {
+  if (!vizData) return;
+  const { lineData, barData, radarData } = vizData;
+  if (!lineData || !lineData.length) {
+    showToast('No marks data available yet', 'warn');
+    return;
+  }
+  mkChart('c-line', { type:'line', data:{ labels:EXAMS, datasets:lineData.map((d,i)=>({ label:d.label, data:d.data, borderColor:PALETTE[i], backgroundColor:PALETTE[i]+'18', tension:.35, fill:false, pointRadius:5 })) }, options:{ responsive:true, scales:{ y:{ min:0, max:100, grid:{ color:'#f0ece6' } }, x:{ grid:{ display:false } } }, plugins:{ legend:{ position:'bottom' } } } });
+  mkChart('c-bar',  { type:'bar',  data:{ labels:barData.map(d=>d.subject.split(' ')[0]), datasets:[{ data:barData.map(d=>d.average), backgroundColor:PALETTE, borderRadius:8 }] }, options:{ responsive:true, plugins:{ legend:{ display:false } }, scales:{ y:{ min:0, max:100, grid:{ color:'#f0ece6' } }, x:{ grid:{ display:false } } } } });
+  mkChart('c-radar',{ type:'radar', data:{ labels:radarData.map(d=>d.subject), datasets:[{ data:radarData.map(d=>d.score), borderColor:'#3b5bdb', backgroundColor:'rgba(59,91,219,.15)', pointBackgroundColor:'#3b5bdb', pointRadius:5 }] }, options:{ responsive:true, scales:{ r:{ min:0, max:100, ticks:{ display:false }, grid:{ color:'#e2ddd6' } } }, plugins:{ legend:{ display:false } } } });
+}
+
+async function renderCompare() {
+  if (!vizData) return;
+  try {
+    const cv     = await api('/api/marks/visualize/class/' + scls);
+    const sorted = [...cv.studentAverages].sort((a, b) => b.overall - a.overall);
+    const myRank = sorted.findIndex(s => s.id === sid) + 1;
+
+    document.getElementById('rank-num').textContent   = '#' + myRank;
+    document.getElementById('rank-label').textContent = 'out of ' + sorted.length + ' in ' + scls;
+
+    const myBarData = vizData.barData || [];
+    document.getElementById('comp-bars').innerHTML = myBarData.map((d, i) => {
+      const ca  = cv.classAverages.find(c => c.subject === d.subject);
+      const cv2 = ca ? ca.average : 0;
+      return `<div class="crow">
+        <span class="cname">${d.subject.split(' ')[0]}</span>
+        <div style="flex:1;display:flex;flex-direction:column;gap:4px">
+          <div style="display:flex;align-items:center;gap:6px"><div class="bwrap"><div class="bfill" style="width:${d.average}%;background:var(--accent)"></div></div><span class="bval" style="color:var(--accent)">${d.average}</span></div>
+          <div style="display:flex;align-items:center;gap:6px"><div class="bwrap"><div class="bfill" style="width:${cv2}%;background:var(--orange)"></div></div><span class="bval" style="color:var(--orange)">${cv2}</span></div>
+        </div></div>`;
+    }).join('');
+
+    document.querySelector('#rank-table tbody').innerHTML = sorted.map((s, i) => {
+      const isMe = s.id === sid;
+      return `<tr style="${isMe ? 'background:rgba(59,91,219,.05)' : ''}">
+        <td><strong>${isMe ? '⭐ ' : ''}#${i+1}</strong></td>
+        <td><strong style="${isMe ? 'color:var(--accent)' : ''}">${s.name}${isMe ? ' (You)' : ''}</strong></td>
+        <td><strong>${s.overall}</strong></td>
+        <td>${gradeBadge(s.grade)}</td>
+      </tr>`;
+    }).join('');
+  } catch (e) { showToast('❌ ' + e.message, 'err'); }
+}
+
+// ── Init ──────────────────────────────────────────────────────────
+async function init() {
+  // Load marks data
+  await refreshViz();
+  renderHome();
+
+  // Fetch any stored notifications (marks/attendance updated while offline)
+  // Small delay to ensure socket is connected and register is sent first
+  setTimeout(fetchStoredNotifications, 1200);
+}
+
+init();
+</script>
+</body>
+</html>

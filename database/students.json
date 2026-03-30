@@ -1,0 +1,11594 @@
+[
+  {
+    "id": "CS1001",
+    "name": "Soham Mehta",
+    "class": "CS1",
+    "email": "cs1001@cs.edu",
+    "marks": {
+      "Mathematics": [
+        71,
+        64,
+        73,
+        61
+      ],
+      "Science": [
+        73,
+        67,
+        73,
+        76
+      ],
+      "English": [
+        65,
+        74,
+        67,
+        76
+      ],
+      "History": [
+        62,
+        71,
+        58,
+        63
+      ],
+      "Computer Science": [
+        71,
+        63,
+        58,
+        74
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 80,
+    "grade": "C"
+  },
+  {
+    "id": "CS1002",
+    "name": "Aryan Rao",
+    "class": "CS1",
+    "email": "cs1002@cs.edu",
+    "marks": {
+      "Mathematics": [
+        46,
+        65,
+        57,
+        46
+      ],
+      "Science": [
+        65,
+        57,
+        47,
+        66
+      ],
+      "English": [
+        55,
+        50,
+        45,
+        51
+      ],
+      "History": [
+        62,
+        49,
+        55,
+        58
+      ],
+      "Computer Science": [
+        52,
+        49,
+        61,
+        45
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 84,
+    "grade": "D"
+  },
+  {
+    "id": "CS1003",
+    "name": "Tushar Kaur",
+    "class": "CS1",
+    "email": "cs1003@cs.edu",
+    "marks": {
+      "Mathematics": [
+        65,
+        49,
+        54,
+        49
+      ],
+      "Science": [
+        44,
+        48,
+        62,
+        52
+      ],
+      "English": [
+        57,
+        48,
+        49,
+        46
+      ],
+      "History": [
+        60,
+        64,
+        54,
+        53
+      ],
+      "Computer Science": [
+        62,
+        53,
+        48,
+        53
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 80,
+    "grade": "D"
+  },
+  {
+    "id": "CS1004",
+    "name": "Tushar Reddy",
+    "class": "CS1",
+    "email": "cs1004@cs.edu",
+    "marks": {
+      "Mathematics": [
+        62,
+        55,
+        53,
+        56
+      ],
+      "Science": [
+        54,
+        68,
+        55,
+        59
+      ],
+      "English": [
+        66,
+        66,
+        64,
+        57
+      ],
+      "History": [
+        61,
+        65,
+        60,
+        62
+      ],
+      "Computer Science": [
+        70,
+        66,
+        71,
+        54
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 70,
+    "grade": "C"
+  },
+  {
+    "id": "CS1005",
+    "name": "Shreya Agarwal",
+    "class": "CS1",
+    "email": "cs1005@cs.edu",
+    "marks": {
+      "Mathematics": [
+        58,
+        59,
+        62,
+        59
+      ],
+      "Science": [
+        57,
+        59,
+        60,
+        45
+      ],
+      "English": [
+        47,
+        51,
+        42,
+        57
+      ],
+      "History": [
+        53,
+        48,
+        43,
+        62
+      ],
+      "Computer Science": [
+        41,
+        54,
+        52,
+        48
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 68,
+    "grade": "D"
+  },
+  {
+    "id": "CS1006",
+    "name": "Arun Gupta",
+    "class": "CS1",
+    "email": "cs1006@cs.edu",
+    "marks": {
+      "Mathematics": [
+        66,
+        66,
+        63,
+        80
+      ],
+      "Science": [
+        68,
+        60,
+        67,
+        77
+      ],
+      "English": [
+        63,
+        63,
+        72,
+        66
+      ],
+      "History": [
+        59,
+        71,
+        70,
+        75
+      ],
+      "Computer Science": [
+        76,
+        66,
+        69,
+        76
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 81,
+    "grade": "C"
+  },
+  {
+    "id": "CS1007",
+    "name": "Ritika Menon",
+    "class": "CS1",
+    "email": "cs1007@cs.edu",
+    "marks": {
+      "Mathematics": [
+        61,
+        53,
+        51,
+        46
+      ],
+      "Science": [
+        62,
+        62,
+        58,
+        47
+      ],
+      "English": [
+        45,
+        57,
+        48,
+        48
+      ],
+      "History": [
+        44,
+        56,
+        59,
+        43
+      ],
+      "Computer Science": [
+        64,
+        60,
+        58,
+        55
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 86,
+    "grade": "D"
+  },
+  {
+    "id": "CS1008",
+    "name": "Aryan Dubey",
+    "class": "CS1",
+    "email": "cs1008@cs.edu",
+    "marks": {
+      "Mathematics": [
+        58,
+        56,
+        69,
+        72
+      ],
+      "Science": [
+        72,
+        72,
+        54,
+        59
+      ],
+      "English": [
+        62,
+        57,
+        58,
+        64
+      ],
+      "History": [
+        71,
+        60,
+        66,
+        62
+      ],
+      "Computer Science": [
+        69,
+        56,
+        69,
+        57
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 70,
+    "grade": "C"
+  },
+  {
+    "id": "CS1009",
+    "name": "Priya Sharma",
+    "class": "CS1",
+    "email": "cs1009@cs.edu",
+    "marks": {
+      "Mathematics": [
+        63,
+        71,
+        80,
+        62
+      ],
+      "Science": [
+        66,
+        66,
+        76,
+        79
+      ],
+      "English": [
+        79,
+        74,
+        71,
+        70
+      ],
+      "History": [
+        66,
+        61,
+        81,
+        68
+      ],
+      "Computer Science": [
+        76,
+        61,
+        66,
+        73
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 73,
+    "grade": "B"
+  },
+  {
+    "id": "CS1010",
+    "name": "Sanjay Yadav",
+    "class": "CS1",
+    "email": "cs1010@cs.edu",
+    "marks": {
+      "Mathematics": [
+        51,
+        57,
+        72,
+        67
+      ],
+      "Science": [
+        56,
+        52,
+        65,
+        55
+      ],
+      "English": [
+        53,
+        60,
+        70,
+        71
+      ],
+      "History": [
+        52,
+        53,
+        60,
+        71
+      ],
+      "Computer Science": [
+        50,
+        58,
+        55,
+        56
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 69,
+    "grade": "D"
+  },
+  {
+    "id": "CS1011",
+    "name": "Hemant Rajput",
+    "class": "CS1",
+    "email": "cs1011@cs.edu",
+    "marks": {
+      "Mathematics": [
+        63,
+        49,
+        47,
+        62
+      ],
+      "Science": [
+        46,
+        43,
+        60,
+        41
+      ],
+      "English": [
+        48,
+        60,
+        42,
+        55
+      ],
+      "History": [
+        42,
+        44,
+        50,
+        55
+      ],
+      "Computer Science": [
+        60,
+        55,
+        51,
+        44
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 70,
+    "grade": "D"
+  },
+  {
+    "id": "CS1012",
+    "name": "Ravi Dubey",
+    "class": "CS1",
+    "email": "cs1012@cs.edu",
+    "marks": {
+      "Mathematics": [
+        63,
+        70,
+        64,
+        56
+      ],
+      "Science": [
+        63,
+        62,
+        76,
+        61
+      ],
+      "English": [
+        55,
+        70,
+        62,
+        60
+      ],
+      "History": [
+        64,
+        63,
+        56,
+        70
+      ],
+      "Computer Science": [
+        58,
+        61,
+        64,
+        55
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 99,
+    "grade": "C"
+  },
+  {
+    "id": "CS1013",
+    "name": "Yash Bansal",
+    "class": "CS1",
+    "email": "cs1013@cs.edu",
+    "marks": {
+      "Mathematics": [
+        70,
+        72,
+        75,
+        68
+      ],
+      "Science": [
+        75,
+        74,
+        72,
+        62
+      ],
+      "English": [
+        80,
+        73,
+        70,
+        76
+      ],
+      "History": [
+        77,
+        75,
+        80,
+        70
+      ],
+      "Computer Science": [
+        67,
+        81,
+        71,
+        65
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 78,
+    "grade": "B"
+  },
+  {
+    "id": "CS1014",
+    "name": "Nandini Kumar",
+    "class": "CS1",
+    "email": "cs1014@cs.edu",
+    "marks": {
+      "Mathematics": [
+        59,
+        61,
+        69,
+        64
+      ],
+      "Science": [
+        74,
+        70,
+        73,
+        69
+      ],
+      "English": [
+        58,
+        61,
+        58,
+        68
+      ],
+      "History": [
+        68,
+        64,
+        65,
+        62
+      ],
+      "Computer Science": [
+        69,
+        61,
+        55,
+        68
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 70,
+    "grade": "C"
+  },
+  {
+    "id": "CS1015",
+    "name": "Kunal Pillai",
+    "class": "CS1",
+    "email": "cs1015@cs.edu",
+    "marks": {
+      "Mathematics": [
+        70,
+        68,
+        68,
+        58
+      ],
+      "Science": [
+        54,
+        52,
+        60,
+        50
+      ],
+      "English": [
+        66,
+        49,
+        61,
+        57
+      ],
+      "History": [
+        56,
+        51,
+        49,
+        62
+      ],
+      "Computer Science": [
+        50,
+        48,
+        51,
+        68
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 81,
+    "grade": "D"
+  },
+  {
+    "id": "CS1016",
+    "name": "Priya Bansal",
+    "class": "CS1",
+    "email": "cs1016@cs.edu",
+    "marks": {
+      "Mathematics": [
+        52,
+        48,
+        64,
+        63
+      ],
+      "Science": [
+        47,
+        64,
+        49,
+        52
+      ],
+      "English": [
+        44,
+        62,
+        46,
+        64
+      ],
+      "History": [
+        59,
+        50,
+        49,
+        54
+      ],
+      "Computer Science": [
+        48,
+        61,
+        53,
+        61
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 75,
+    "grade": "D"
+  },
+  {
+    "id": "CS1017",
+    "name": "Aditya Deshpande",
+    "class": "CS1",
+    "email": "cs1017@cs.edu",
+    "marks": {
+      "Mathematics": [
+        73,
+        65,
+        73,
+        76
+      ],
+      "Science": [
+        78,
+        70,
+        70,
+        71
+      ],
+      "English": [
+        75,
+        62,
+        80,
+        61
+      ],
+      "History": [
+        68,
+        79,
+        69,
+        62
+      ],
+      "Computer Science": [
+        69,
+        65,
+        71,
+        63
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 85,
+    "grade": "B"
+  },
+  {
+    "id": "CS1018",
+    "name": "Rajesh Rajput",
+    "class": "CS1",
+    "email": "cs1018@cs.edu",
+    "marks": {
+      "Mathematics": [
+        57,
+        42,
+        60,
+        53
+      ],
+      "Science": [
+        51,
+        52,
+        46,
+        59
+      ],
+      "English": [
+        49,
+        40,
+        44,
+        48
+      ],
+      "History": [
+        51,
+        48,
+        50,
+        42
+      ],
+      "Computer Science": [
+        55,
+        59,
+        41,
+        47
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 74,
+    "grade": "F"
+  },
+  {
+    "id": "CS1019",
+    "name": "Sahil Kumar",
+    "class": "CS1",
+    "email": "cs1019@cs.edu",
+    "marks": {
+      "Mathematics": [
+        52,
+        64,
+        59,
+        69
+      ],
+      "Science": [
+        68,
+        63,
+        53,
+        68
+      ],
+      "English": [
+        60,
+        54,
+        63,
+        55
+      ],
+      "History": [
+        49,
+        59,
+        51,
+        49
+      ],
+      "Computer Science": [
+        62,
+        55,
+        51,
+        70
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 91,
+    "grade": "D"
+  },
+  {
+    "id": "CS1020",
+    "name": "Vikram Jain",
+    "class": "CS1",
+    "email": "cs1020@cs.edu",
+    "marks": {
+      "Mathematics": [
+        75,
+        93,
+        80,
+        82
+      ],
+      "Science": [
+        90,
+        93,
+        88,
+        90
+      ],
+      "English": [
+        78,
+        74,
+        90,
+        86
+      ],
+      "History": [
+        80,
+        89,
+        74,
+        86
+      ],
+      "Computer Science": [
+        81,
+        72,
+        89,
+        72
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 82,
+    "grade": "A"
+  },
+  {
+    "id": "CS1021",
+    "name": "Priya Bhatt",
+    "class": "CS1",
+    "email": "cs1021@cs.edu",
+    "marks": {
+      "Mathematics": [
+        81,
+        81,
+        64,
+        64
+      ],
+      "Science": [
+        80,
+        80,
+        77,
+        78
+      ],
+      "English": [
+        71,
+        63,
+        62,
+        69
+      ],
+      "History": [
+        72,
+        75,
+        65,
+        70
+      ],
+      "Computer Science": [
+        66,
+        73,
+        67,
+        66
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 87,
+    "grade": "B"
+  },
+  {
+    "id": "CS1022",
+    "name": "Pradeep Thakur",
+    "class": "CS1",
+    "email": "cs1022@cs.edu",
+    "marks": {
+      "Mathematics": [
+        69,
+        76,
+        83,
+        69
+      ],
+      "Science": [
+        83,
+        70,
+        77,
+        69
+      ],
+      "English": [
+        90,
+        84,
+        79,
+        88
+      ],
+      "History": [
+        70,
+        81,
+        69,
+        90
+      ],
+      "Computer Science": [
+        77,
+        71,
+        79,
+        83
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 78,
+    "grade": "B"
+  },
+  {
+    "id": "CS1023",
+    "name": "Sanjay Chopra",
+    "class": "CS1",
+    "email": "cs1023@cs.edu",
+    "marks": {
+      "Mathematics": [
+        52,
+        60,
+        54,
+        50
+      ],
+      "Science": [
+        56,
+        41,
+        45,
+        60
+      ],
+      "English": [
+        45,
+        45,
+        47,
+        47
+      ],
+      "History": [
+        46,
+        61,
+        56,
+        60
+      ],
+      "Computer Science": [
+        49,
+        47,
+        42,
+        54
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 75,
+    "grade": "D"
+  },
+  {
+    "id": "CS1024",
+    "name": "Kavya Gupta",
+    "class": "CS1",
+    "email": "cs1024@cs.edu",
+    "marks": {
+      "Mathematics": [
+        71,
+        73,
+        80,
+        87
+      ],
+      "Science": [
+        77,
+        80,
+        88,
+        78
+      ],
+      "English": [
+        75,
+        84,
+        84,
+        74
+      ],
+      "History": [
+        78,
+        86,
+        71,
+        69
+      ],
+      "Computer Science": [
+        68,
+        86,
+        70,
+        80
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 87,
+    "grade": "B"
+  },
+  {
+    "id": "CS1025",
+    "name": "Sachin Agarwal",
+    "class": "CS1",
+    "email": "cs1025@cs.edu",
+    "marks": {
+      "Mathematics": [
+        82,
+        80,
+        85,
+        77
+      ],
+      "Science": [
+        68,
+        71,
+        86,
+        78
+      ],
+      "English": [
+        69,
+        71,
+        65,
+        87
+      ],
+      "History": [
+        82,
+        69,
+        72,
+        67
+      ],
+      "Computer Science": [
+        86,
+        70,
+        82,
+        66
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 72,
+    "grade": "B"
+  },
+  {
+    "id": "CS1026",
+    "name": "Aisha Sharma",
+    "class": "CS1",
+    "email": "cs1026@cs.edu",
+    "marks": {
+      "Mathematics": [
+        82,
+        69,
+        84,
+        87
+      ],
+      "Science": [
+        73,
+        85,
+        74,
+        70
+      ],
+      "English": [
+        85,
+        85,
+        80,
+        88
+      ],
+      "History": [
+        74,
+        79,
+        75,
+        89
+      ],
+      "Computer Science": [
+        84,
+        69,
+        77,
+        77
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 71,
+    "grade": "B"
+  },
+  {
+    "id": "CS1027",
+    "name": "Amit Thakur",
+    "class": "CS1",
+    "email": "cs1027@cs.edu",
+    "marks": {
+      "Mathematics": [
+        87,
+        83,
+        87,
+        71
+      ],
+      "Science": [
+        91,
+        77,
+        72,
+        80
+      ],
+      "English": [
+        85,
+        90,
+        75,
+        77
+      ],
+      "History": [
+        87,
+        85,
+        84,
+        92
+      ],
+      "Computer Science": [
+        84,
+        92,
+        75,
+        89
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 87,
+    "grade": "A"
+  },
+  {
+    "id": "CS1028",
+    "name": "Vishal Sharma",
+    "class": "CS1",
+    "email": "cs1028@cs.edu",
+    "marks": {
+      "Mathematics": [
+        73,
+        80,
+        76,
+        64
+      ],
+      "Science": [
+        68,
+        60,
+        63,
+        65
+      ],
+      "English": [
+        65,
+        67,
+        72,
+        80
+      ],
+      "History": [
+        76,
+        71,
+        78,
+        74
+      ],
+      "Computer Science": [
+        66,
+        64,
+        70,
+        81
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 82,
+    "grade": "B"
+  },
+  {
+    "id": "CS1029",
+    "name": "Aryan Kaur",
+    "class": "CS1",
+    "email": "cs1029@cs.edu",
+    "marks": {
+      "Mathematics": [
+        73,
+        65,
+        68,
+        72
+      ],
+      "Science": [
+        65,
+        78,
+        73,
+        83
+      ],
+      "English": [
+        78,
+        74,
+        79,
+        84
+      ],
+      "History": [
+        81,
+        68,
+        72,
+        79
+      ],
+      "Computer Science": [
+        78,
+        84,
+        78,
+        74
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 75,
+    "grade": "B"
+  },
+  {
+    "id": "CS1030",
+    "name": "Vinay Garg",
+    "class": "CS1",
+    "email": "cs1030@cs.edu",
+    "marks": {
+      "Mathematics": [
+        75,
+        71,
+        64,
+        74
+      ],
+      "Science": [
+        84,
+        67,
+        83,
+        66
+      ],
+      "English": [
+        78,
+        76,
+        79,
+        79
+      ],
+      "History": [
+        82,
+        68,
+        74,
+        85
+      ],
+      "Computer Science": [
+        71,
+        83,
+        67,
+        84
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 83,
+    "grade": "B"
+  },
+  {
+    "id": "CS1031",
+    "name": "Arjun Deshpande",
+    "class": "CS1",
+    "email": "cs1031@cs.edu",
+    "marks": {
+      "Mathematics": [
+        44,
+        45,
+        52,
+        61
+      ],
+      "Science": [
+        61,
+        44,
+        47,
+        45
+      ],
+      "English": [
+        53,
+        61,
+        45,
+        46
+      ],
+      "History": [
+        59,
+        59,
+        55,
+        61
+      ],
+      "Computer Science": [
+        47,
+        44,
+        44,
+        58
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 72,
+    "grade": "D"
+  },
+  {
+    "id": "CS1032",
+    "name": "Geeta Mehta",
+    "class": "CS1",
+    "email": "cs1032@cs.edu",
+    "marks": {
+      "Mathematics": [
+        79,
+        71,
+        74,
+        67
+      ],
+      "Science": [
+        83,
+        67,
+        73,
+        78
+      ],
+      "English": [
+        68,
+        85,
+        76,
+        81
+      ],
+      "History": [
+        86,
+        71,
+        83,
+        86
+      ],
+      "Computer Science": [
+        79,
+        65,
+        71,
+        86
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 95,
+    "grade": "B"
+  },
+  {
+    "id": "CS1033",
+    "name": "Pradeep Pandey",
+    "class": "CS1",
+    "email": "cs1033@cs.edu",
+    "marks": {
+      "Mathematics": [
+        56,
+        51,
+        45,
+        49
+      ],
+      "Science": [
+        47,
+        44,
+        48,
+        46
+      ],
+      "English": [
+        44,
+        57,
+        56,
+        60
+      ],
+      "History": [
+        54,
+        55,
+        59,
+        61
+      ],
+      "Computer Science": [
+        45,
+        50,
+        49,
+        47
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 89,
+    "grade": "D"
+  },
+  {
+    "id": "CS1034",
+    "name": "Manish Agarwal",
+    "class": "CS1",
+    "email": "cs1034@cs.edu",
+    "marks": {
+      "Mathematics": [
+        76,
+        61,
+        62,
+        70
+      ],
+      "Science": [
+        74,
+        56,
+        76,
+        74
+      ],
+      "English": [
+        71,
+        72,
+        71,
+        69
+      ],
+      "History": [
+        70,
+        56,
+        69,
+        67
+      ],
+      "Computer Science": [
+        77,
+        60,
+        56,
+        60
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 89,
+    "grade": "C"
+  },
+  {
+    "id": "CS1035",
+    "name": "Deepak Patel",
+    "class": "CS1",
+    "email": "cs1035@cs.edu",
+    "marks": {
+      "Mathematics": [
+        61,
+        74,
+        77,
+        65
+      ],
+      "Science": [
+        64,
+        63,
+        77,
+        67
+      ],
+      "English": [
+        61,
+        64,
+        73,
+        62
+      ],
+      "History": [
+        61,
+        74,
+        72,
+        67
+      ],
+      "Computer Science": [
+        58,
+        70,
+        73,
+        66
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 68,
+    "grade": "C"
+  },
+  {
+    "id": "CS1036",
+    "name": "Rohit Mehta",
+    "class": "CS1",
+    "email": "cs1036@cs.edu",
+    "marks": {
+      "Mathematics": [
+        69,
+        80,
+        61,
+        70
+      ],
+      "Science": [
+        71,
+        76,
+        78,
+        80
+      ],
+      "English": [
+        71,
+        66,
+        75,
+        63
+      ],
+      "History": [
+        64,
+        74,
+        71,
+        69
+      ],
+      "Computer Science": [
+        70,
+        65,
+        76,
+        74
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 69,
+    "grade": "B"
+  },
+  {
+    "id": "CS1037",
+    "name": "Pooja Kumar",
+    "class": "CS1",
+    "email": "cs1037@cs.edu",
+    "marks": {
+      "Mathematics": [
+        56,
+        51,
+        57,
+        59
+      ],
+      "Science": [
+        69,
+        52,
+        68,
+        65
+      ],
+      "English": [
+        53,
+        53,
+        66,
+        61
+      ],
+      "History": [
+        57,
+        50,
+        58,
+        51
+      ],
+      "Computer Science": [
+        69,
+        53,
+        65,
+        61
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 93,
+    "grade": "D"
+  },
+  {
+    "id": "CS1038",
+    "name": "Chetan Singh",
+    "class": "CS1",
+    "email": "cs1038@cs.edu",
+    "marks": {
+      "Mathematics": [
+        62,
+        60,
+        53,
+        52
+      ],
+      "Science": [
+        60,
+        60,
+        45,
+        46
+      ],
+      "English": [
+        45,
+        50,
+        63,
+        43
+      ],
+      "History": [
+        59,
+        45,
+        63,
+        44
+      ],
+      "Computer Science": [
+        41,
+        51,
+        54,
+        61
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 74,
+    "grade": "D"
+  },
+  {
+    "id": "CS1039",
+    "name": "Farhan Dubey",
+    "class": "CS1",
+    "email": "cs1039@cs.edu",
+    "marks": {
+      "Mathematics": [
+        73,
+        73,
+        89,
+        81
+      ],
+      "Science": [
+        75,
+        80,
+        72,
+        83
+      ],
+      "English": [
+        72,
+        74,
+        84,
+        74
+      ],
+      "History": [
+        68,
+        74,
+        77,
+        68
+      ],
+      "Computer Science": [
+        69,
+        78,
+        71,
+        87
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 74,
+    "grade": "B"
+  },
+  {
+    "id": "CS1040",
+    "name": "Pradeep Agarwal",
+    "class": "CS1",
+    "email": "cs1040@cs.edu",
+    "marks": {
+      "Mathematics": [
+        66,
+        67,
+        51,
+        52
+      ],
+      "Science": [
+        65,
+        63,
+        62,
+        67
+      ],
+      "English": [
+        61,
+        64,
+        58,
+        69
+      ],
+      "History": [
+        55,
+        64,
+        59,
+        71
+      ],
+      "Computer Science": [
+        53,
+        57,
+        71,
+        56
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 88,
+    "grade": "C"
+  },
+  {
+    "id": "CS1041",
+    "name": "Vijay Tiwari",
+    "class": "CS1",
+    "email": "cs1041@cs.edu",
+    "marks": {
+      "Mathematics": [
+        84,
+        83,
+        83,
+        70
+      ],
+      "Science": [
+        77,
+        76,
+        84,
+        86
+      ],
+      "English": [
+        81,
+        70,
+        81,
+        84
+      ],
+      "History": [
+        70,
+        86,
+        71,
+        73
+      ],
+      "Computer Science": [
+        76,
+        85,
+        70,
+        85
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 79,
+    "grade": "B"
+  },
+  {
+    "id": "CS1042",
+    "name": "Harish Patil",
+    "class": "CS1",
+    "email": "cs1042@cs.edu",
+    "marks": {
+      "Mathematics": [
+        69,
+        57,
+        59,
+        68
+      ],
+      "Science": [
+        61,
+        58,
+        63,
+        60
+      ],
+      "English": [
+        63,
+        72,
+        78,
+        71
+      ],
+      "History": [
+        71,
+        57,
+        76,
+        65
+      ],
+      "Computer Science": [
+        77,
+        65,
+        69,
+        63
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 89,
+    "grade": "C"
+  },
+  {
+    "id": "CS1043",
+    "name": "Kunal Tiwari",
+    "class": "CS1",
+    "email": "cs1043@cs.edu",
+    "marks": {
+      "Mathematics": [
+        88,
+        88,
+        69,
+        78
+      ],
+      "Science": [
+        67,
+        76,
+        68,
+        79
+      ],
+      "English": [
+        88,
+        78,
+        79,
+        84
+      ],
+      "History": [
+        70,
+        76,
+        84,
+        68
+      ],
+      "Computer Science": [
+        81,
+        80,
+        83,
+        79
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 70,
+    "grade": "B"
+  },
+  {
+    "id": "CS1044",
+    "name": "Dhruv Gupta",
+    "class": "CS1",
+    "email": "cs1044@cs.edu",
+    "marks": {
+      "Mathematics": [
+        73,
+        72,
+        77,
+        78
+      ],
+      "Science": [
+        64,
+        82,
+        82,
+        65
+      ],
+      "English": [
+        84,
+        81,
+        67,
+        76
+      ],
+      "History": [
+        71,
+        68,
+        82,
+        83
+      ],
+      "Computer Science": [
+        79,
+        81,
+        66,
+        69
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 88,
+    "grade": "B"
+  },
+  {
+    "id": "CS1045",
+    "name": "Sneha Bansal",
+    "class": "CS1",
+    "email": "cs1045@cs.edu",
+    "marks": {
+      "Mathematics": [
+        64,
+        60,
+        45,
+        56
+      ],
+      "Science": [
+        58,
+        47,
+        62,
+        63
+      ],
+      "English": [
+        53,
+        50,
+        62,
+        49
+      ],
+      "History": [
+        65,
+        46,
+        49,
+        47
+      ],
+      "Computer Science": [
+        63,
+        52,
+        55,
+        49
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 80,
+    "grade": "D"
+  },
+  {
+    "id": "CS1046",
+    "name": "Esha Chopra",
+    "class": "CS1",
+    "email": "cs1046@cs.edu",
+    "marks": {
+      "Mathematics": [
+        77,
+        80,
+        66,
+        84
+      ],
+      "Science": [
+        80,
+        78,
+        75,
+        64
+      ],
+      "English": [
+        71,
+        65,
+        76,
+        72
+      ],
+      "History": [
+        84,
+        70,
+        75,
+        80
+      ],
+      "Computer Science": [
+        66,
+        70,
+        77,
+        69
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 71,
+    "grade": "B"
+  },
+  {
+    "id": "CS1047",
+    "name": "Bhavya Sharma",
+    "class": "CS1",
+    "email": "cs1047@cs.edu",
+    "marks": {
+      "Mathematics": [
+        70,
+        77,
+        72,
+        78
+      ],
+      "Science": [
+        78,
+        84,
+        83,
+        71
+      ],
+      "English": [
+        78,
+        81,
+        73,
+        83
+      ],
+      "History": [
+        68,
+        65,
+        64,
+        83
+      ],
+      "Computer Science": [
+        77,
+        75,
+        66,
+        74
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 92,
+    "grade": "B"
+  },
+  {
+    "id": "CS1048",
+    "name": "Amit Iyer",
+    "class": "CS1",
+    "email": "cs1048@cs.edu",
+    "marks": {
+      "Mathematics": [
+        79,
+        85,
+        78,
+        71
+      ],
+      "Science": [
+        66,
+        67,
+        86,
+        76
+      ],
+      "English": [
+        74,
+        80,
+        82,
+        84
+      ],
+      "History": [
+        70,
+        70,
+        68,
+        78
+      ],
+      "Computer Science": [
+        85,
+        72,
+        69,
+        70
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 94,
+    "grade": "B"
+  },
+  {
+    "id": "CS1049",
+    "name": "Sneha Shah",
+    "class": "CS1",
+    "email": "cs1049@cs.edu",
+    "marks": {
+      "Mathematics": [
+        75,
+        70,
+        81,
+        72
+      ],
+      "Science": [
+        71,
+        76,
+        82,
+        72
+      ],
+      "English": [
+        88,
+        87,
+        87,
+        87
+      ],
+      "History": [
+        82,
+        69,
+        87,
+        81
+      ],
+      "Computer Science": [
+        80,
+        84,
+        67,
+        71
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 75,
+    "grade": "B"
+  },
+  {
+    "id": "CS1050",
+    "name": "Aarav Chauhan",
+    "class": "CS1",
+    "email": "cs1050@cs.edu",
+    "marks": {
+      "Mathematics": [
+        47,
+        54,
+        45,
+        48
+      ],
+      "Science": [
+        61,
+        55,
+        42,
+        52
+      ],
+      "English": [
+        58,
+        58,
+        57,
+        51
+      ],
+      "History": [
+        48,
+        59,
+        46,
+        55
+      ],
+      "Computer Science": [
+        42,
+        60,
+        61,
+        54
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 95,
+    "grade": "D"
+  },
+  {
+    "id": "CS1051",
+    "name": "Hemant Iyer",
+    "class": "CS1",
+    "email": "cs1051@cs.edu",
+    "marks": {
+      "Mathematics": [
+        61,
+        65,
+        69,
+        65
+      ],
+      "Science": [
+        74,
+        77,
+        75,
+        69
+      ],
+      "English": [
+        68,
+        64,
+        71,
+        72
+      ],
+      "History": [
+        63,
+        72,
+        58,
+        78
+      ],
+      "Computer Science": [
+        72,
+        78,
+        76,
+        63
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 69,
+    "grade": "C"
+  },
+  {
+    "id": "CS1052",
+    "name": "Vinay Singh",
+    "class": "CS1",
+    "email": "cs1052@cs.edu",
+    "marks": {
+      "Mathematics": [
+        61,
+        64,
+        58,
+        56
+      ],
+      "Science": [
+        63,
+        58,
+        63,
+        68
+      ],
+      "English": [
+        52,
+        56,
+        60,
+        68
+      ],
+      "History": [
+        67,
+        72,
+        64,
+        73
+      ],
+      "Computer Science": [
+        70,
+        68,
+        55,
+        72
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 74,
+    "grade": "C"
+  },
+  {
+    "id": "CS1053",
+    "name": "Rajesh Chopra",
+    "class": "CS1",
+    "email": "cs1053@cs.edu",
+    "marks": {
+      "Mathematics": [
+        46,
+        61,
+        57,
+        41
+      ],
+      "Science": [
+        44,
+        54,
+        47,
+        50
+      ],
+      "English": [
+        54,
+        40,
+        50,
+        49
+      ],
+      "History": [
+        59,
+        44,
+        58,
+        40
+      ],
+      "Computer Science": [
+        45,
+        55,
+        59,
+        51
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 90,
+    "grade": "D"
+  },
+  {
+    "id": "CS1054",
+    "name": "Amit Yadav",
+    "class": "CS1",
+    "email": "cs1054@cs.edu",
+    "marks": {
+      "Mathematics": [
+        80,
+        72,
+        89,
+        82
+      ],
+      "Science": [
+        79,
+        73,
+        82,
+        78
+      ],
+      "English": [
+        74,
+        84,
+        74,
+        78
+      ],
+      "History": [
+        77,
+        87,
+        83,
+        81
+      ],
+      "Computer Science": [
+        72,
+        70,
+        89,
+        85
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 71,
+    "grade": "B"
+  },
+  {
+    "id": "CS1055",
+    "name": "Hemant Kumar",
+    "class": "CS1",
+    "email": "cs1055@cs.edu",
+    "marks": {
+      "Mathematics": [
+        92,
+        79,
+        79,
+        92
+      ],
+      "Science": [
+        78,
+        89,
+        93,
+        75
+      ],
+      "English": [
+        80,
+        76,
+        83,
+        79
+      ],
+      "History": [
+        88,
+        92,
+        80,
+        82
+      ],
+      "Computer Science": [
+        78,
+        74,
+        80,
+        87
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 89,
+    "grade": "A"
+  },
+  {
+    "id": "CS1056",
+    "name": "Manish Bansal",
+    "class": "CS1",
+    "email": "cs1056@cs.edu",
+    "marks": {
+      "Mathematics": [
+        83,
+        77,
+        83,
+        78
+      ],
+      "Science": [
+        87,
+        90,
+        81,
+        73
+      ],
+      "English": [
+        79,
+        76,
+        83,
+        81
+      ],
+      "History": [
+        74,
+        84,
+        89,
+        86
+      ],
+      "Computer Science": [
+        80,
+        75,
+        83,
+        84
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 99,
+    "grade": "A"
+  },
+  {
+    "id": "CS1057",
+    "name": "Rakesh Malhotra",
+    "class": "CS1",
+    "email": "cs1057@cs.edu",
+    "marks": {
+      "Mathematics": [
+        57,
+        69,
+        58,
+        74
+      ],
+      "Science": [
+        60,
+        67,
+        61,
+        56
+      ],
+      "English": [
+        73,
+        59,
+        67,
+        66
+      ],
+      "History": [
+        68,
+        56,
+        60,
+        68
+      ],
+      "Computer Science": [
+        62,
+        62,
+        74,
+        72
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 72,
+    "grade": "C"
+  },
+  {
+    "id": "CS1058",
+    "name": "Uday Patil",
+    "class": "CS1",
+    "email": "cs1058@cs.edu",
+    "marks": {
+      "Mathematics": [
+        57,
+        65,
+        62,
+        65
+      ],
+      "Science": [
+        50,
+        53,
+        64,
+        53
+      ],
+      "English": [
+        67,
+        48,
+        56,
+        68
+      ],
+      "History": [
+        66,
+        66,
+        64,
+        53
+      ],
+      "Computer Science": [
+        60,
+        63,
+        63,
+        66
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 96,
+    "grade": "C"
+  },
+  {
+    "id": "CS1059",
+    "name": "Nikhil Pandey",
+    "class": "CS1",
+    "email": "cs1059@cs.edu",
+    "marks": {
+      "Mathematics": [
+        87,
+        82,
+        90,
+        76
+      ],
+      "Science": [
+        72,
+        86,
+        73,
+        85
+      ],
+      "English": [
+        90,
+        80,
+        78,
+        73
+      ],
+      "History": [
+        86,
+        87,
+        93,
+        86
+      ],
+      "Computer Science": [
+        75,
+        80,
+        86,
+        91
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 91,
+    "grade": "A"
+  },
+  {
+    "id": "CS1060",
+    "name": "Shubham Chopra",
+    "class": "CS1",
+    "email": "cs1060@cs.edu",
+    "marks": {
+      "Mathematics": [
+        77,
+        61,
+        70,
+        63
+      ],
+      "Science": [
+        61,
+        66,
+        69,
+        61
+      ],
+      "English": [
+        78,
+        66,
+        76,
+        62
+      ],
+      "History": [
+        66,
+        63,
+        60,
+        69
+      ],
+      "Computer Science": [
+        65,
+        70,
+        61,
+        62
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 89,
+    "grade": "C"
+  },
+  {
+    "id": "CS1061",
+    "name": "Rakesh Yadav",
+    "class": "CS1",
+    "email": "cs1061@cs.edu",
+    "marks": {
+      "Mathematics": [
+        76,
+        80,
+        60,
+        78
+      ],
+      "Science": [
+        79,
+        76,
+        67,
+        74
+      ],
+      "English": [
+        80,
+        65,
+        62,
+        74
+      ],
+      "History": [
+        80,
+        79,
+        63,
+        71
+      ],
+      "Computer Science": [
+        73,
+        79,
+        73,
+        73
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 81,
+    "grade": "B"
+  },
+  {
+    "id": "CS1062",
+    "name": "Pranav Jain",
+    "class": "CS1",
+    "email": "cs1062@cs.edu",
+    "marks": {
+      "Mathematics": [
+        80,
+        72,
+        73,
+        81
+      ],
+      "Science": [
+        85,
+        83,
+        76,
+        82
+      ],
+      "English": [
+        78,
+        86,
+        88,
+        77
+      ],
+      "History": [
+        83,
+        79,
+        81,
+        72
+      ],
+      "Computer Science": [
+        72,
+        79,
+        77,
+        71
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 72,
+    "grade": "B"
+  },
+  {
+    "id": "CS1063",
+    "name": "Ananya Kumar",
+    "class": "CS1",
+    "email": "cs1063@cs.edu",
+    "marks": {
+      "Mathematics": [
+        49,
+        51,
+        43,
+        46
+      ],
+      "Science": [
+        63,
+        48,
+        59,
+        45
+      ],
+      "English": [
+        59,
+        48,
+        45,
+        49
+      ],
+      "History": [
+        50,
+        54,
+        44,
+        63
+      ],
+      "Computer Science": [
+        60,
+        56,
+        52,
+        64
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 87,
+    "grade": "D"
+  },
+  {
+    "id": "CS2001",
+    "name": "Kavya Reddy",
+    "class": "CS2",
+    "email": "cs2001@cs.edu",
+    "marks": {
+      "Mathematics": [
+        63,
+        52,
+        55,
+        63
+      ],
+      "Science": [
+        49,
+        56,
+        49,
+        48
+      ],
+      "English": [
+        50,
+        56,
+        57,
+        45
+      ],
+      "History": [
+        50,
+        54,
+        63,
+        45
+      ],
+      "Computer Science": [
+        63,
+        46,
+        46,
+        57
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 93,
+    "grade": "D"
+  },
+  {
+    "id": "CS2002",
+    "name": "Isha Mehta",
+    "class": "CS2",
+    "email": "cs2002@cs.edu",
+    "marks": {
+      "Mathematics": [
+        83,
+        75,
+        74,
+        77
+      ],
+      "Science": [
+        76,
+        67,
+        68,
+        83
+      ],
+      "English": [
+        74,
+        87,
+        87,
+        80
+      ],
+      "History": [
+        73,
+        75,
+        75,
+        87
+      ],
+      "Computer Science": [
+        88,
+        81,
+        80,
+        87
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 68,
+    "grade": "B"
+  },
+  {
+    "id": "CS2003",
+    "name": "Aryan Joshi",
+    "class": "CS2",
+    "email": "cs2003@cs.edu",
+    "marks": {
+      "Mathematics": [
+        74,
+        65,
+        58,
+        63
+      ],
+      "Science": [
+        77,
+        57,
+        76,
+        57
+      ],
+      "English": [
+        74,
+        72,
+        63,
+        68
+      ],
+      "History": [
+        64,
+        68,
+        64,
+        73
+      ],
+      "Computer Science": [
+        59,
+        71,
+        73,
+        74
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 92,
+    "grade": "C"
+  },
+  {
+    "id": "CS2004",
+    "name": "Jatin Gupta",
+    "class": "CS2",
+    "email": "cs2004@cs.edu",
+    "marks": {
+      "Mathematics": [
+        68,
+        86,
+        88,
+        84
+      ],
+      "Science": [
+        78,
+        80,
+        69,
+        78
+      ],
+      "English": [
+        77,
+        88,
+        86,
+        76
+      ],
+      "History": [
+        81,
+        77,
+        72,
+        82
+      ],
+      "Computer Science": [
+        78,
+        88,
+        71,
+        72
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 90,
+    "grade": "B"
+  },
+  {
+    "id": "CS2005",
+    "name": "Rajesh Nair",
+    "class": "CS2",
+    "email": "cs2005@cs.edu",
+    "marks": {
+      "Mathematics": [
+        69,
+        66,
+        66,
+        63
+      ],
+      "Science": [
+        55,
+        70,
+        68,
+        55
+      ],
+      "English": [
+        65,
+        62,
+        72,
+        68
+      ],
+      "History": [
+        61,
+        57,
+        71,
+        65
+      ],
+      "Computer Science": [
+        70,
+        69,
+        71,
+        70
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 73,
+    "grade": "C"
+  },
+  {
+    "id": "CS2006",
+    "name": "Mihir Kapoor",
+    "class": "CS2",
+    "email": "cs2006@cs.edu",
+    "marks": {
+      "Mathematics": [
+        55,
+        60,
+        54,
+        54
+      ],
+      "Science": [
+        53,
+        57,
+        64,
+        57
+      ],
+      "English": [
+        66,
+        48,
+        56,
+        67
+      ],
+      "History": [
+        49,
+        64,
+        48,
+        51
+      ],
+      "Computer Science": [
+        58,
+        52,
+        59,
+        47
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 71,
+    "grade": "D"
+  },
+  {
+    "id": "CS2007",
+    "name": "Uday Iyer",
+    "class": "CS2",
+    "email": "cs2007@cs.edu",
+    "marks": {
+      "Mathematics": [
+        52,
+        51,
+        51,
+        50
+      ],
+      "Science": [
+        48,
+        63,
+        54,
+        50
+      ],
+      "English": [
+        49,
+        47,
+        46,
+        54
+      ],
+      "History": [
+        44,
+        51,
+        53,
+        64
+      ],
+      "Computer Science": [
+        58,
+        62,
+        57,
+        43
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 79,
+    "grade": "D"
+  },
+  {
+    "id": "CS2008",
+    "name": "Ananya Rao",
+    "class": "CS2",
+    "email": "cs2008@cs.edu",
+    "marks": {
+      "Mathematics": [
+        78,
+        86,
+        84,
+        89
+      ],
+      "Science": [
+        74,
+        87,
+        88,
+        71
+      ],
+      "English": [
+        77,
+        71,
+        74,
+        85
+      ],
+      "History": [
+        78,
+        83,
+        69,
+        88
+      ],
+      "Computer Science": [
+        78,
+        73,
+        90,
+        81
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 76,
+    "grade": "A"
+  },
+  {
+    "id": "CS2009",
+    "name": "Vikram Mittal",
+    "class": "CS2",
+    "email": "cs2009@cs.edu",
+    "marks": {
+      "Mathematics": [
+        80,
+        86,
+        65,
+        85
+      ],
+      "Science": [
+        78,
+        81,
+        82,
+        73
+      ],
+      "English": [
+        80,
+        78,
+        72,
+        65
+      ],
+      "History": [
+        67,
+        74,
+        76,
+        73
+      ],
+      "Computer Science": [
+        67,
+        68,
+        81,
+        86
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 68,
+    "grade": "B"
+  },
+  {
+    "id": "CS2010",
+    "name": "Vishal Verma",
+    "class": "CS2",
+    "email": "cs2010@cs.edu",
+    "marks": {
+      "Mathematics": [
+        74,
+        71,
+        78,
+        67
+      ],
+      "Science": [
+        72,
+        78,
+        83,
+        72
+      ],
+      "English": [
+        78,
+        74,
+        61,
+        69
+      ],
+      "History": [
+        81,
+        74,
+        70,
+        77
+      ],
+      "Computer Science": [
+        75,
+        62,
+        77,
+        70
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 84,
+    "grade": "B"
+  },
+  {
+    "id": "CS2011",
+    "name": "Divya Garg",
+    "class": "CS2",
+    "email": "cs2011@cs.edu",
+    "marks": {
+      "Mathematics": [
+        56,
+        67,
+        66,
+        65
+      ],
+      "Science": [
+        63,
+        67,
+        63,
+        54
+      ],
+      "English": [
+        66,
+        65,
+        59,
+        61
+      ],
+      "History": [
+        73,
+        61,
+        67,
+        68
+      ],
+      "Computer Science": [
+        70,
+        52,
+        71,
+        57
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 70,
+    "grade": "C"
+  },
+  {
+    "id": "CS2012",
+    "name": "Aryan Chopra",
+    "class": "CS2",
+    "email": "cs2012@cs.edu",
+    "marks": {
+      "Mathematics": [
+        72,
+        71,
+        78,
+        83
+      ],
+      "Science": [
+        73,
+        76,
+        90,
+        86
+      ],
+      "English": [
+        86,
+        87,
+        78,
+        87
+      ],
+      "History": [
+        85,
+        78,
+        88,
+        71
+      ],
+      "Computer Science": [
+        88,
+        87,
+        75,
+        80
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 76,
+    "grade": "A"
+  },
+  {
+    "id": "CS2013",
+    "name": "Shreya Rajput",
+    "class": "CS2",
+    "email": "cs2013@cs.edu",
+    "marks": {
+      "Mathematics": [
+        66,
+        65,
+        47,
+        57
+      ],
+      "Science": [
+        50,
+        67,
+        53,
+        54
+      ],
+      "English": [
+        64,
+        63,
+        46,
+        57
+      ],
+      "History": [
+        49,
+        63,
+        47,
+        60
+      ],
+      "Computer Science": [
+        58,
+        65,
+        48,
+        47
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 88,
+    "grade": "D"
+  },
+  {
+    "id": "CS2014",
+    "name": "Nandini Patel",
+    "class": "CS2",
+    "email": "cs2014@cs.edu",
+    "marks": {
+      "Mathematics": [
+        60,
+        59,
+        77,
+        76
+      ],
+      "Science": [
+        60,
+        74,
+        62,
+        74
+      ],
+      "English": [
+        69,
+        64,
+        69,
+        61
+      ],
+      "History": [
+        68,
+        70,
+        77,
+        61
+      ],
+      "Computer Science": [
+        66,
+        59,
+        68,
+        75
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 76,
+    "grade": "C"
+  },
+  {
+    "id": "CS2015",
+    "name": "Varsha Bhat",
+    "class": "CS2",
+    "email": "cs2015@cs.edu",
+    "marks": {
+      "Mathematics": [
+        80,
+        79,
+        72,
+        69
+      ],
+      "Science": [
+        82,
+        64,
+        69,
+        83
+      ],
+      "English": [
+        74,
+        72,
+        66,
+        80
+      ],
+      "History": [
+        82,
+        67,
+        64,
+        70
+      ],
+      "Computer Science": [
+        75,
+        77,
+        84,
+        79
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 88,
+    "grade": "B"
+  },
+  {
+    "id": "CS2016",
+    "name": "Deepak Bhat",
+    "class": "CS2",
+    "email": "cs2016@cs.edu",
+    "marks": {
+      "Mathematics": [
+        61,
+        59,
+        63,
+        60
+      ],
+      "Science": [
+        57,
+        49,
+        47,
+        43
+      ],
+      "English": [
+        56,
+        56,
+        56,
+        64
+      ],
+      "History": [
+        46,
+        59,
+        56,
+        55
+      ],
+      "Computer Science": [
+        49,
+        64,
+        61,
+        48
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 89,
+    "grade": "D"
+  },
+  {
+    "id": "CS2017",
+    "name": "Sachin Kapoor",
+    "class": "CS2",
+    "email": "cs2017@cs.edu",
+    "marks": {
+      "Mathematics": [
+        51,
+        46,
+        61,
+        55
+      ],
+      "Science": [
+        48,
+        44,
+        58,
+        44
+      ],
+      "English": [
+        53,
+        54,
+        60,
+        61
+      ],
+      "History": [
+        57,
+        45,
+        54,
+        56
+      ],
+      "Computer Science": [
+        43,
+        44,
+        49,
+        53
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 84,
+    "grade": "D"
+  },
+  {
+    "id": "CS2018",
+    "name": "Vinay Patel",
+    "class": "CS2",
+    "email": "cs2018@cs.edu",
+    "marks": {
+      "Mathematics": [
+        60,
+        68,
+        59,
+        57
+      ],
+      "Science": [
+        67,
+        53,
+        59,
+        53
+      ],
+      "English": [
+        65,
+        60,
+        49,
+        65
+      ],
+      "History": [
+        59,
+        66,
+        70,
+        56
+      ],
+      "Computer Science": [
+        49,
+        55,
+        66,
+        58
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 71,
+    "grade": "D"
+  },
+  {
+    "id": "CS2019",
+    "name": "Tushar Mehta",
+    "class": "CS2",
+    "email": "cs2019@cs.edu",
+    "marks": {
+      "Mathematics": [
+        55,
+        67,
+        71,
+        52
+      ],
+      "Science": [
+        56,
+        70,
+        55,
+        59
+      ],
+      "English": [
+        70,
+        51,
+        66,
+        52
+      ],
+      "History": [
+        66,
+        52,
+        55,
+        58
+      ],
+      "Computer Science": [
+        61,
+        63,
+        68,
+        64
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 78,
+    "grade": "C"
+  },
+  {
+    "id": "CS2020",
+    "name": "Chetan Yadav",
+    "class": "CS2",
+    "email": "cs2020@cs.edu",
+    "marks": {
+      "Mathematics": [
+        72,
+        80,
+        68,
+        78
+      ],
+      "Science": [
+        79,
+        81,
+        67,
+        73
+      ],
+      "English": [
+        80,
+        74,
+        79,
+        78
+      ],
+      "History": [
+        78,
+        65,
+        67,
+        77
+      ],
+      "Computer Science": [
+        76,
+        82,
+        73,
+        72
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 83,
+    "grade": "B"
+  },
+  {
+    "id": "CS2021",
+    "name": "Vijay Mehta",
+    "class": "CS2",
+    "email": "cs2021@cs.edu",
+    "marks": {
+      "Mathematics": [
+        66,
+        72,
+        56,
+        61
+      ],
+      "Science": [
+        62,
+        68,
+        55,
+        73
+      ],
+      "English": [
+        55,
+        70,
+        57,
+        66
+      ],
+      "History": [
+        57,
+        54,
+        52,
+        62
+      ],
+      "Computer Science": [
+        58,
+        70,
+        67,
+        69
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 85,
+    "grade": "C"
+  },
+  {
+    "id": "CS2022",
+    "name": "Arun Sinha",
+    "class": "CS2",
+    "email": "cs2022@cs.edu",
+    "marks": {
+      "Mathematics": [
+        83,
+        73,
+        68,
+        79
+      ],
+      "Science": [
+        72,
+        66,
+        69,
+        76
+      ],
+      "English": [
+        73,
+        75,
+        69,
+        84
+      ],
+      "History": [
+        68,
+        74,
+        67,
+        72
+      ],
+      "Computer Science": [
+        82,
+        81,
+        77,
+        80
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 76,
+    "grade": "B"
+  },
+  {
+    "id": "CS2023",
+    "name": "Sneha Pandey",
+    "class": "CS2",
+    "email": "cs2023@cs.edu",
+    "marks": {
+      "Mathematics": [
+        66,
+        67,
+        69,
+        72
+      ],
+      "Science": [
+        80,
+        66,
+        77,
+        70
+      ],
+      "English": [
+        71,
+        75,
+        79,
+        87
+      ],
+      "History": [
+        79,
+        83,
+        73,
+        81
+      ],
+      "Computer Science": [
+        68,
+        81,
+        81,
+        75
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 94,
+    "grade": "B"
+  },
+  {
+    "id": "CS2024",
+    "name": "Anjali Singh",
+    "class": "CS2",
+    "email": "cs2024@cs.edu",
+    "marks": {
+      "Mathematics": [
+        63,
+        55,
+        45,
+        42
+      ],
+      "Science": [
+        60,
+        47,
+        42,
+        45
+      ],
+      "English": [
+        59,
+        41,
+        56,
+        49
+      ],
+      "History": [
+        60,
+        41,
+        42,
+        46
+      ],
+      "Computer Science": [
+        59,
+        63,
+        62,
+        58
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 77,
+    "grade": "D"
+  },
+  {
+    "id": "CS2025",
+    "name": "Ananya Pandey",
+    "class": "CS2",
+    "email": "cs2025@cs.edu",
+    "marks": {
+      "Mathematics": [
+        61,
+        43,
+        58,
+        58
+      ],
+      "Science": [
+        57,
+        50,
+        58,
+        52
+      ],
+      "English": [
+        45,
+        56,
+        47,
+        44
+      ],
+      "History": [
+        60,
+        62,
+        48,
+        47
+      ],
+      "Computer Science": [
+        41,
+        47,
+        47,
+        60
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 88,
+    "grade": "D"
+  },
+  {
+    "id": "CS2026",
+    "name": "Priya Desai",
+    "class": "CS2",
+    "email": "cs2026@cs.edu",
+    "marks": {
+      "Mathematics": [
+        82,
+        79,
+        88,
+        75
+      ],
+      "Science": [
+        73,
+        71,
+        76,
+        82
+      ],
+      "English": [
+        72,
+        80,
+        84,
+        86
+      ],
+      "History": [
+        88,
+        74,
+        88,
+        81
+      ],
+      "Computer Science": [
+        70,
+        71,
+        86,
+        86
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 82,
+    "grade": "B"
+  },
+  {
+    "id": "CS2027",
+    "name": "Shreya Patel",
+    "class": "CS2",
+    "email": "cs2027@cs.edu",
+    "marks": {
+      "Mathematics": [
+        71,
+        84,
+        81,
+        90
+      ],
+      "Science": [
+        69,
+        72,
+        71,
+        86
+      ],
+      "English": [
+        69,
+        89,
+        82,
+        69
+      ],
+      "History": [
+        75,
+        83,
+        70,
+        71
+      ],
+      "Computer Science": [
+        87,
+        87,
+        87,
+        75
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 92,
+    "grade": "B"
+  },
+  {
+    "id": "CS2028",
+    "name": "Omkar Shah",
+    "class": "CS2",
+    "email": "cs2028@cs.edu",
+    "marks": {
+      "Mathematics": [
+        47,
+        57,
+        60,
+        63
+      ],
+      "Science": [
+        62,
+        49,
+        63,
+        63
+      ],
+      "English": [
+        51,
+        57,
+        50,
+        55
+      ],
+      "History": [
+        50,
+        50,
+        50,
+        54
+      ],
+      "Computer Science": [
+        50,
+        48,
+        64,
+        53
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 74,
+    "grade": "D"
+  },
+  {
+    "id": "CS2029",
+    "name": "Gaurav Pandey",
+    "class": "CS2",
+    "email": "cs2029@cs.edu",
+    "marks": {
+      "Mathematics": [
+        64,
+        72,
+        77,
+        77
+      ],
+      "Science": [
+        62,
+        74,
+        70,
+        62
+      ],
+      "English": [
+        74,
+        74,
+        78,
+        64
+      ],
+      "History": [
+        59,
+        71,
+        78,
+        69
+      ],
+      "Computer Science": [
+        75,
+        78,
+        77,
+        63
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 90,
+    "grade": "B"
+  },
+  {
+    "id": "CS2030",
+    "name": "Rakesh Sharma",
+    "class": "CS2",
+    "email": "cs2030@cs.edu",
+    "marks": {
+      "Mathematics": [
+        68,
+        71,
+        72,
+        77
+      ],
+      "Science": [
+        82,
+        69,
+        75,
+        75
+      ],
+      "English": [
+        79,
+        77,
+        85,
+        87
+      ],
+      "History": [
+        77,
+        79,
+        84,
+        73
+      ],
+      "Computer Science": [
+        76,
+        84,
+        86,
+        88
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 93,
+    "grade": "B"
+  },
+  {
+    "id": "CS2031",
+    "name": "Nikita Yadav",
+    "class": "CS2",
+    "email": "cs2031@cs.edu",
+    "marks": {
+      "Mathematics": [
+        84,
+        90,
+        84,
+        79
+      ],
+      "Science": [
+        83,
+        79,
+        80,
+        89
+      ],
+      "English": [
+        87,
+        73,
+        84,
+        71
+      ],
+      "History": [
+        87,
+        75,
+        85,
+        76
+      ],
+      "Computer Science": [
+        79,
+        84,
+        78,
+        70
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 84,
+    "grade": "A"
+  },
+  {
+    "id": "CS2032",
+    "name": "Ananya Tiwari",
+    "class": "CS2",
+    "email": "cs2032@cs.edu",
+    "marks": {
+      "Mathematics": [
+        61,
+        74,
+        75,
+        56
+      ],
+      "Science": [
+        73,
+        59,
+        74,
+        74
+      ],
+      "English": [
+        69,
+        64,
+        70,
+        65
+      ],
+      "History": [
+        59,
+        67,
+        73,
+        55
+      ],
+      "Computer Science": [
+        66,
+        66,
+        66,
+        60
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 92,
+    "grade": "C"
+  },
+  {
+    "id": "CS2033",
+    "name": "Suresh Kaur",
+    "class": "CS2",
+    "email": "cs2033@cs.edu",
+    "marks": {
+      "Mathematics": [
+        79,
+        71,
+        62,
+        75
+      ],
+      "Science": [
+        73,
+        67,
+        71,
+        80
+      ],
+      "English": [
+        75,
+        75,
+        81,
+        80
+      ],
+      "History": [
+        80,
+        60,
+        79,
+        63
+      ],
+      "Computer Science": [
+        66,
+        76,
+        76,
+        77
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 69,
+    "grade": "B"
+  },
+  {
+    "id": "CS2034",
+    "name": "Aditya Rao",
+    "class": "CS2",
+    "email": "cs2034@cs.edu",
+    "marks": {
+      "Mathematics": [
+        48,
+        58,
+        49,
+        61
+      ],
+      "Science": [
+        66,
+        62,
+        53,
+        58
+      ],
+      "English": [
+        56,
+        63,
+        50,
+        65
+      ],
+      "History": [
+        63,
+        59,
+        63,
+        60
+      ],
+      "Computer Science": [
+        68,
+        49,
+        55,
+        53
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 73,
+    "grade": "D"
+  },
+  {
+    "id": "CS2035",
+    "name": "Vinay Mittal",
+    "class": "CS2",
+    "email": "cs2035@cs.edu",
+    "marks": {
+      "Mathematics": [
+        74,
+        77,
+        75,
+        71
+      ],
+      "Science": [
+        71,
+        65,
+        85,
+        69
+      ],
+      "English": [
+        75,
+        72,
+        69,
+        75
+      ],
+      "History": [
+        77,
+        66,
+        65,
+        83
+      ],
+      "Computer Science": [
+        76,
+        68,
+        76,
+        70
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 84,
+    "grade": "B"
+  },
+  {
+    "id": "CS2036",
+    "name": "Hemant Tiwari",
+    "class": "CS2",
+    "email": "cs2036@cs.edu",
+    "marks": {
+      "Mathematics": [
+        55,
+        59,
+        71,
+        55
+      ],
+      "Science": [
+        69,
+        64,
+        54,
+        60
+      ],
+      "English": [
+        67,
+        72,
+        68,
+        71
+      ],
+      "History": [
+        52,
+        57,
+        53,
+        56
+      ],
+      "Computer Science": [
+        56,
+        54,
+        64,
+        61
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 79,
+    "grade": "C"
+  },
+  {
+    "id": "CS2037",
+    "name": "Hemant Bansal",
+    "class": "CS2",
+    "email": "cs2037@cs.edu",
+    "marks": {
+      "Mathematics": [
+        81,
+        76,
+        77,
+        83
+      ],
+      "Science": [
+        82,
+        66,
+        87,
+        67
+      ],
+      "English": [
+        68,
+        65,
+        77,
+        81
+      ],
+      "History": [
+        73,
+        83,
+        85,
+        71
+      ],
+      "Computer Science": [
+        86,
+        81,
+        74,
+        80
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 80,
+    "grade": "B"
+  },
+  {
+    "id": "CS2038",
+    "name": "Harish Bansal",
+    "class": "CS2",
+    "email": "cs2038@cs.edu",
+    "marks": {
+      "Mathematics": [
+        63,
+        51,
+        49,
+        63
+      ],
+      "Science": [
+        65,
+        66,
+        60,
+        65
+      ],
+      "English": [
+        54,
+        62,
+        49,
+        65
+      ],
+      "History": [
+        47,
+        59,
+        50,
+        63
+      ],
+      "Computer Science": [
+        54,
+        67,
+        59,
+        62
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 94,
+    "grade": "D"
+  },
+  {
+    "id": "CS2039",
+    "name": "Soham Iyer",
+    "class": "CS2",
+    "email": "cs2039@cs.edu",
+    "marks": {
+      "Mathematics": [
+        53,
+        56,
+        61,
+        53
+      ],
+      "Science": [
+        50,
+        65,
+        61,
+        56
+      ],
+      "English": [
+        55,
+        55,
+        66,
+        65
+      ],
+      "History": [
+        61,
+        65,
+        51,
+        51
+      ],
+      "Computer Science": [
+        47,
+        47,
+        47,
+        57
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 96,
+    "grade": "D"
+  },
+  {
+    "id": "CS2040",
+    "name": "Priya Dubey",
+    "class": "CS2",
+    "email": "cs2040@cs.edu",
+    "marks": {
+      "Mathematics": [
+        52,
+        46,
+        55,
+        54
+      ],
+      "Science": [
+        44,
+        52,
+        50,
+        49
+      ],
+      "English": [
+        60,
+        62,
+        50,
+        50
+      ],
+      "History": [
+        55,
+        61,
+        51,
+        50
+      ],
+      "Computer Science": [
+        47,
+        48,
+        63,
+        62
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 82,
+    "grade": "D"
+  },
+  {
+    "id": "CS2041",
+    "name": "Dhruv Bhatt",
+    "class": "CS2",
+    "email": "cs2041@cs.edu",
+    "marks": {
+      "Mathematics": [
+        84,
+        82,
+        76,
+        75
+      ],
+      "Science": [
+        85,
+        71,
+        83,
+        89
+      ],
+      "English": [
+        81,
+        69,
+        84,
+        84
+      ],
+      "History": [
+        70,
+        74,
+        87,
+        81
+      ],
+      "Computer Science": [
+        82,
+        72,
+        74,
+        72
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 86,
+    "grade": "B"
+  },
+  {
+    "id": "CS2042",
+    "name": "Nikhil Tiwari",
+    "class": "CS2",
+    "email": "cs2042@cs.edu",
+    "marks": {
+      "Mathematics": [
+        83,
+        87,
+        76,
+        80
+      ],
+      "Science": [
+        83,
+        78,
+        77,
+        77
+      ],
+      "English": [
+        85,
+        85,
+        77,
+        79
+      ],
+      "History": [
+        75,
+        84,
+        80,
+        82
+      ],
+      "Computer Science": [
+        73,
+        87,
+        80,
+        77
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 87,
+    "grade": "A"
+  },
+  {
+    "id": "CS2043",
+    "name": "Arjun Kaur",
+    "class": "CS2",
+    "email": "cs2043@cs.edu",
+    "marks": {
+      "Mathematics": [
+        51,
+        43,
+        42,
+        64
+      ],
+      "Science": [
+        56,
+        50,
+        58,
+        46
+      ],
+      "English": [
+        44,
+        63,
+        61,
+        47
+      ],
+      "History": [
+        62,
+        62,
+        54,
+        45
+      ],
+      "Computer Science": [
+        60,
+        50,
+        60,
+        44
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 88,
+    "grade": "D"
+  },
+  {
+    "id": "CS2044",
+    "name": "Vijay Garg",
+    "class": "CS2",
+    "email": "cs2044@cs.edu",
+    "marks": {
+      "Mathematics": [
+        84,
+        83,
+        71,
+        83
+      ],
+      "Science": [
+        87,
+        86,
+        83,
+        86
+      ],
+      "English": [
+        88,
+        89,
+        75,
+        76
+      ],
+      "History": [
+        89,
+        83,
+        75,
+        84
+      ],
+      "Computer Science": [
+        70,
+        89,
+        70,
+        73
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 74,
+    "grade": "A"
+  },
+  {
+    "id": "CS2045",
+    "name": "Uday Menon",
+    "class": "CS2",
+    "email": "cs2045@cs.edu",
+    "marks": {
+      "Mathematics": [
+        71,
+        79,
+        66,
+        77
+      ],
+      "Science": [
+        79,
+        75,
+        80,
+        72
+      ],
+      "English": [
+        72,
+        62,
+        62,
+        68
+      ],
+      "History": [
+        73,
+        76,
+        64,
+        73
+      ],
+      "Computer Science": [
+        73,
+        83,
+        83,
+        67
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 79,
+    "grade": "B"
+  },
+  {
+    "id": "CS2046",
+    "name": "Omkar Chopra",
+    "class": "CS2",
+    "email": "cs2046@cs.edu",
+    "marks": {
+      "Mathematics": [
+        81,
+        72,
+        82,
+        81
+      ],
+      "Science": [
+        90,
+        74,
+        75,
+        88
+      ],
+      "English": [
+        90,
+        91,
+        85,
+        79
+      ],
+      "History": [
+        84,
+        76,
+        91,
+        91
+      ],
+      "Computer Science": [
+        91,
+        75,
+        87,
+        77
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 94,
+    "grade": "A"
+  },
+  {
+    "id": "CS2047",
+    "name": "Soham Deshpande",
+    "class": "CS2",
+    "email": "cs2047@cs.edu",
+    "marks": {
+      "Mathematics": [
+        74,
+        79,
+        71,
+        81
+      ],
+      "Science": [
+        71,
+        72,
+        79,
+        83
+      ],
+      "English": [
+        84,
+        68,
+        76,
+        81
+      ],
+      "History": [
+        70,
+        74,
+        82,
+        65
+      ],
+      "Computer Science": [
+        78,
+        66,
+        75,
+        79
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 79,
+    "grade": "B"
+  },
+  {
+    "id": "CS2048",
+    "name": "Esha Shah",
+    "class": "CS2",
+    "email": "cs2048@cs.edu",
+    "marks": {
+      "Mathematics": [
+        50,
+        56,
+        54,
+        69
+      ],
+      "Science": [
+        59,
+        57,
+        58,
+        66
+      ],
+      "English": [
+        52,
+        66,
+        62,
+        68
+      ],
+      "History": [
+        49,
+        57,
+        64,
+        54
+      ],
+      "Computer Science": [
+        66,
+        48,
+        55,
+        59
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 83,
+    "grade": "D"
+  },
+  {
+    "id": "CS2049",
+    "name": "Bhavesh Patil",
+    "class": "CS2",
+    "email": "cs2049@cs.edu",
+    "marks": {
+      "Mathematics": [
+        91,
+        82,
+        83,
+        78
+      ],
+      "Science": [
+        76,
+        83,
+        78,
+        92
+      ],
+      "English": [
+        92,
+        75,
+        89,
+        92
+      ],
+      "History": [
+        85,
+        94,
+        74,
+        85
+      ],
+      "Computer Science": [
+        77,
+        93,
+        90,
+        86
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 96,
+    "grade": "A"
+  },
+  {
+    "id": "CS2050",
+    "name": "Nikita Agarwal",
+    "class": "CS2",
+    "email": "cs2050@cs.edu",
+    "marks": {
+      "Mathematics": [
+        70,
+        85,
+        73,
+        74
+      ],
+      "Science": [
+        87,
+        79,
+        84,
+        80
+      ],
+      "English": [
+        87,
+        86,
+        79,
+        77
+      ],
+      "History": [
+        92,
+        72,
+        76,
+        87
+      ],
+      "Computer Science": [
+        83,
+        83,
+        84,
+        72
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 84,
+    "grade": "A"
+  },
+  {
+    "id": "CS2051",
+    "name": "Rajan Pillai",
+    "class": "CS2",
+    "email": "cs2051@cs.edu",
+    "marks": {
+      "Mathematics": [
+        75,
+        75,
+        73,
+        67
+      ],
+      "Science": [
+        67,
+        70,
+        68,
+        73
+      ],
+      "English": [
+        84,
+        86,
+        73,
+        70
+      ],
+      "History": [
+        79,
+        70,
+        81,
+        88
+      ],
+      "Computer Science": [
+        68,
+        68,
+        82,
+        72
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 75,
+    "grade": "B"
+  },
+  {
+    "id": "CS2052",
+    "name": "Divya Bhat",
+    "class": "CS2",
+    "email": "cs2052@cs.edu",
+    "marks": {
+      "Mathematics": [
+        61,
+        49,
+        61,
+        50
+      ],
+      "Science": [
+        55,
+        59,
+        62,
+        62
+      ],
+      "English": [
+        57,
+        47,
+        64,
+        64
+      ],
+      "History": [
+        51,
+        51,
+        64,
+        56
+      ],
+      "Computer Science": [
+        55,
+        48,
+        63,
+        55
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 79,
+    "grade": "D"
+  },
+  {
+    "id": "CS2053",
+    "name": "Rohit Kapoor",
+    "class": "CS2",
+    "email": "cs2053@cs.edu",
+    "marks": {
+      "Mathematics": [
+        76,
+        82,
+        74,
+        76
+      ],
+      "Science": [
+        80,
+        80,
+        76,
+        91
+      ],
+      "English": [
+        81,
+        85,
+        78,
+        85
+      ],
+      "History": [
+        84,
+        83,
+        82,
+        75
+      ],
+      "Computer Science": [
+        90,
+        74,
+        81,
+        83
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 75,
+    "grade": "A"
+  },
+  {
+    "id": "CS2054",
+    "name": "Lakshmi Gupta",
+    "class": "CS2",
+    "email": "cs2054@cs.edu",
+    "marks": {
+      "Mathematics": [
+        79,
+        62,
+        69,
+        80
+      ],
+      "Science": [
+        76,
+        73,
+        66,
+        80
+      ],
+      "English": [
+        81,
+        80,
+        73,
+        69
+      ],
+      "History": [
+        75,
+        76,
+        60,
+        67
+      ],
+      "Computer Science": [
+        70,
+        78,
+        72,
+        78
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 97,
+    "grade": "B"
+  },
+  {
+    "id": "CS2055",
+    "name": "Kunal Chauhan",
+    "class": "CS2",
+    "email": "cs2055@cs.edu",
+    "marks": {
+      "Mathematics": [
+        86,
+        84,
+        87,
+        72
+      ],
+      "Science": [
+        72,
+        87,
+        89,
+        78
+      ],
+      "English": [
+        90,
+        90,
+        79,
+        87
+      ],
+      "History": [
+        80,
+        71,
+        92,
+        87
+      ],
+      "Computer Science": [
+        76,
+        79,
+        84,
+        79
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 89,
+    "grade": "A"
+  },
+  {
+    "id": "CS2056",
+    "name": "Tushar Thakur",
+    "class": "CS2",
+    "email": "cs2056@cs.edu",
+    "marks": {
+      "Mathematics": [
+        56,
+        61,
+        52,
+        59
+      ],
+      "Science": [
+        45,
+        59,
+        54,
+        51
+      ],
+      "English": [
+        57,
+        53,
+        47,
+        50
+      ],
+      "History": [
+        61,
+        45,
+        60,
+        44
+      ],
+      "Computer Science": [
+        46,
+        46,
+        59,
+        61
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 87,
+    "grade": "D"
+  },
+  {
+    "id": "CS2057",
+    "name": "Ishaan Bansal",
+    "class": "CS2",
+    "email": "cs2057@cs.edu",
+    "marks": {
+      "Mathematics": [
+        67,
+        75,
+        69,
+        67
+      ],
+      "Science": [
+        66,
+        62,
+        76,
+        71
+      ],
+      "English": [
+        66,
+        78,
+        63,
+        68
+      ],
+      "History": [
+        66,
+        79,
+        70,
+        71
+      ],
+      "Computer Science": [
+        80,
+        77,
+        63,
+        74
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 93,
+    "grade": "B"
+  },
+  {
+    "id": "CS2058",
+    "name": "Anjali Chauhan",
+    "class": "CS2",
+    "email": "cs2058@cs.edu",
+    "marks": {
+      "Mathematics": [
+        57,
+        63,
+        48,
+        48
+      ],
+      "Science": [
+        47,
+        51,
+        48,
+        60
+      ],
+      "English": [
+        59,
+        59,
+        65,
+        54
+      ],
+      "History": [
+        54,
+        51,
+        52,
+        50
+      ],
+      "Computer Science": [
+        63,
+        63,
+        65,
+        52
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 69,
+    "grade": "D"
+  },
+  {
+    "id": "CS2059",
+    "name": "Hemant Mittal",
+    "class": "CS2",
+    "email": "cs2059@cs.edu",
+    "marks": {
+      "Mathematics": [
+        68,
+        65,
+        77,
+        65
+      ],
+      "Science": [
+        66,
+        65,
+        83,
+        70
+      ],
+      "English": [
+        68,
+        72,
+        79,
+        74
+      ],
+      "History": [
+        68,
+        78,
+        84,
+        75
+      ],
+      "Computer Science": [
+        72,
+        63,
+        81,
+        84
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 97,
+    "grade": "B"
+  },
+  {
+    "id": "CS2060",
+    "name": "Sanket Malhotra",
+    "class": "CS2",
+    "email": "cs2060@cs.edu",
+    "marks": {
+      "Mathematics": [
+        68,
+        68,
+        77,
+        78
+      ],
+      "Science": [
+        71,
+        79,
+        79,
+        70
+      ],
+      "English": [
+        79,
+        72,
+        63,
+        61
+      ],
+      "History": [
+        80,
+        69,
+        69,
+        78
+      ],
+      "Computer Science": [
+        77,
+        79,
+        75,
+        75
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 81,
+    "grade": "B"
+  },
+  {
+    "id": "CS2061",
+    "name": "Divya Nair",
+    "class": "CS2",
+    "email": "cs2061@cs.edu",
+    "marks": {
+      "Mathematics": [
+        65,
+        49,
+        63,
+        61
+      ],
+      "Science": [
+        55,
+        62,
+        69,
+        62
+      ],
+      "English": [
+        58,
+        66,
+        50,
+        54
+      ],
+      "History": [
+        67,
+        60,
+        48,
+        54
+      ],
+      "Computer Science": [
+        49,
+        64,
+        55,
+        60
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 96,
+    "grade": "D"
+  },
+  {
+    "id": "CS3001",
+    "name": "Priya Jain",
+    "class": "CS3",
+    "email": "cs3001@cs.edu",
+    "marks": {
+      "Mathematics": [
+        42,
+        44,
+        47,
+        59
+      ],
+      "Science": [
+        47,
+        50,
+        44,
+        46
+      ],
+      "English": [
+        45,
+        44,
+        57,
+        61
+      ],
+      "History": [
+        55,
+        57,
+        58,
+        44
+      ],
+      "Computer Science": [
+        47,
+        60,
+        41,
+        41
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 95,
+    "grade": "F"
+  },
+  {
+    "id": "CS3002",
+    "name": "Chetan Rao",
+    "class": "CS3",
+    "email": "cs3002@cs.edu",
+    "marks": {
+      "Mathematics": [
+        72,
+        81,
+        66,
+        78
+      ],
+      "Science": [
+        82,
+        68,
+        87,
+        73
+      ],
+      "English": [
+        82,
+        73,
+        75,
+        77
+      ],
+      "History": [
+        71,
+        86,
+        79,
+        74
+      ],
+      "Computer Science": [
+        70,
+        77,
+        80,
+        68
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 96,
+    "grade": "B"
+  },
+  {
+    "id": "CS3003",
+    "name": "Isha Shah",
+    "class": "CS3",
+    "email": "cs3003@cs.edu",
+    "marks": {
+      "Mathematics": [
+        78,
+        76,
+        77,
+        66
+      ],
+      "Science": [
+        78,
+        72,
+        71,
+        74
+      ],
+      "English": [
+        80,
+        78,
+        72,
+        62
+      ],
+      "History": [
+        64,
+        61,
+        60,
+        60
+      ],
+      "Computer Science": [
+        63,
+        80,
+        68,
+        59
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 86,
+    "grade": "C"
+  },
+  {
+    "id": "CS3004",
+    "name": "Rajesh Gupta",
+    "class": "CS3",
+    "email": "cs3004@cs.edu",
+    "marks": {
+      "Mathematics": [
+        84,
+        84,
+        83,
+        90
+      ],
+      "Science": [
+        91,
+        84,
+        71,
+        79
+      ],
+      "English": [
+        85,
+        90,
+        75,
+        76
+      ],
+      "History": [
+        85,
+        73,
+        73,
+        87
+      ],
+      "Computer Science": [
+        73,
+        74,
+        88,
+        79
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 96,
+    "grade": "A"
+  },
+  {
+    "id": "CS3005",
+    "name": "Farhan Shah",
+    "class": "CS3",
+    "email": "cs3005@cs.edu",
+    "marks": {
+      "Mathematics": [
+        55,
+        56,
+        58,
+        58
+      ],
+      "Science": [
+        43,
+        45,
+        56,
+        57
+      ],
+      "English": [
+        46,
+        46,
+        57,
+        63
+      ],
+      "History": [
+        44,
+        55,
+        52,
+        45
+      ],
+      "Computer Science": [
+        50,
+        44,
+        58,
+        45
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 68,
+    "grade": "D"
+  },
+  {
+    "id": "CS3006",
+    "name": "Tushar Menon",
+    "class": "CS3",
+    "email": "cs3006@cs.edu",
+    "marks": {
+      "Mathematics": [
+        75,
+        73,
+        71,
+        86
+      ],
+      "Science": [
+        79,
+        68,
+        81,
+        90
+      ],
+      "English": [
+        73,
+        88,
+        73,
+        70
+      ],
+      "History": [
+        75,
+        75,
+        70,
+        82
+      ],
+      "Computer Science": [
+        77,
+        69,
+        68,
+        79
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 79,
+    "grade": "B"
+  },
+  {
+    "id": "CS3007",
+    "name": "Chetan Tiwari",
+    "class": "CS3",
+    "email": "cs3007@cs.edu",
+    "marks": {
+      "Mathematics": [
+        71,
+        59,
+        69,
+        71
+      ],
+      "Science": [
+        62,
+        65,
+        67,
+        67
+      ],
+      "English": [
+        76,
+        77,
+        69,
+        78
+      ],
+      "History": [
+        74,
+        68,
+        61,
+        57
+      ],
+      "Computer Science": [
+        59,
+        76,
+        65,
+        64
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 81,
+    "grade": "C"
+  },
+  {
+    "id": "CS3008",
+    "name": "Harish Mehta",
+    "class": "CS3",
+    "email": "cs3008@cs.edu",
+    "marks": {
+      "Mathematics": [
+        68,
+        52,
+        63,
+        68
+      ],
+      "Science": [
+        50,
+        67,
+        54,
+        59
+      ],
+      "English": [
+        63,
+        63,
+        61,
+        64
+      ],
+      "History": [
+        52,
+        64,
+        57,
+        68
+      ],
+      "Computer Science": [
+        67,
+        67,
+        70,
+        65
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 83,
+    "grade": "C"
+  },
+  {
+    "id": "CS3009",
+    "name": "Aditya Mehta",
+    "class": "CS3",
+    "email": "cs3009@cs.edu",
+    "marks": {
+      "Mathematics": [
+        82,
+        76,
+        83,
+        86
+      ],
+      "Science": [
+        90,
+        83,
+        75,
+        72
+      ],
+      "English": [
+        89,
+        79,
+        81,
+        70
+      ],
+      "History": [
+        71,
+        81,
+        82,
+        74
+      ],
+      "Computer Science": [
+        78,
+        87,
+        72,
+        71
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 73,
+    "grade": "B"
+  },
+  {
+    "id": "CS3010",
+    "name": "Sachin Jain",
+    "class": "CS3",
+    "email": "cs3010@cs.edu",
+    "marks": {
+      "Mathematics": [
+        56,
+        50,
+        59,
+        57
+      ],
+      "Science": [
+        63,
+        63,
+        47,
+        52
+      ],
+      "English": [
+        66,
+        61,
+        62,
+        48
+      ],
+      "History": [
+        60,
+        67,
+        55,
+        67
+      ],
+      "Computer Science": [
+        58,
+        49,
+        58,
+        52
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 82,
+    "grade": "D"
+  },
+  {
+    "id": "CS3011",
+    "name": "Gaurav Mehta",
+    "class": "CS3",
+    "email": "cs3011@cs.edu",
+    "marks": {
+      "Mathematics": [
+        71,
+        71,
+        81,
+        73
+      ],
+      "Science": [
+        90,
+        70,
+        84,
+        69
+      ],
+      "English": [
+        80,
+        74,
+        80,
+        78
+      ],
+      "History": [
+        89,
+        81,
+        80,
+        79
+      ],
+      "Computer Science": [
+        80,
+        69,
+        76,
+        87
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 84,
+    "grade": "B"
+  },
+  {
+    "id": "CS3012",
+    "name": "Vishal Kapoor",
+    "class": "CS3",
+    "email": "cs3012@cs.edu",
+    "marks": {
+      "Mathematics": [
+        42,
+        48,
+        55,
+        47
+      ],
+      "Science": [
+        58,
+        57,
+        41,
+        60
+      ],
+      "English": [
+        41,
+        48,
+        51,
+        54
+      ],
+      "History": [
+        54,
+        56,
+        52,
+        61
+      ],
+      "Computer Science": [
+        45,
+        60,
+        52,
+        60
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 87,
+    "grade": "D"
+  },
+  {
+    "id": "CS3013",
+    "name": "Manish Jain",
+    "class": "CS3",
+    "email": "cs3013@cs.edu",
+    "marks": {
+      "Mathematics": [
+        65,
+        73,
+        63,
+        63
+      ],
+      "Science": [
+        75,
+        75,
+        68,
+        60
+      ],
+      "English": [
+        65,
+        74,
+        69,
+        56
+      ],
+      "History": [
+        59,
+        73,
+        75,
+        67
+      ],
+      "Computer Science": [
+        71,
+        65,
+        66,
+        67
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 86,
+    "grade": "C"
+  },
+  {
+    "id": "CS3014",
+    "name": "Meera Joshi",
+    "class": "CS3",
+    "email": "cs3014@cs.edu",
+    "marks": {
+      "Mathematics": [
+        69,
+        76,
+        84,
+        86
+      ],
+      "Science": [
+        82,
+        85,
+        68,
+        85
+      ],
+      "English": [
+        82,
+        69,
+        75,
+        77
+      ],
+      "History": [
+        77,
+        73,
+        69,
+        80
+      ],
+      "Computer Science": [
+        67,
+        87,
+        74,
+        67
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 69,
+    "grade": "B"
+  },
+  {
+    "id": "CS3015",
+    "name": "Nandini Deshpande",
+    "class": "CS3",
+    "email": "cs3015@cs.edu",
+    "marks": {
+      "Mathematics": [
+        57,
+        54,
+        58,
+        65
+      ],
+      "Science": [
+        60,
+        48,
+        57,
+        63
+      ],
+      "English": [
+        53,
+        67,
+        58,
+        65
+      ],
+      "History": [
+        62,
+        67,
+        66,
+        54
+      ],
+      "Computer Science": [
+        55,
+        50,
+        57,
+        48
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 97,
+    "grade": "D"
+  },
+  {
+    "id": "CS3016",
+    "name": "Rahul Bansal",
+    "class": "CS3",
+    "email": "cs3016@cs.edu",
+    "marks": {
+      "Mathematics": [
+        76,
+        80,
+        70,
+        78
+      ],
+      "Science": [
+        84,
+        77,
+        87,
+        88
+      ],
+      "English": [
+        71,
+        75,
+        91,
+        75
+      ],
+      "History": [
+        72,
+        72,
+        84,
+        88
+      ],
+      "Computer Science": [
+        85,
+        86,
+        71,
+        76
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 99,
+    "grade": "B"
+  },
+  {
+    "id": "CS3017",
+    "name": "Kunal Shah",
+    "class": "CS3",
+    "email": "cs3017@cs.edu",
+    "marks": {
+      "Mathematics": [
+        69,
+        63,
+        62,
+        55
+      ],
+      "Science": [
+        58,
+        69,
+        71,
+        72
+      ],
+      "English": [
+        56,
+        63,
+        57,
+        74
+      ],
+      "History": [
+        59,
+        68,
+        70,
+        57
+      ],
+      "Computer Science": [
+        65,
+        60,
+        56,
+        69
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 95,
+    "grade": "C"
+  },
+  {
+    "id": "CS3018",
+    "name": "Rahul Thakur",
+    "class": "CS3",
+    "email": "cs3018@cs.edu",
+    "marks": {
+      "Mathematics": [
+        76,
+        78,
+        91,
+        86
+      ],
+      "Science": [
+        93,
+        76,
+        76,
+        86
+      ],
+      "English": [
+        92,
+        91,
+        88,
+        92
+      ],
+      "History": [
+        80,
+        90,
+        94,
+        82
+      ],
+      "Computer Science": [
+        82,
+        88,
+        93,
+        89
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 95,
+    "grade": "A"
+  },
+  {
+    "id": "CS3019",
+    "name": "Vikram Dubey",
+    "class": "CS3",
+    "email": "cs3019@cs.edu",
+    "marks": {
+      "Mathematics": [
+        67,
+        52,
+        57,
+        58
+      ],
+      "Science": [
+        66,
+        60,
+        50,
+        65
+      ],
+      "English": [
+        50,
+        68,
+        55,
+        68
+      ],
+      "History": [
+        50,
+        51,
+        57,
+        61
+      ],
+      "Computer Science": [
+        68,
+        52,
+        65,
+        62
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 96,
+    "grade": "D"
+  },
+  {
+    "id": "CS3020",
+    "name": "Rakesh Sinha",
+    "class": "CS3",
+    "email": "cs3020@cs.edu",
+    "marks": {
+      "Mathematics": [
+        70,
+        80,
+        75,
+        79
+      ],
+      "Science": [
+        70,
+        77,
+        81,
+        63
+      ],
+      "English": [
+        69,
+        71,
+        77,
+        65
+      ],
+      "History": [
+        79,
+        80,
+        70,
+        66
+      ],
+      "Computer Science": [
+        78,
+        74,
+        75,
+        81
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 89,
+    "grade": "B"
+  },
+  {
+    "id": "CS3021",
+    "name": "Gaurav Gupta",
+    "class": "CS3",
+    "email": "cs3021@cs.edu",
+    "marks": {
+      "Mathematics": [
+        64,
+        60,
+        77,
+        59
+      ],
+      "Science": [
+        64,
+        67,
+        60,
+        69
+      ],
+      "English": [
+        74,
+        61,
+        61,
+        61
+      ],
+      "History": [
+        80,
+        67,
+        80,
+        60
+      ],
+      "Computer Science": [
+        64,
+        70,
+        60,
+        73
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 94,
+    "grade": "C"
+  },
+  {
+    "id": "CS3022",
+    "name": "Nandini Pandey",
+    "class": "CS3",
+    "email": "cs3022@cs.edu",
+    "marks": {
+      "Mathematics": [
+        69,
+        71,
+        54,
+        55
+      ],
+      "Science": [
+        69,
+        72,
+        62,
+        67
+      ],
+      "English": [
+        71,
+        67,
+        69,
+        55
+      ],
+      "History": [
+        73,
+        62,
+        70,
+        68
+      ],
+      "Computer Science": [
+        62,
+        60,
+        74,
+        59
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 71,
+    "grade": "C"
+  },
+  {
+    "id": "CS3023",
+    "name": "Amit Shah",
+    "class": "CS3",
+    "email": "cs3023@cs.edu",
+    "marks": {
+      "Mathematics": [
+        67,
+        78,
+        60,
+        74
+      ],
+      "Science": [
+        69,
+        73,
+        80,
+        69
+      ],
+      "English": [
+        79,
+        61,
+        76,
+        78
+      ],
+      "History": [
+        78,
+        77,
+        77,
+        67
+      ],
+      "Computer Science": [
+        78,
+        62,
+        60,
+        58
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 68,
+    "grade": "B"
+  },
+  {
+    "id": "CS3024",
+    "name": "Kavya Chauhan",
+    "class": "CS3",
+    "email": "cs3024@cs.edu",
+    "marks": {
+      "Mathematics": [
+        76,
+        86,
+        93,
+        82
+      ],
+      "Science": [
+        84,
+        75,
+        78,
+        75
+      ],
+      "English": [
+        83,
+        82,
+        91,
+        94
+      ],
+      "History": [
+        80,
+        82,
+        87,
+        78
+      ],
+      "Computer Science": [
+        93,
+        76,
+        73,
+        73
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 96,
+    "grade": "A"
+  },
+  {
+    "id": "CS3025",
+    "name": "Chetan Gill",
+    "class": "CS3",
+    "email": "cs3025@cs.edu",
+    "marks": {
+      "Mathematics": [
+        61,
+        61,
+        53,
+        68
+      ],
+      "Science": [
+        66,
+        57,
+        64,
+        57
+      ],
+      "English": [
+        61,
+        68,
+        65,
+        58
+      ],
+      "History": [
+        49,
+        56,
+        52,
+        64
+      ],
+      "Computer Science": [
+        67,
+        49,
+        61,
+        59
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 79,
+    "grade": "D"
+  },
+  {
+    "id": "CS3026",
+    "name": "Isha Kulkarni",
+    "class": "CS3",
+    "email": "cs3026@cs.edu",
+    "marks": {
+      "Mathematics": [
+        46,
+        55,
+        42,
+        54
+      ],
+      "Science": [
+        42,
+        58,
+        45,
+        52
+      ],
+      "English": [
+        62,
+        56,
+        56,
+        52
+      ],
+      "History": [
+        62,
+        56,
+        52,
+        60
+      ],
+      "Computer Science": [
+        59,
+        52,
+        56,
+        58
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 87,
+    "grade": "D"
+  },
+  {
+    "id": "CS3027",
+    "name": "Kavya Sinha",
+    "class": "CS3",
+    "email": "cs3027@cs.edu",
+    "marks": {
+      "Mathematics": [
+        68,
+        76,
+        78,
+        69
+      ],
+      "Science": [
+        71,
+        80,
+        76,
+        79
+      ],
+      "English": [
+        73,
+        75,
+        76,
+        75
+      ],
+      "History": [
+        74,
+        65,
+        84,
+        77
+      ],
+      "Computer Science": [
+        85,
+        64,
+        67,
+        70
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 75,
+    "grade": "B"
+  },
+  {
+    "id": "CS3028",
+    "name": "Deepak Iyer",
+    "class": "CS3",
+    "email": "cs3028@cs.edu",
+    "marks": {
+      "Mathematics": [
+        74,
+        71,
+        86,
+        76
+      ],
+      "Science": [
+        92,
+        73,
+        72,
+        86
+      ],
+      "English": [
+        81,
+        76,
+        80,
+        83
+      ],
+      "History": [
+        75,
+        83,
+        90,
+        90
+      ],
+      "Computer Science": [
+        86,
+        74,
+        79,
+        84
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 85,
+    "grade": "A"
+  },
+  {
+    "id": "CS3029",
+    "name": "Sahil Iyer",
+    "class": "CS3",
+    "email": "cs3029@cs.edu",
+    "marks": {
+      "Mathematics": [
+        88,
+        81,
+        77,
+        85
+      ],
+      "Science": [
+        76,
+        78,
+        84,
+        68
+      ],
+      "English": [
+        73,
+        80,
+        70,
+        86
+      ],
+      "History": [
+        74,
+        85,
+        85,
+        80
+      ],
+      "Computer Science": [
+        88,
+        82,
+        69,
+        85
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 70,
+    "grade": "B"
+  },
+  {
+    "id": "CS3030",
+    "name": "Akash Agarwal",
+    "class": "CS3",
+    "email": "cs3030@cs.edu",
+    "marks": {
+      "Mathematics": [
+        56,
+        46,
+        48,
+        50
+      ],
+      "Science": [
+        46,
+        52,
+        51,
+        53
+      ],
+      "English": [
+        62,
+        47,
+        59,
+        47
+      ],
+      "History": [
+        45,
+        59,
+        51,
+        50
+      ],
+      "Computer Science": [
+        56,
+        51,
+        62,
+        57
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 91,
+    "grade": "D"
+  },
+  {
+    "id": "CS3031",
+    "name": "Vikram Mishra",
+    "class": "CS3",
+    "email": "cs3031@cs.edu",
+    "marks": {
+      "Mathematics": [
+        84,
+        74,
+        72,
+        69
+      ],
+      "Science": [
+        66,
+        82,
+        80,
+        74
+      ],
+      "English": [
+        78,
+        76,
+        83,
+        69
+      ],
+      "History": [
+        75,
+        79,
+        75,
+        73
+      ],
+      "Computer Science": [
+        84,
+        68,
+        71,
+        79
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 93,
+    "grade": "B"
+  },
+  {
+    "id": "CS3032",
+    "name": "Farhan Kaur",
+    "class": "CS3",
+    "email": "cs3032@cs.edu",
+    "marks": {
+      "Mathematics": [
+        52,
+        54,
+        57,
+        65
+      ],
+      "Science": [
+        69,
+        57,
+        69,
+        64
+      ],
+      "English": [
+        60,
+        63,
+        65,
+        53
+      ],
+      "History": [
+        67,
+        56,
+        54,
+        55
+      ],
+      "Computer Science": [
+        57,
+        53,
+        55,
+        60
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 85,
+    "grade": "D"
+  },
+  {
+    "id": "CS3033",
+    "name": "Geeta Joshi",
+    "class": "CS3",
+    "email": "cs3033@cs.edu",
+    "marks": {
+      "Mathematics": [
+        58,
+        72,
+        72,
+        59
+      ],
+      "Science": [
+        66,
+        67,
+        68,
+        55
+      ],
+      "English": [
+        64,
+        61,
+        58,
+        68
+      ],
+      "History": [
+        52,
+        63,
+        63,
+        64
+      ],
+      "Computer Science": [
+        54,
+        53,
+        71,
+        68
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 96,
+    "grade": "C"
+  },
+  {
+    "id": "CS3034",
+    "name": "Yash Kumar",
+    "class": "CS3",
+    "email": "cs3034@cs.edu",
+    "marks": {
+      "Mathematics": [
+        67,
+        68,
+        74,
+        69
+      ],
+      "Science": [
+        68,
+        61,
+        73,
+        56
+      ],
+      "English": [
+        71,
+        57,
+        73,
+        63
+      ],
+      "History": [
+        69,
+        64,
+        76,
+        66
+      ],
+      "Computer Science": [
+        56,
+        74,
+        68,
+        59
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 93,
+    "grade": "C"
+  },
+  {
+    "id": "CS3035",
+    "name": "Farhan Menon",
+    "class": "CS3",
+    "email": "cs3035@cs.edu",
+    "marks": {
+      "Mathematics": [
+        49,
+        61,
+        55,
+        50
+      ],
+      "Science": [
+        58,
+        59,
+        51,
+        66
+      ],
+      "English": [
+        64,
+        53,
+        62,
+        66
+      ],
+      "History": [
+        55,
+        66,
+        51,
+        67
+      ],
+      "Computer Science": [
+        54,
+        58,
+        68,
+        59
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 93,
+    "grade": "D"
+  },
+  {
+    "id": "CS3036",
+    "name": "Varsha Garg",
+    "class": "CS3",
+    "email": "cs3036@cs.edu",
+    "marks": {
+      "Mathematics": [
+        56,
+        60,
+        49,
+        50
+      ],
+      "Science": [
+        52,
+        52,
+        58,
+        54
+      ],
+      "English": [
+        59,
+        46,
+        45,
+        57
+      ],
+      "History": [
+        65,
+        65,
+        61,
+        48
+      ],
+      "Computer Science": [
+        56,
+        59,
+        51,
+        53
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 87,
+    "grade": "D"
+  },
+  {
+    "id": "CS3037",
+    "name": "Aarav Iyer",
+    "class": "CS3",
+    "email": "cs3037@cs.edu",
+    "marks": {
+      "Mathematics": [
+        77,
+        65,
+        74,
+        83
+      ],
+      "Science": [
+        78,
+        75,
+        79,
+        72
+      ],
+      "English": [
+        76,
+        74,
+        62,
+        73
+      ],
+      "History": [
+        71,
+        66,
+        79,
+        65
+      ],
+      "Computer Science": [
+        76,
+        75,
+        82,
+        78
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 78,
+    "grade": "B"
+  },
+  {
+    "id": "CS3038",
+    "name": "Akash Sinha",
+    "class": "CS3",
+    "email": "cs3038@cs.edu",
+    "marks": {
+      "Mathematics": [
+        46,
+        60,
+        47,
+        46
+      ],
+      "Science": [
+        57,
+        43,
+        61,
+        47
+      ],
+      "English": [
+        55,
+        51,
+        63,
+        56
+      ],
+      "History": [
+        63,
+        53,
+        54,
+        44
+      ],
+      "Computer Science": [
+        56,
+        60,
+        55,
+        58
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 73,
+    "grade": "D"
+  },
+  {
+    "id": "CS3039",
+    "name": "Jatin Verma",
+    "class": "CS3",
+    "email": "cs3039@cs.edu",
+    "marks": {
+      "Mathematics": [
+        49,
+        67,
+        55,
+        48
+      ],
+      "Science": [
+        47,
+        57,
+        60,
+        47
+      ],
+      "English": [
+        59,
+        56,
+        50,
+        62
+      ],
+      "History": [
+        53,
+        52,
+        59,
+        51
+      ],
+      "Computer Science": [
+        56,
+        61,
+        48,
+        50
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 81,
+    "grade": "D"
+  },
+  {
+    "id": "CS3040",
+    "name": "Ananya Bhatt",
+    "class": "CS3",
+    "email": "cs3040@cs.edu",
+    "marks": {
+      "Mathematics": [
+        65,
+        69,
+        72,
+        77
+      ],
+      "Science": [
+        72,
+        65,
+        66,
+        70
+      ],
+      "English": [
+        77,
+        81,
+        66,
+        74
+      ],
+      "History": [
+        81,
+        65,
+        69,
+        65
+      ],
+      "Computer Science": [
+        74,
+        67,
+        74,
+        73
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 77,
+    "grade": "B"
+  },
+  {
+    "id": "CS3041",
+    "name": "Lakshmi Reddy",
+    "class": "CS3",
+    "email": "cs3041@cs.edu",
+    "marks": {
+      "Mathematics": [
+        60,
+        72,
+        64,
+        65
+      ],
+      "Science": [
+        68,
+        73,
+        71,
+        71
+      ],
+      "English": [
+        59,
+        67,
+        72,
+        62
+      ],
+      "History": [
+        60,
+        78,
+        72,
+        73
+      ],
+      "Computer Science": [
+        75,
+        73,
+        66,
+        80
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 88,
+    "grade": "C"
+  },
+  {
+    "id": "CS3042",
+    "name": "Uday Bhat",
+    "class": "CS3",
+    "email": "cs3042@cs.edu",
+    "marks": {
+      "Mathematics": [
+        63,
+        75,
+        78,
+        74
+      ],
+      "Science": [
+        63,
+        63,
+        63,
+        80
+      ],
+      "English": [
+        66,
+        81,
+        82,
+        70
+      ],
+      "History": [
+        70,
+        82,
+        63,
+        83
+      ],
+      "Computer Science": [
+        74,
+        71,
+        72,
+        63
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 73,
+    "grade": "B"
+  },
+  {
+    "id": "CS3043",
+    "name": "Isha Rao",
+    "class": "CS3",
+    "email": "cs3043@cs.edu",
+    "marks": {
+      "Mathematics": [
+        72,
+        83,
+        68,
+        84
+      ],
+      "Science": [
+        83,
+        72,
+        74,
+        69
+      ],
+      "English": [
+        76,
+        87,
+        71,
+        71
+      ],
+      "History": [
+        73,
+        68,
+        86,
+        71
+      ],
+      "Computer Science": [
+        81,
+        67,
+        67,
+        73
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 89,
+    "grade": "B"
+  },
+  {
+    "id": "CS3044",
+    "name": "Sachin Rao",
+    "class": "CS3",
+    "email": "cs3044@cs.edu",
+    "marks": {
+      "Mathematics": [
+        81,
+        76,
+        86,
+        81
+      ],
+      "Science": [
+        90,
+        93,
+        91,
+        80
+      ],
+      "English": [
+        76,
+        75,
+        72,
+        74
+      ],
+      "History": [
+        76,
+        83,
+        86,
+        77
+      ],
+      "Computer Science": [
+        80,
+        80,
+        92,
+        78
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 79,
+    "grade": "A"
+  },
+  {
+    "id": "CS3045",
+    "name": "Chirag Agarwal",
+    "class": "CS3",
+    "email": "cs3045@cs.edu",
+    "marks": {
+      "Mathematics": [
+        71,
+        84,
+        64,
+        66
+      ],
+      "Science": [
+        66,
+        64,
+        65,
+        76
+      ],
+      "English": [
+        66,
+        81,
+        72,
+        83
+      ],
+      "History": [
+        85,
+        70,
+        84,
+        84
+      ],
+      "Computer Science": [
+        77,
+        73,
+        73,
+        64
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 72,
+    "grade": "B"
+  },
+  {
+    "id": "CS3046",
+    "name": "Priya Tiwari",
+    "class": "CS3",
+    "email": "cs3046@cs.edu",
+    "marks": {
+      "Mathematics": [
+        78,
+        83,
+        76,
+        83
+      ],
+      "Science": [
+        81,
+        82,
+        81,
+        83
+      ],
+      "English": [
+        67,
+        87,
+        84,
+        87
+      ],
+      "History": [
+        82,
+        78,
+        89,
+        73
+      ],
+      "Computer Science": [
+        78,
+        82,
+        80,
+        79
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 84,
+    "grade": "A"
+  },
+  {
+    "id": "CS3047",
+    "name": "Vijay Mishra",
+    "class": "CS3",
+    "email": "cs3047@cs.edu",
+    "marks": {
+      "Mathematics": [
+        73,
+        71,
+        69,
+        76
+      ],
+      "Science": [
+        87,
+        87,
+        71,
+        73
+      ],
+      "English": [
+        67,
+        86,
+        75,
+        80
+      ],
+      "History": [
+        86,
+        71,
+        82,
+        69
+      ],
+      "Computer Science": [
+        77,
+        76,
+        69,
+        79
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 88,
+    "grade": "B"
+  },
+  {
+    "id": "CS3048",
+    "name": "Geeta Deshpande",
+    "class": "CS3",
+    "email": "cs3048@cs.edu",
+    "marks": {
+      "Mathematics": [
+        74,
+        69,
+        70,
+        61
+      ],
+      "Science": [
+        62,
+        66,
+        58,
+        75
+      ],
+      "English": [
+        71,
+        62,
+        64,
+        67
+      ],
+      "History": [
+        63,
+        63,
+        69,
+        76
+      ],
+      "Computer Science": [
+        76,
+        74,
+        77,
+        62
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 79,
+    "grade": "C"
+  },
+  {
+    "id": "CS3049",
+    "name": "Rajan Shah",
+    "class": "CS3",
+    "email": "cs3049@cs.edu",
+    "marks": {
+      "Mathematics": [
+        54,
+        50,
+        56,
+        56
+      ],
+      "Science": [
+        60,
+        54,
+        63,
+        61
+      ],
+      "English": [
+        51,
+        62,
+        47,
+        56
+      ],
+      "History": [
+        51,
+        65,
+        68,
+        57
+      ],
+      "Computer Science": [
+        58,
+        48,
+        47,
+        63
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 76,
+    "grade": "D"
+  },
+  {
+    "id": "CS3050",
+    "name": "Rohit Menon",
+    "class": "CS3",
+    "email": "cs3050@cs.edu",
+    "marks": {
+      "Mathematics": [
+        76,
+        58,
+        78,
+        60
+      ],
+      "Science": [
+        71,
+        69,
+        61,
+        78
+      ],
+      "English": [
+        70,
+        77,
+        58,
+        77
+      ],
+      "History": [
+        78,
+        73,
+        60,
+        64
+      ],
+      "Computer Science": [
+        68,
+        72,
+        68,
+        77
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 73,
+    "grade": "C"
+  },
+  {
+    "id": "CS3051",
+    "name": "Gaurav Kulkarni",
+    "class": "CS3",
+    "email": "cs3051@cs.edu",
+    "marks": {
+      "Mathematics": [
+        65,
+        63,
+        73,
+        65
+      ],
+      "Science": [
+        74,
+        67,
+        69,
+        65
+      ],
+      "English": [
+        66,
+        56,
+        61,
+        69
+      ],
+      "History": [
+        63,
+        58,
+        72,
+        74
+      ],
+      "Computer Science": [
+        57,
+        66,
+        73,
+        55
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 96,
+    "grade": "C"
+  },
+  {
+    "id": "CS3052",
+    "name": "Rahul Kumar",
+    "class": "CS3",
+    "email": "cs3052@cs.edu",
+    "marks": {
+      "Mathematics": [
+        85,
+        82,
+        77,
+        81
+      ],
+      "Science": [
+        78,
+        78,
+        85,
+        75
+      ],
+      "English": [
+        74,
+        80,
+        67,
+        72
+      ],
+      "History": [
+        68,
+        72,
+        70,
+        82
+      ],
+      "Computer Science": [
+        71,
+        80,
+        76,
+        80
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 87,
+    "grade": "B"
+  },
+  {
+    "id": "CS3053",
+    "name": "Nikhil Sharma",
+    "class": "CS3",
+    "email": "cs3053@cs.edu",
+    "marks": {
+      "Mathematics": [
+        71,
+        69,
+        76,
+        79
+      ],
+      "Science": [
+        80,
+        77,
+        68,
+        83
+      ],
+      "English": [
+        86,
+        72,
+        67,
+        78
+      ],
+      "History": [
+        82,
+        72,
+        80,
+        80
+      ],
+      "Computer Science": [
+        78,
+        82,
+        70,
+        70
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 80,
+    "grade": "B"
+  },
+  {
+    "id": "CS3054",
+    "name": "Gaurav Tiwari",
+    "class": "CS3",
+    "email": "cs3054@cs.edu",
+    "marks": {
+      "Mathematics": [
+        82,
+        83,
+        88,
+        77
+      ],
+      "Science": [
+        80,
+        88,
+        73,
+        92
+      ],
+      "English": [
+        88,
+        71,
+        89,
+        74
+      ],
+      "History": [
+        78,
+        79,
+        90,
+        71
+      ],
+      "Computer Science": [
+        79,
+        82,
+        82,
+        80
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 80,
+    "grade": "A"
+  },
+  {
+    "id": "CS3055",
+    "name": "Vikram Pillai",
+    "class": "CS3",
+    "email": "cs3055@cs.edu",
+    "marks": {
+      "Mathematics": [
+        50,
+        45,
+        58,
+        54
+      ],
+      "Science": [
+        61,
+        62,
+        60,
+        48
+      ],
+      "English": [
+        59,
+        43,
+        43,
+        57
+      ],
+      "History": [
+        62,
+        45,
+        58,
+        59
+      ],
+      "Computer Science": [
+        59,
+        58,
+        47,
+        48
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 71,
+    "grade": "D"
+  },
+  {
+    "id": "CS3056",
+    "name": "Aarav Nair",
+    "class": "CS3",
+    "email": "cs3056@cs.edu",
+    "marks": {
+      "Mathematics": [
+        62,
+        62,
+        65,
+        72
+      ],
+      "Science": [
+        66,
+        75,
+        69,
+        71
+      ],
+      "English": [
+        81,
+        66,
+        70,
+        66
+      ],
+      "History": [
+        69,
+        73,
+        73,
+        74
+      ],
+      "Computer Science": [
+        66,
+        77,
+        64,
+        76
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 78,
+    "grade": "C"
+  },
+  {
+    "id": "CS3057",
+    "name": "Vinay Tiwari",
+    "class": "CS3",
+    "email": "cs3057@cs.edu",
+    "marks": {
+      "Mathematics": [
+        56,
+        72,
+        62,
+        62
+      ],
+      "Science": [
+        70,
+        53,
+        60,
+        72
+      ],
+      "English": [
+        67,
+        54,
+        56,
+        56
+      ],
+      "History": [
+        56,
+        71,
+        57,
+        51
+      ],
+      "Computer Science": [
+        66,
+        52,
+        63,
+        51
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 71,
+    "grade": "C"
+  },
+  {
+    "id": "CS3058",
+    "name": "Deepak Kaur",
+    "class": "CS3",
+    "email": "cs3058@cs.edu",
+    "marks": {
+      "Mathematics": [
+        65,
+        71,
+        64,
+        70
+      ],
+      "Science": [
+        77,
+        76,
+        63,
+        80
+      ],
+      "English": [
+        71,
+        76,
+        66,
+        73
+      ],
+      "History": [
+        74,
+        68,
+        64,
+        65
+      ],
+      "Computer Science": [
+        67,
+        78,
+        78,
+        76
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 74,
+    "grade": "B"
+  },
+  {
+    "id": "CS3059",
+    "name": "Kavya Shah",
+    "class": "CS3",
+    "email": "cs3059@cs.edu",
+    "marks": {
+      "Mathematics": [
+        70,
+        71,
+        73,
+        62
+      ],
+      "Science": [
+        75,
+        74,
+        62,
+        69
+      ],
+      "English": [
+        69,
+        78,
+        69,
+        72
+      ],
+      "History": [
+        64,
+        74,
+        73,
+        63
+      ],
+      "Computer Science": [
+        62,
+        58,
+        60,
+        68
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 99,
+    "grade": "C"
+  },
+  {
+    "id": "CS3060",
+    "name": "Rohit Agarwal",
+    "class": "CS3",
+    "email": "cs3060@cs.edu",
+    "marks": {
+      "Mathematics": [
+        46,
+        59,
+        66,
+        67
+      ],
+      "Science": [
+        49,
+        47,
+        63,
+        47
+      ],
+      "English": [
+        62,
+        47,
+        63,
+        55
+      ],
+      "History": [
+        60,
+        55,
+        65,
+        47
+      ],
+      "Computer Science": [
+        66,
+        67,
+        49,
+        65
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 80,
+    "grade": "D"
+  },
+  {
+    "id": "CS3061",
+    "name": "Ravi Singh",
+    "class": "CS3",
+    "email": "cs3061@cs.edu",
+    "marks": {
+      "Mathematics": [
+        49,
+        57,
+        63,
+        48
+      ],
+      "Science": [
+        62,
+        49,
+        55,
+        64
+      ],
+      "English": [
+        48,
+        45,
+        52,
+        46
+      ],
+      "History": [
+        56,
+        63,
+        51,
+        63
+      ],
+      "Computer Science": [
+        47,
+        54,
+        47,
+        65
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 90,
+    "grade": "D"
+  },
+  {
+    "id": "CS3062",
+    "name": "Rakesh Pandey",
+    "class": "CS3",
+    "email": "cs3062@cs.edu",
+    "marks": {
+      "Mathematics": [
+        58,
+        59,
+        51,
+        58
+      ],
+      "Science": [
+        61,
+        67,
+        54,
+        73
+      ],
+      "English": [
+        72,
+        54,
+        68,
+        55
+      ],
+      "History": [
+        71,
+        71,
+        66,
+        69
+      ],
+      "Computer Science": [
+        70,
+        61,
+        68,
+        65
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 78,
+    "grade": "C"
+  },
+  {
+    "id": "CS3063",
+    "name": "Meera Iyer",
+    "class": "CS3",
+    "email": "cs3063@cs.edu",
+    "marks": {
+      "Mathematics": [
+        91,
+        76,
+        84,
+        82
+      ],
+      "Science": [
+        76,
+        91,
+        73,
+        78
+      ],
+      "English": [
+        79,
+        87,
+        74,
+        71
+      ],
+      "History": [
+        77,
+        90,
+        90,
+        86
+      ],
+      "Computer Science": [
+        73,
+        89,
+        80,
+        78
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 69,
+    "grade": "A"
+  },
+  {
+    "id": "CS3064",
+    "name": "Rakesh Menon",
+    "class": "CS3",
+    "email": "cs3064@cs.edu",
+    "marks": {
+      "Mathematics": [
+        70,
+        66,
+        53,
+        64
+      ],
+      "Science": [
+        65,
+        57,
+        64,
+        71
+      ],
+      "English": [
+        60,
+        71,
+        66,
+        69
+      ],
+      "History": [
+        65,
+        72,
+        55,
+        59
+      ],
+      "Computer Science": [
+        67,
+        71,
+        68,
+        58
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 91,
+    "grade": "C"
+  },
+  {
+    "id": "CS3065",
+    "name": "Yash Rao",
+    "class": "CS3",
+    "email": "cs3065@cs.edu",
+    "marks": {
+      "Mathematics": [
+        68,
+        85,
+        85,
+        79
+      ],
+      "Science": [
+        68,
+        70,
+        77,
+        76
+      ],
+      "English": [
+        85,
+        75,
+        68,
+        87
+      ],
+      "History": [
+        67,
+        74,
+        71,
+        72
+      ],
+      "Computer Science": [
+        67,
+        85,
+        68,
+        73
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 94,
+    "grade": "B"
+  },
+  {
+    "id": "CS4001",
+    "name": "Shubham Tiwari",
+    "class": "CS4",
+    "email": "cs4001@cs.edu",
+    "marks": {
+      "Mathematics": [
+        66,
+        51,
+        50,
+        67
+      ],
+      "Science": [
+        69,
+        53,
+        64,
+        57
+      ],
+      "English": [
+        58,
+        57,
+        63,
+        66
+      ],
+      "History": [
+        57,
+        70,
+        52,
+        57
+      ],
+      "Computer Science": [
+        56,
+        63,
+        68,
+        65
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 95,
+    "grade": "C"
+  },
+  {
+    "id": "CS4002",
+    "name": "Rajan Bhat",
+    "class": "CS4",
+    "email": "cs4002@cs.edu",
+    "marks": {
+      "Mathematics": [
+        63,
+        51,
+        64,
+        50
+      ],
+      "Science": [
+        67,
+        68,
+        58,
+        61
+      ],
+      "English": [
+        60,
+        58,
+        70,
+        69
+      ],
+      "History": [
+        52,
+        67,
+        60,
+        70
+      ],
+      "Computer Science": [
+        64,
+        67,
+        53,
+        52
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 74,
+    "grade": "C"
+  },
+  {
+    "id": "CS4003",
+    "name": "Deepak Mittal",
+    "class": "CS4",
+    "email": "cs4003@cs.edu",
+    "marks": {
+      "Mathematics": [
+        53,
+        53,
+        59,
+        72
+      ],
+      "Science": [
+        66,
+        64,
+        64,
+        62
+      ],
+      "English": [
+        58,
+        58,
+        65,
+        57
+      ],
+      "History": [
+        68,
+        55,
+        56,
+        71
+      ],
+      "Computer Science": [
+        59,
+        73,
+        63,
+        52
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 91,
+    "grade": "C"
+  },
+  {
+    "id": "CS4004",
+    "name": "Akash Garg",
+    "class": "CS4",
+    "email": "cs4004@cs.edu",
+    "marks": {
+      "Mathematics": [
+        55,
+        65,
+        64,
+        69
+      ],
+      "Science": [
+        57,
+        68,
+        55,
+        50
+      ],
+      "English": [
+        67,
+        70,
+        51,
+        57
+      ],
+      "History": [
+        71,
+        61,
+        54,
+        71
+      ],
+      "Computer Science": [
+        66,
+        57,
+        65,
+        53
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 70,
+    "grade": "C"
+  },
+  {
+    "id": "CS4005",
+    "name": "Tanvi Kumar",
+    "class": "CS4",
+    "email": "cs4005@cs.edu",
+    "marks": {
+      "Mathematics": [
+        64,
+        52,
+        59,
+        54
+      ],
+      "Science": [
+        65,
+        52,
+        52,
+        53
+      ],
+      "English": [
+        65,
+        63,
+        45,
+        48
+      ],
+      "History": [
+        45,
+        51,
+        51,
+        57
+      ],
+      "Computer Science": [
+        59,
+        60,
+        62,
+        45
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 86,
+    "grade": "D"
+  },
+  {
+    "id": "CS4006",
+    "name": "Akash Thakur",
+    "class": "CS4",
+    "email": "cs4006@cs.edu",
+    "marks": {
+      "Mathematics": [
+        76,
+        72,
+        75,
+        68
+      ],
+      "Science": [
+        77,
+        78,
+        72,
+        64
+      ],
+      "English": [
+        73,
+        60,
+        63,
+        59
+      ],
+      "History": [
+        77,
+        73,
+        77,
+        76
+      ],
+      "Computer Science": [
+        60,
+        60,
+        74,
+        58
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 88,
+    "grade": "C"
+  },
+  {
+    "id": "CS4007",
+    "name": "Tanvi Patil",
+    "class": "CS4",
+    "email": "cs4007@cs.edu",
+    "marks": {
+      "Mathematics": [
+        63,
+        62,
+        61,
+        51
+      ],
+      "Science": [
+        64,
+        51,
+        63,
+        51
+      ],
+      "English": [
+        57,
+        54,
+        55,
+        48
+      ],
+      "History": [
+        45,
+        50,
+        55,
+        48
+      ],
+      "Computer Science": [
+        43,
+        51,
+        46,
+        53
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 69,
+    "grade": "D"
+  },
+  {
+    "id": "CS4008",
+    "name": "Lakshmi Tiwari",
+    "class": "CS4",
+    "email": "cs4008@cs.edu",
+    "marks": {
+      "Mathematics": [
+        88,
+        86,
+        90,
+        77
+      ],
+      "Science": [
+        75,
+        73,
+        89,
+        90
+      ],
+      "English": [
+        90,
+        81,
+        73,
+        76
+      ],
+      "History": [
+        81,
+        76,
+        86,
+        92
+      ],
+      "Computer Science": [
+        80,
+        72,
+        73,
+        73
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 76,
+    "grade": "A"
+  },
+  {
+    "id": "CS4009",
+    "name": "Kiran Rajput",
+    "class": "CS4",
+    "email": "cs4009@cs.edu",
+    "marks": {
+      "Mathematics": [
+        59,
+        56,
+        73,
+        63
+      ],
+      "Science": [
+        68,
+        60,
+        69,
+        72
+      ],
+      "English": [
+        63,
+        66,
+        57,
+        55
+      ],
+      "History": [
+        73,
+        54,
+        57,
+        68
+      ],
+      "Computer Science": [
+        65,
+        61,
+        73,
+        62
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 88,
+    "grade": "C"
+  },
+  {
+    "id": "CS4010",
+    "name": "Sanket Kaur",
+    "class": "CS4",
+    "email": "cs4010@cs.edu",
+    "marks": {
+      "Mathematics": [
+        70,
+        54,
+        64,
+        63
+      ],
+      "Science": [
+        62,
+        71,
+        64,
+        61
+      ],
+      "English": [
+        62,
+        63,
+        62,
+        64
+      ],
+      "History": [
+        59,
+        62,
+        62,
+        66
+      ],
+      "Computer Science": [
+        75,
+        63,
+        70,
+        61
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 81,
+    "grade": "C"
+  },
+  {
+    "id": "CS4011",
+    "name": "Pooja Bhat",
+    "class": "CS4",
+    "email": "cs4011@cs.edu",
+    "marks": {
+      "Mathematics": [
+        59,
+        64,
+        60,
+        45
+      ],
+      "Science": [
+        48,
+        61,
+        64,
+        46
+      ],
+      "English": [
+        46,
+        48,
+        52,
+        56
+      ],
+      "History": [
+        50,
+        64,
+        49,
+        64
+      ],
+      "Computer Science": [
+        59,
+        60,
+        56,
+        66
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 86,
+    "grade": "D"
+  },
+  {
+    "id": "CS4012",
+    "name": "Vinay Yadav",
+    "class": "CS4",
+    "email": "cs4012@cs.edu",
+    "marks": {
+      "Mathematics": [
+        57,
+        53,
+        60,
+        57
+      ],
+      "Science": [
+        54,
+        62,
+        57,
+        54
+      ],
+      "English": [
+        59,
+        44,
+        49,
+        49
+      ],
+      "History": [
+        42,
+        54,
+        43,
+        57
+      ],
+      "Computer Science": [
+        60,
+        48,
+        62,
+        51
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 69,
+    "grade": "D"
+  },
+  {
+    "id": "CS4013",
+    "name": "Anjali Verma",
+    "class": "CS4",
+    "email": "cs4013@cs.edu",
+    "marks": {
+      "Mathematics": [
+        66,
+        46,
+        66,
+        57
+      ],
+      "Science": [
+        58,
+        56,
+        52,
+        60
+      ],
+      "English": [
+        51,
+        60,
+        48,
+        47
+      ],
+      "History": [
+        62,
+        64,
+        58,
+        65
+      ],
+      "Computer Science": [
+        48,
+        60,
+        61,
+        50
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 89,
+    "grade": "D"
+  },
+  {
+    "id": "CS4014",
+    "name": "Anjali Joshi",
+    "class": "CS4",
+    "email": "cs4014@cs.edu",
+    "marks": {
+      "Mathematics": [
+        51,
+        59,
+        63,
+        56
+      ],
+      "Science": [
+        50,
+        58,
+        57,
+        67
+      ],
+      "English": [
+        68,
+        66,
+        70,
+        68
+      ],
+      "History": [
+        63,
+        66,
+        51,
+        56
+      ],
+      "Computer Science": [
+        58,
+        51,
+        67,
+        55
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 84,
+    "grade": "C"
+  },
+  {
+    "id": "CS4015",
+    "name": "Ritika Chauhan",
+    "class": "CS4",
+    "email": "cs4015@cs.edu",
+    "marks": {
+      "Mathematics": [
+        47,
+        65,
+        57,
+        49
+      ],
+      "Science": [
+        58,
+        67,
+        67,
+        48
+      ],
+      "English": [
+        61,
+        56,
+        61,
+        49
+      ],
+      "History": [
+        54,
+        61,
+        49,
+        62
+      ],
+      "Computer Science": [
+        59,
+        60,
+        52,
+        62
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 90,
+    "grade": "D"
+  },
+  {
+    "id": "CS4016",
+    "name": "Chetan Reddy",
+    "class": "CS4",
+    "email": "cs4016@cs.edu",
+    "marks": {
+      "Mathematics": [
+        88,
+        73,
+        70,
+        83
+      ],
+      "Science": [
+        69,
+        71,
+        88,
+        72
+      ],
+      "English": [
+        67,
+        77,
+        83,
+        82
+      ],
+      "History": [
+        86,
+        83,
+        84,
+        88
+      ],
+      "Computer Science": [
+        84,
+        85,
+        77,
+        71
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 81,
+    "grade": "B"
+  },
+  {
+    "id": "CS4017",
+    "name": "Aarav Gill",
+    "class": "CS4",
+    "email": "cs4017@cs.edu",
+    "marks": {
+      "Mathematics": [
+        75,
+        70,
+        64,
+        75
+      ],
+      "Science": [
+        63,
+        74,
+        63,
+        61
+      ],
+      "English": [
+        66,
+        72,
+        67,
+        62
+      ],
+      "History": [
+        70,
+        61,
+        67,
+        62
+      ],
+      "Computer Science": [
+        63,
+        81,
+        67,
+        62
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 87,
+    "grade": "C"
+  },
+  {
+    "id": "CS4018",
+    "name": "Kiran Patil",
+    "class": "CS4",
+    "email": "cs4018@cs.edu",
+    "marks": {
+      "Mathematics": [
+        64,
+        70,
+        71,
+        59
+      ],
+      "Science": [
+        78,
+        68,
+        67,
+        71
+      ],
+      "English": [
+        76,
+        68,
+        70,
+        67
+      ],
+      "History": [
+        76,
+        71,
+        63,
+        64
+      ],
+      "Computer Science": [
+        74,
+        65,
+        66,
+        76
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 82,
+    "grade": "C"
+  },
+  {
+    "id": "CS4019",
+    "name": "Vishal Gill",
+    "class": "CS4",
+    "email": "cs4019@cs.edu",
+    "marks": {
+      "Mathematics": [
+        77,
+        69,
+        73,
+        66
+      ],
+      "Science": [
+        57,
+        75,
+        74,
+        60
+      ],
+      "English": [
+        73,
+        62,
+        74,
+        58
+      ],
+      "History": [
+        61,
+        76,
+        60,
+        74
+      ],
+      "Computer Science": [
+        73,
+        59,
+        61,
+        73
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 99,
+    "grade": "C"
+  },
+  {
+    "id": "CS4020",
+    "name": "Arjun Dubey",
+    "class": "CS4",
+    "email": "cs4020@cs.edu",
+    "marks": {
+      "Mathematics": [
+        81,
+        63,
+        76,
+        64
+      ],
+      "Science": [
+        77,
+        75,
+        73,
+        74
+      ],
+      "English": [
+        69,
+        68,
+        71,
+        76
+      ],
+      "History": [
+        74,
+        66,
+        80,
+        67
+      ],
+      "Computer Science": [
+        65,
+        71,
+        68,
+        64
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 84,
+    "grade": "B"
+  },
+  {
+    "id": "CS4021",
+    "name": "Nandini Desai",
+    "class": "CS4",
+    "email": "cs4021@cs.edu",
+    "marks": {
+      "Mathematics": [
+        64,
+        69,
+        58,
+        66
+      ],
+      "Science": [
+        60,
+        75,
+        55,
+        59
+      ],
+      "English": [
+        64,
+        62,
+        56,
+        62
+      ],
+      "History": [
+        59,
+        66,
+        58,
+        75
+      ],
+      "Computer Science": [
+        64,
+        57,
+        66,
+        61
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 78,
+    "grade": "C"
+  },
+  {
+    "id": "CS4022",
+    "name": "Deepak Shah",
+    "class": "CS4",
+    "email": "cs4022@cs.edu",
+    "marks": {
+      "Mathematics": [
+        70,
+        86,
+        83,
+        67
+      ],
+      "Science": [
+        71,
+        77,
+        76,
+        74
+      ],
+      "English": [
+        77,
+        82,
+        80,
+        71
+      ],
+      "History": [
+        83,
+        68,
+        83,
+        79
+      ],
+      "Computer Science": [
+        69,
+        68,
+        76,
+        81
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 85,
+    "grade": "B"
+  },
+  {
+    "id": "CS4023",
+    "name": "Anjali Bhat",
+    "class": "CS4",
+    "email": "cs4023@cs.edu",
+    "marks": {
+      "Mathematics": [
+        63,
+        63,
+        59,
+        65
+      ],
+      "Science": [
+        67,
+        58,
+        62,
+        75
+      ],
+      "English": [
+        68,
+        61,
+        75,
+        61
+      ],
+      "History": [
+        71,
+        60,
+        71,
+        61
+      ],
+      "Computer Science": [
+        76,
+        69,
+        74,
+        58
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 79,
+    "grade": "C"
+  },
+  {
+    "id": "CS4024",
+    "name": "Chirag Menon",
+    "class": "CS4",
+    "email": "cs4024@cs.edu",
+    "marks": {
+      "Mathematics": [
+        71,
+        76,
+        60,
+        76
+      ],
+      "Science": [
+        60,
+        73,
+        72,
+        61
+      ],
+      "English": [
+        74,
+        75,
+        63,
+        71
+      ],
+      "History": [
+        66,
+        59,
+        60,
+        67
+      ],
+      "Computer Science": [
+        81,
+        62,
+        59,
+        64
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 96,
+    "grade": "C"
+  },
+  {
+    "id": "CS4025",
+    "name": "Esha Thakur",
+    "class": "CS4",
+    "email": "cs4025@cs.edu",
+    "marks": {
+      "Mathematics": [
+        63,
+        51,
+        56,
+        57
+      ],
+      "Science": [
+        47,
+        46,
+        48,
+        62
+      ],
+      "English": [
+        62,
+        49,
+        49,
+        63
+      ],
+      "History": [
+        60,
+        67,
+        66,
+        58
+      ],
+      "Computer Science": [
+        68,
+        47,
+        63,
+        48
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 99,
+    "grade": "D"
+  },
+  {
+    "id": "CS4026",
+    "name": "Arun Malhotra",
+    "class": "CS4",
+    "email": "cs4026@cs.edu",
+    "marks": {
+      "Mathematics": [
+        43,
+        41,
+        52,
+        58
+      ],
+      "Science": [
+        58,
+        49,
+        49,
+        52
+      ],
+      "English": [
+        48,
+        55,
+        52,
+        51
+      ],
+      "History": [
+        59,
+        50,
+        59,
+        48
+      ],
+      "Computer Science": [
+        41,
+        52,
+        45,
+        59
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 71,
+    "grade": "D"
+  },
+  {
+    "id": "CS4027",
+    "name": "Deepak Kulkarni",
+    "class": "CS4",
+    "email": "cs4027@cs.edu",
+    "marks": {
+      "Mathematics": [
+        61,
+        59,
+        73,
+        68
+      ],
+      "Science": [
+        64,
+        67,
+        77,
+        71
+      ],
+      "English": [
+        67,
+        71,
+        68,
+        74
+      ],
+      "History": [
+        76,
+        59,
+        65,
+        68
+      ],
+      "Computer Science": [
+        70,
+        74,
+        64,
+        73
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 76,
+    "grade": "C"
+  },
+  {
+    "id": "CS4028",
+    "name": "Vaibhav Chopra",
+    "class": "CS4",
+    "email": "cs4028@cs.edu",
+    "marks": {
+      "Mathematics": [
+        48,
+        56,
+        51,
+        57
+      ],
+      "Science": [
+        53,
+        45,
+        56,
+        60
+      ],
+      "English": [
+        43,
+        44,
+        54,
+        52
+      ],
+      "History": [
+        57,
+        55,
+        55,
+        53
+      ],
+      "Computer Science": [
+        42,
+        44,
+        52,
+        49
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 87,
+    "grade": "D"
+  },
+  {
+    "id": "CS4029",
+    "name": "Akash Reddy",
+    "class": "CS4",
+    "email": "cs4029@cs.edu",
+    "marks": {
+      "Mathematics": [
+        59,
+        70,
+        53,
+        67
+      ],
+      "Science": [
+        64,
+        72,
+        60,
+        71
+      ],
+      "English": [
+        53,
+        55,
+        51,
+        66
+      ],
+      "History": [
+        66,
+        58,
+        66,
+        62
+      ],
+      "Computer Science": [
+        71,
+        64,
+        63,
+        69
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 93,
+    "grade": "C"
+  },
+  {
+    "id": "CS4030",
+    "name": "Pradeep Chopra",
+    "class": "CS4",
+    "email": "cs4030@cs.edu",
+    "marks": {
+      "Mathematics": [
+        70,
+        75,
+        70,
+        70
+      ],
+      "Science": [
+        71,
+        79,
+        87,
+        81
+      ],
+      "English": [
+        77,
+        68,
+        79,
+        73
+      ],
+      "History": [
+        75,
+        71,
+        77,
+        79
+      ],
+      "Computer Science": [
+        84,
+        79,
+        71,
+        71
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 75,
+    "grade": "B"
+  },
+  {
+    "id": "CS4031",
+    "name": "Meera Chauhan",
+    "class": "CS4",
+    "email": "cs4031@cs.edu",
+    "marks": {
+      "Mathematics": [
+        55,
+        50,
+        60,
+        57
+      ],
+      "Science": [
+        54,
+        67,
+        56,
+        58
+      ],
+      "English": [
+        53,
+        47,
+        50,
+        57
+      ],
+      "History": [
+        65,
+        62,
+        64,
+        68
+      ],
+      "Computer Science": [
+        61,
+        59,
+        62,
+        49
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 93,
+    "grade": "D"
+  },
+  {
+    "id": "CS4032",
+    "name": "Sahil Malhotra",
+    "class": "CS4",
+    "email": "cs4032@cs.edu",
+    "marks": {
+      "Mathematics": [
+        54,
+        40,
+        59,
+        43
+      ],
+      "Science": [
+        59,
+        60,
+        52,
+        54
+      ],
+      "English": [
+        56,
+        49,
+        53,
+        50
+      ],
+      "History": [
+        54,
+        49,
+        59,
+        54
+      ],
+      "Computer Science": [
+        61,
+        43,
+        59,
+        59
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 75,
+    "grade": "D"
+  },
+  {
+    "id": "CS4033",
+    "name": "Nikhil Kumar",
+    "class": "CS4",
+    "email": "cs4033@cs.edu",
+    "marks": {
+      "Mathematics": [
+        59,
+        48,
+        48,
+        46
+      ],
+      "Science": [
+        46,
+        67,
+        48,
+        61
+      ],
+      "English": [
+        55,
+        53,
+        63,
+        65
+      ],
+      "History": [
+        65,
+        47,
+        61,
+        47
+      ],
+      "Computer Science": [
+        60,
+        51,
+        46,
+        61
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 90,
+    "grade": "D"
+  },
+  {
+    "id": "CS4034",
+    "name": "Ritika Reddy",
+    "class": "CS4",
+    "email": "cs4034@cs.edu",
+    "marks": {
+      "Mathematics": [
+        54,
+        57,
+        48,
+        60
+      ],
+      "Science": [
+        58,
+        51,
+        49,
+        45
+      ],
+      "English": [
+        59,
+        62,
+        64,
+        53
+      ],
+      "History": [
+        64,
+        51,
+        59,
+        46
+      ],
+      "Computer Science": [
+        54,
+        59,
+        52,
+        49
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 76,
+    "grade": "D"
+  },
+  {
+    "id": "CS4035",
+    "name": "Vaibhav Mittal",
+    "class": "CS4",
+    "email": "cs4035@cs.edu",
+    "marks": {
+      "Mathematics": [
+        61,
+        73,
+        60,
+        57
+      ],
+      "Science": [
+        74,
+        60,
+        73,
+        57
+      ],
+      "English": [
+        73,
+        74,
+        71,
+        67
+      ],
+      "History": [
+        60,
+        72,
+        58,
+        57
+      ],
+      "Computer Science": [
+        71,
+        55,
+        54,
+        55
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 76,
+    "grade": "C"
+  },
+  {
+    "id": "CS4036",
+    "name": "Sachin Verma",
+    "class": "CS4",
+    "email": "cs4036@cs.edu",
+    "marks": {
+      "Mathematics": [
+        94,
+        82,
+        78,
+        89
+      ],
+      "Science": [
+        80,
+        79,
+        77,
+        74
+      ],
+      "English": [
+        87,
+        95,
+        81,
+        80
+      ],
+      "History": [
+        83,
+        87,
+        84,
+        93
+      ],
+      "Computer Science": [
+        81,
+        89,
+        74,
+        84
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 98,
+    "grade": "A"
+  },
+  {
+    "id": "CS4037",
+    "name": "Aditya Sharma",
+    "class": "CS4",
+    "email": "cs4037@cs.edu",
+    "marks": {
+      "Mathematics": [
+        83,
+        72,
+        82,
+        64
+      ],
+      "Science": [
+        71,
+        78,
+        70,
+        66
+      ],
+      "English": [
+        63,
+        66,
+        74,
+        64
+      ],
+      "History": [
+        78,
+        81,
+        80,
+        67
+      ],
+      "Computer Science": [
+        68,
+        71,
+        84,
+        79
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 80,
+    "grade": "B"
+  },
+  {
+    "id": "CS4038",
+    "name": "Kunal Menon",
+    "class": "CS4",
+    "email": "cs4038@cs.edu",
+    "marks": {
+      "Mathematics": [
+        62,
+        46,
+        54,
+        52
+      ],
+      "Science": [
+        63,
+        47,
+        44,
+        56
+      ],
+      "English": [
+        47,
+        49,
+        62,
+        53
+      ],
+      "History": [
+        54,
+        56,
+        52,
+        55
+      ],
+      "Computer Science": [
+        58,
+        44,
+        47,
+        58
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 79,
+    "grade": "D"
+  },
+  {
+    "id": "CS4039",
+    "name": "Anjali Dubey",
+    "class": "CS4",
+    "email": "cs4039@cs.edu",
+    "marks": {
+      "Mathematics": [
+        59,
+        59,
+        54,
+        48
+      ],
+      "Science": [
+        60,
+        54,
+        62,
+        49
+      ],
+      "English": [
+        57,
+        61,
+        68,
+        67
+      ],
+      "History": [
+        49,
+        57,
+        68,
+        66
+      ],
+      "Computer Science": [
+        68,
+        49,
+        67,
+        63
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 86,
+    "grade": "D"
+  },
+  {
+    "id": "CS4040",
+    "name": "Arun Rajput",
+    "class": "CS4",
+    "email": "cs4040@cs.edu",
+    "marks": {
+      "Mathematics": [
+        64,
+        62,
+        65,
+        66
+      ],
+      "Science": [
+        51,
+        47,
+        53,
+        53
+      ],
+      "English": [
+        62,
+        60,
+        65,
+        60
+      ],
+      "History": [
+        59,
+        65,
+        65,
+        46
+      ],
+      "Computer Science": [
+        55,
+        56,
+        50,
+        65
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 74,
+    "grade": "D"
+  },
+  {
+    "id": "CS4041",
+    "name": "Sahil Shah",
+    "class": "CS4",
+    "email": "cs4041@cs.edu",
+    "marks": {
+      "Mathematics": [
+        48,
+        63,
+        51,
+        56
+      ],
+      "Science": [
+        60,
+        45,
+        54,
+        55
+      ],
+      "English": [
+        51,
+        56,
+        64,
+        49
+      ],
+      "History": [
+        52,
+        53,
+        58,
+        64
+      ],
+      "Computer Science": [
+        58,
+        59,
+        47,
+        45
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 85,
+    "grade": "D"
+  },
+  {
+    "id": "CS4042",
+    "name": "Priya Kapoor",
+    "class": "CS4",
+    "email": "cs4042@cs.edu",
+    "marks": {
+      "Mathematics": [
+        87,
+        91,
+        74,
+        72
+      ],
+      "Science": [
+        76,
+        90,
+        76,
+        90
+      ],
+      "English": [
+        84,
+        71,
+        86,
+        90
+      ],
+      "History": [
+        77,
+        84,
+        77,
+        83
+      ],
+      "Computer Science": [
+        88,
+        90,
+        75,
+        71
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 99,
+    "grade": "A"
+  },
+  {
+    "id": "CS4043",
+    "name": "Bhavya Menon",
+    "class": "CS4",
+    "email": "cs4043@cs.edu",
+    "marks": {
+      "Mathematics": [
+        78,
+        94,
+        74,
+        83
+      ],
+      "Science": [
+        86,
+        74,
+        86,
+        93
+      ],
+      "English": [
+        74,
+        81,
+        82,
+        79
+      ],
+      "History": [
+        87,
+        88,
+        75,
+        83
+      ],
+      "Computer Science": [
+        83,
+        93,
+        94,
+        88
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 72,
+    "grade": "A"
+  },
+  {
+    "id": "CS4044",
+    "name": "Sahil Deshpande",
+    "class": "CS4",
+    "email": "cs4044@cs.edu",
+    "marks": {
+      "Mathematics": [
+        69,
+        84,
+        81,
+        81
+      ],
+      "Science": [
+        76,
+        71,
+        86,
+        68
+      ],
+      "English": [
+        85,
+        72,
+        81,
+        71
+      ],
+      "History": [
+        78,
+        76,
+        82,
+        75
+      ],
+      "Computer Science": [
+        66,
+        73,
+        68,
+        67
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 90,
+    "grade": "B"
+  },
+  {
+    "id": "CS4045",
+    "name": "Rakesh Desai",
+    "class": "CS4",
+    "email": "cs4045@cs.edu",
+    "marks": {
+      "Mathematics": [
+        72,
+        60,
+        72,
+        51
+      ],
+      "Science": [
+        69,
+        62,
+        66,
+        68
+      ],
+      "English": [
+        53,
+        51,
+        59,
+        57
+      ],
+      "History": [
+        62,
+        63,
+        57,
+        69
+      ],
+      "Computer Science": [
+        71,
+        65,
+        55,
+        53
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 87,
+    "grade": "C"
+  },
+  {
+    "id": "CS4046",
+    "name": "Zara Kapoor",
+    "class": "CS4",
+    "email": "cs4046@cs.edu",
+    "marks": {
+      "Mathematics": [
+        64,
+        53,
+        58,
+        43
+      ],
+      "Science": [
+        55,
+        55,
+        62,
+        50
+      ],
+      "English": [
+        63,
+        55,
+        53,
+        64
+      ],
+      "History": [
+        46,
+        57,
+        52,
+        43
+      ],
+      "Computer Science": [
+        60,
+        49,
+        64,
+        60
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 73,
+    "grade": "D"
+  },
+  {
+    "id": "CS4047",
+    "name": "Sanjay Mittal",
+    "class": "CS4",
+    "email": "cs4047@cs.edu",
+    "marks": {
+      "Mathematics": [
+        61,
+        68,
+        64,
+        69
+      ],
+      "Science": [
+        71,
+        57,
+        64,
+        56
+      ],
+      "English": [
+        62,
+        57,
+        57,
+        51
+      ],
+      "History": [
+        68,
+        68,
+        63,
+        63
+      ],
+      "Computer Science": [
+        56,
+        65,
+        65,
+        67
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 81,
+    "grade": "C"
+  },
+  {
+    "id": "CS4048",
+    "name": "Kavya Pandey",
+    "class": "CS4",
+    "email": "cs4048@cs.edu",
+    "marks": {
+      "Mathematics": [
+        57,
+        73,
+        67,
+        59
+      ],
+      "Science": [
+        62,
+        56,
+        66,
+        69
+      ],
+      "English": [
+        73,
+        73,
+        61,
+        72
+      ],
+      "History": [
+        55,
+        68,
+        53,
+        59
+      ],
+      "Computer Science": [
+        68,
+        53,
+        57,
+        62
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 85,
+    "grade": "C"
+  },
+  {
+    "id": "CS4049",
+    "name": "Vijay Kapoor",
+    "class": "CS4",
+    "email": "cs4049@cs.edu",
+    "marks": {
+      "Mathematics": [
+        72,
+        75,
+        76,
+        71
+      ],
+      "Science": [
+        81,
+        79,
+        78,
+        88
+      ],
+      "English": [
+        81,
+        85,
+        71,
+        83
+      ],
+      "History": [
+        70,
+        73,
+        90,
+        73
+      ],
+      "Computer Science": [
+        72,
+        82,
+        90,
+        83
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 97,
+    "grade": "B"
+  },
+  {
+    "id": "CS4050",
+    "name": "Gaurav Rao",
+    "class": "CS4",
+    "email": "cs4050@cs.edu",
+    "marks": {
+      "Mathematics": [
+        75,
+        66,
+        86,
+        82
+      ],
+      "Science": [
+        69,
+        84,
+        84,
+        67
+      ],
+      "English": [
+        82,
+        72,
+        86,
+        68
+      ],
+      "History": [
+        70,
+        83,
+        70,
+        77
+      ],
+      "Computer Science": [
+        77,
+        65,
+        83,
+        84
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 69,
+    "grade": "B"
+  },
+  {
+    "id": "CS4051",
+    "name": "Aditya Jain",
+    "class": "CS4",
+    "email": "cs4051@cs.edu",
+    "marks": {
+      "Mathematics": [
+        64,
+        61,
+        69,
+        63
+      ],
+      "Science": [
+        52,
+        48,
+        49,
+        66
+      ],
+      "English": [
+        70,
+        53,
+        51,
+        67
+      ],
+      "History": [
+        57,
+        70,
+        60,
+        52
+      ],
+      "Computer Science": [
+        53,
+        67,
+        56,
+        68
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 85,
+    "grade": "D"
+  },
+  {
+    "id": "CS4052",
+    "name": "Rajesh Joshi",
+    "class": "CS4",
+    "email": "cs4052@cs.edu",
+    "marks": {
+      "Mathematics": [
+        62,
+        79,
+        72,
+        69
+      ],
+      "Science": [
+        72,
+        81,
+        66,
+        74
+      ],
+      "English": [
+        76,
+        63,
+        66,
+        77
+      ],
+      "History": [
+        68,
+        82,
+        83,
+        71
+      ],
+      "Computer Science": [
+        79,
+        77,
+        80,
+        76
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 84,
+    "grade": "B"
+  },
+  {
+    "id": "CS4053",
+    "name": "Zara Garg",
+    "class": "CS4",
+    "email": "cs4053@cs.edu",
+    "marks": {
+      "Mathematics": [
+        95,
+        88,
+        84,
+        93
+      ],
+      "Science": [
+        82,
+        74,
+        86,
+        77
+      ],
+      "English": [
+        90,
+        91,
+        85,
+        89
+      ],
+      "History": [
+        82,
+        89,
+        92,
+        83
+      ],
+      "Computer Science": [
+        76,
+        79,
+        77,
+        92
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 76,
+    "grade": "A"
+  },
+  {
+    "id": "CS4054",
+    "name": "Geeta Tiwari",
+    "class": "CS4",
+    "email": "cs4054@cs.edu",
+    "marks": {
+      "Mathematics": [
+        89,
+        89,
+        84,
+        89
+      ],
+      "Science": [
+        68,
+        85,
+        75,
+        76
+      ],
+      "English": [
+        74,
+        81,
+        67,
+        76
+      ],
+      "History": [
+        87,
+        80,
+        79,
+        77
+      ],
+      "Computer Science": [
+        70,
+        88,
+        87,
+        83
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 93,
+    "grade": "A"
+  },
+  {
+    "id": "CS4055",
+    "name": "Amit Kapoor",
+    "class": "CS4",
+    "email": "cs4055@cs.edu",
+    "marks": {
+      "Mathematics": [
+        81,
+        76,
+        85,
+        89
+      ],
+      "Science": [
+        71,
+        81,
+        86,
+        86
+      ],
+      "English": [
+        88,
+        83,
+        90,
+        71
+      ],
+      "History": [
+        88,
+        75,
+        77,
+        85
+      ],
+      "Computer Science": [
+        75,
+        74,
+        87,
+        78
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 76,
+    "grade": "A"
+  },
+  {
+    "id": "CS4056",
+    "name": "Vijay Gupta",
+    "class": "CS4",
+    "email": "cs4056@cs.edu",
+    "marks": {
+      "Mathematics": [
+        67,
+        78,
+        65,
+        82
+      ],
+      "Science": [
+        72,
+        66,
+        69,
+        81
+      ],
+      "English": [
+        78,
+        65,
+        75,
+        62
+      ],
+      "History": [
+        70,
+        68,
+        83,
+        72
+      ],
+      "Computer Science": [
+        79,
+        79,
+        83,
+        75
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 83,
+    "grade": "B"
+  },
+  {
+    "id": "CS4057",
+    "name": "Suresh Joshi",
+    "class": "CS4",
+    "email": "cs4057@cs.edu",
+    "marks": {
+      "Mathematics": [
+        85,
+        84,
+        80,
+        71
+      ],
+      "Science": [
+        82,
+        87,
+        79,
+        73
+      ],
+      "English": [
+        87,
+        87,
+        72,
+        79
+      ],
+      "History": [
+        80,
+        90,
+        78,
+        83
+      ],
+      "Computer Science": [
+        76,
+        78,
+        77,
+        85
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 78,
+    "grade": "A"
+  },
+  {
+    "id": "CS4058",
+    "name": "Arjun Kulkarni",
+    "class": "CS4",
+    "email": "cs4058@cs.edu",
+    "marks": {
+      "Mathematics": [
+        51,
+        50,
+        68,
+        65
+      ],
+      "Science": [
+        49,
+        67,
+        64,
+        49
+      ],
+      "English": [
+        65,
+        68,
+        61,
+        48
+      ],
+      "History": [
+        50,
+        47,
+        54,
+        59
+      ],
+      "Computer Science": [
+        48,
+        59,
+        51,
+        60
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 92,
+    "grade": "D"
+  },
+  {
+    "id": "CS4059",
+    "name": "Divya Iyer",
+    "class": "CS4",
+    "email": "cs4059@cs.edu",
+    "marks": {
+      "Mathematics": [
+        56,
+        59,
+        67,
+        71
+      ],
+      "Science": [
+        74,
+        71,
+        71,
+        74
+      ],
+      "English": [
+        61,
+        69,
+        67,
+        65
+      ],
+      "History": [
+        58,
+        70,
+        61,
+        54
+      ],
+      "Computer Science": [
+        63,
+        63,
+        63,
+        61
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 76,
+    "grade": "C"
+  },
+  {
+    "id": "CS4060",
+    "name": "Arun Bansal",
+    "class": "CS4",
+    "email": "cs4060@cs.edu",
+    "marks": {
+      "Mathematics": [
+        86,
+        78,
+        88,
+        72
+      ],
+      "Science": [
+        88,
+        85,
+        70,
+        88
+      ],
+      "English": [
+        90,
+        89,
+        90,
+        78
+      ],
+      "History": [
+        71,
+        86,
+        80,
+        86
+      ],
+      "Computer Science": [
+        72,
+        85,
+        73,
+        77
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 80,
+    "grade": "A"
+  },
+  {
+    "id": "CS4061",
+    "name": "Chirag Mehta",
+    "class": "CS4",
+    "email": "cs4061@cs.edu",
+    "marks": {
+      "Mathematics": [
+        54,
+        60,
+        63,
+        58
+      ],
+      "Science": [
+        62,
+        66,
+        66,
+        63
+      ],
+      "English": [
+        70,
+        64,
+        69,
+        55
+      ],
+      "History": [
+        67,
+        58,
+        62,
+        67
+      ],
+      "Computer Science": [
+        64,
+        53,
+        62,
+        51
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 97,
+    "grade": "C"
+  },
+  {
+    "id": "CS4062",
+    "name": "Zara Joshi",
+    "class": "CS4",
+    "email": "cs4062@cs.edu",
+    "marks": {
+      "Mathematics": [
+        77,
+        83,
+        66,
+        69
+      ],
+      "Science": [
+        84,
+        77,
+        65,
+        84
+      ],
+      "English": [
+        83,
+        75,
+        74,
+        80
+      ],
+      "History": [
+        70,
+        66,
+        85,
+        75
+      ],
+      "Computer Science": [
+        83,
+        74,
+        77,
+        78
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 87,
+    "grade": "B"
+  },
+  {
+    "id": "CS1064",
+    "name": "Travis Head",
+    "class": "CS1",
+    "email": "travis@cs.edu",
+    "marks": {
+      "Mathematics": [
+        70,
+        69,
+        84,
+        90
+      ],
+      "Science": [
+        50,
+        64,
+        67,
+        71
+      ],
+      "English": [
+        71,
+        72,
+        83,
+        84
+      ],
+      "History": [
+        45,
+        90,
+        74,
+        65
+      ],
+      "Computer Science": [
+        90,
+        71,
+        82,
+        59
+      ]
+    },
+    "exams": [
+      "Unit Test 1",
+      "Mid Term",
+      "Unit Test 2",
+      "Final"
+    ],
+    "attendance": 70,
+    "grade": "B"
+  }
+]
