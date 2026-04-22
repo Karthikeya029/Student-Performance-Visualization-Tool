@@ -12,10 +12,18 @@ if(typeof Chart!=='undefined'){
   Chart.defaults.plugins.legend.labels.pointStyleWidth=8;
 }
 
-const PALETTE  = ['#3b5bdb','#f76707','#2f9e44','#ae3ec9','#1098ad','#e03131','#f59f00'];
+// Pastel-first palette for charts (soft but still readable on white)
+const PALETTE  = ['#6B8FF0','#F2A865','#6CCF9B','#B991F2','#66C7D8','#F29AA2','#EBCB6B'];
 const CLASSES  = ['CS1','CS2','CS3','CS4'];
-const SUBJECTS = ['Mathematics','Science','English','History','Computer Science'];
-const EXAMS    = ['Unit Test 1','Mid Term','Unit Test 2','Final'];
+const SUBJECTS = ['Mathematics','Physics','English','French','DSA'];
+const SUBJECT_COLOR_MAP = {
+  Mathematics: '#6B8FF0',
+  Physics:     '#F2A865',
+  English:     '#6CCF9B',
+  French:      '#B991F2',
+  DSA:         '#66C7D8'
+};
+const EXAMS    = ['Minor 1','Mid Term','Minor 2','Final'];
 
 const _charts = {};
 function mkChart(id, cfg) {
@@ -25,7 +33,20 @@ function mkChart(id, cfg) {
 }
 
 function gradeColor(g) {
-  return {'A+':'#2f9e44','A':'#40c057','B':'#3b5bdb','C':'#f76707','D':'#fd7e14','F':'#e03131'}[g] || '#868e96';
+  return {
+    'A+':'#6CCF9B',
+    'A':'#8FE0B3',
+    'B':'#6B8FF0',
+    'C':'#F2A865',
+    'D':'#EBCB6B',
+    'F':'#F29AA2'
+  }[g] || '#A3A3B3';
+}
+function subjectColor(subject) {
+  return SUBJECT_COLOR_MAP[subject] || '#868e96';
+}
+function subjectColorsFor(list) {
+  return list.map(subjectColor);
 }
 function calcGrade(avg) {
   if(avg>=90)return'A+'; if(avg>=80)return'A'; if(avg>=70)return'B';
@@ -187,6 +208,8 @@ function _validateNumber(el, label, min, max) {
   }
 
   _clearErr(el);
+  // Normalize (removes leading zeros like 0009 -> 9)
+  el.value = String(v);
   el.style.borderColor = '#2f9e44'; // green = valid
   return { ok: true, value: v };
 }

@@ -22,8 +22,8 @@ async function connectMySQL() {
   try {
     await sequelize.authenticate();
     console.log('✅ MySQL connected →', `${process.env.MYSQL_HOST || 'localhost'}/${process.env.MYSQL_DATABASE || 'edutrack_marks'}`);
-    // sync: alter updates columns without dropping data
-    await sequelize.sync({ alter: true });
+    // sync: avoid alter in dev to prevent index explosion
+    await sequelize.sync();
     console.log('✅ MySQL tables synced');
   } catch (err) {
     console.error('❌ MySQL failed:', err.message);

@@ -28,7 +28,7 @@ router.get('/summary',           auth, coordOrTeacher, summary);
 router.get('/subject/:subject',  auth, coordOrTeacher, subjectSummary);
 router.get('/:id',               auth, getOne);
 router.post('/',                 auth, coordOnly, create);
-router.put('/:id',               auth, coordOnly, update);
+router.put('/:id',               auth, coordOrTeacher, update);
 router.delete('/:id',            auth, coordOnly, remove);
 
 module.exports = router;

@@ -46,12 +46,12 @@
   },
   {
     "id": 6,
-    "username": "teacher_science",
+    "username": "teacher_physics",
     "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
     "role": "teacher",
     "name": "Prof. Sunita Patel",
     "class": null,
-    "subject": "Science"
+    "subject": "Physics"
   },
   {
     "id": 7,
@@ -64,21 +64,21 @@
   },
   {
     "id": 8,
-    "username": "teacher_history",
+    "username": "teacher_french",
     "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
     "role": "teacher",
     "name": "Prof. Kavitha Nair",
     "class": null,
-    "subject": "History"
+    "subject": "French"
   },
   {
     "id": 9,
-    "username": "teacher_cs",
+    "username": "teacher_dsa",
     "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
     "role": "teacher",
     "name": "Prof. Rajesh Gupta",
     "class": null,
-    "subject": "Computer Science"
+    "subject": "DSA"
   },
   {
     "id": 10,

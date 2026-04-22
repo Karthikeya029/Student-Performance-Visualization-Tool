@@ -27,6 +27,72 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);m
 .un{font-size:13px;font-weight:500;color:rgba(255,255,255,.8)}
 .blog{padding:6px 12px;border-radius:6px;background:rgba(255,255,255,.07);border:none;color:rgba(255,255,255,.5);font-size:12px;cursor:pointer;transition:all .15s}
 .blog:hover{background:rgba(224,49,49,.2);color:#ff6b6b}
+/* ── Profile dropdown ── */
+.profile-trigger{display:flex;align-items:center;gap:8px;cursor:pointer;padding:5px 10px;border-radius:8px;transition:background .15s;position:relative}
+.profile-trigger:hover{background:rgba(255,255,255,.08)}
+.profile-dropdown{position:absolute;top:54px;right:0;width:220px;background:#fff;border-radius:14px;border:1px solid var(--border);box-shadow:0 12px 40px rgba(0,0,0,.14);z-index:700;display:none;flex-direction:column;overflow:hidden;animation:pdIn .18s cubic-bezier(.16,1,.3,1)}
+.profile-dropdown.open{display:flex}
+@keyframes pdIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+.pd-header{display:flex;align-items:center;gap:12px;padding:16px 16px 12px}
+.pd-av{width:40px;height:40px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:16px;font-weight:800;color:#fff;flex-shrink:0}
+.pd-name{font-weight:700;font-size:14px;color:var(--ink)}
+.pd-role{font-size:11px;color:var(--muted);margin-top:1px}
+.pd-divider{height:1px;background:var(--border);margin:0}
+.pd-item{display:flex;align-items:center;gap:10px;padding:11px 16px;background:none;border:none;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;color:var(--ink);cursor:pointer;text-align:left;transition:background .15s;width:100%}
+.pd-item:hover{background:rgba(59,91,219,.05)}
+.pd-icon{font-size:15px;width:20px;text-align:center}
+.pd-logout{color:#e03131}.pd-logout:hover{background:rgba(224,49,49,.06)}
+/* ── Modals ── */
+.modal-overlay{position:fixed;inset:0;background:rgba(13,15,26,.45);z-index:800;display:none;align-items:center;justify-content:center;animation:fadeIn .2s ease}
+.modal-overlay.open{display:flex}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.modal{background:#fff;border-radius:20px;padding:0;width:420px;max-width:92vw;box-shadow:0 24px 80px rgba(0,0,0,.18);animation:modalIn .22s cubic-bezier(.16,1,.3,1);overflow:hidden}
+@keyframes modalIn{from{opacity:0;transform:translateY(24px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.modal-head{padding:24px 28px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.modal-head h2{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:var(--ink)}
+.modal-close{background:none;border:none;font-size:22px;cursor:pointer;color:#9ca3af;line-height:1;padding:4px;border-radius:6px;transition:all .15s}
+.modal-close:hover{background:var(--paper);color:var(--ink)}
+.modal-body{padding:24px 28px}
+/* Profile info rows */
+.pi-row{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid var(--border)}
+.pi-row:last-child{border-bottom:none}
+.pi-icon{width:36px;height:36px;border-radius:10px;background:rgba(59,91,219,.08);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.pi-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:2px}
+.pi-value{font-size:14px;font-weight:600;color:var(--ink)}
+/* Profile avatar large */
+.profile-av-lg{width:72px;height:72px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:28px;font-weight:800;color:#fff;margin:0 auto 16px;flex-shrink:0}
+.profile-av-wrap{text-align:center;padding-bottom:20px;border-bottom:1px solid var(--border);margin-bottom:4px}
+/* Form fields in modal */
+.mfield{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.mfield label{font-size:12px;font-weight:600;color:var(--ink)}
+.mfield input{padding:11px 14px;border:2px solid var(--border);border-radius:10px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--ink);background:var(--paper);outline:none;transition:border-color .2s}
+.mfield input:focus{border-color:var(--accent);background:#fff}
+.mfield .hint{font-size:11px;color:var(--muted);margin-top:2px}
+.mbtn{width:100%;padding:13px;background:var(--accent);color:#fff;border:none;border-radius:10px;font-family:'Syne',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s;margin-top:4px}
+.mbtn:hover{background:#2f4cc5;transform:translateY(-1px)}
+.mbtn:active{transform:translateY(0)}
+.msg-ok{background:rgba(47,158,68,.1);border:1px solid rgba(47,158,68,.25);border-radius:8px;padding:10px 14px;font-size:13px;color:#2f9e44;margin-bottom:14px;display:none}
+.msg-err{background:rgba(224,49,49,.08);border:1px solid rgba(224,49,49,.25);border-radius:8px;padding:10px 14px;font-size:13px;color:#e03131;margin-bottom:14px;display:none}
+.msg-ok.show,.msg-err.show{display:block}
+/* Password strength bar */
+.pw-strength{height:4px;border-radius:100px;margin-top:6px;transition:all .3s}
+/* Subject attendance */
+.sa-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:24px}
+.sa-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;text-align:center}
+.sa-card .sa-subj{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px}
+.sa-donut{position:relative;width:90px;height:90px;margin:0 auto 10px}
+.sa-donut svg{width:90px;height:90px;transform:rotate(-90deg)}
+.sa-donut-label{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:17px;font-weight:800;color:var(--ink)}
+.sa-status{font-size:12px;font-weight:600;margin-top:6px}
+.sa-status.good{color:#2f9e44}.sa-status.avg{color:#f76707}.sa-status.low{color:#e03131}
+.oa-card{background:var(--ink);border-radius:14px;padding:22px 28px;color:#fff;display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;position:relative;overflow:hidden}
+.oa-card::before{content:'';position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(59,91,219,.3),transparent 70%);right:-40px;top:-40px}
+.oa-val{font-family:'Syne',sans-serif;font-size:44px;font-weight:800;color:#fff;line-height:1}
+.oa-lbl{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:rgba(255,255,255,.5);margin-top:4px}
+.oa-status{padding:6px 16px;border-radius:100px;font-size:13px;font-weight:700}
+.oa-status.good{background:rgba(47,158,68,.2);color:#6ee7b7}
+.oa-status.warn{background:rgba(247,103,7,.2);color:#fed7aa}
+.oa-status.bad {background:rgba(224,49,49,.2);color:#fca5a5}
 .main{padding:28px;max-width:1200px;margin:0 auto}
 .page{display:none}.page.active{display:block}
 /* Hero */
@@ -99,14 +165,39 @@ tr.row-flash td{animation:rflash .9s ease}
     <button class="tni" onclick="nav('marks',this)">📝 My Marks</button>
     <button class="tni" onclick="nav('charts',this)">📈 Charts</button>
     <button class="tni" onclick="nav('compare',this)">🏆 Class Rank</button>
+    <button class="tni" onclick="nav('attendance',this)">📅 Attendance</button>
   </nav>
   <div class="tuser">
     <button class="notif-btn" id="notif-toggle-btn" onclick="toggleNotifPanel()">
       🔔<span class="notif-badge" id="notif-badge"></span>
     </button>
-    <div class="av" id="sav">S</div>
-    <span class="un" id="sname">Student</span>
-    <button class="blog" onclick="logout()">Sign Out</button>
+    <!-- Profile dropdown trigger -->
+    <div class="profile-trigger" id="profile-trigger" onclick="toggleProfileDropdown()">
+      <div class="av" id="sav">S</div>
+      <span class="un" id="sname">Student</span>
+      <span style="color:rgba(255,255,255,.4);font-size:10px;margin-left:2px">▾</span>
+    </div>
+    <!-- Profile dropdown menu -->
+    <div class="profile-dropdown" id="profile-dropdown">
+      <div class="pd-header">
+        <div class="pd-av" id="pd-av">S</div>
+        <div>
+          <div class="pd-name" id="pd-name">Student</div>
+          <div class="pd-role">Student</div>
+        </div>
+      </div>
+      <div class="pd-divider"></div>
+      <button class="pd-item" onclick="openProfile()">
+        <span class="pd-icon">👤</span> View Profile
+      </button>
+      <button class="pd-item" onclick="openChangePassword()">
+        <span class="pd-icon">🔒</span> Change Password
+      </button>
+      <div class="pd-divider"></div>
+      <button class="pd-item pd-logout" onclick="logout()">
+        <span class="pd-icon">←</span> Sign Out
+      </button>
+    </div>
   </div>
 </header>
 
@@ -124,6 +215,80 @@ tr.row-flash td{animation:rflash .9s ease}
   </div>
 </div>
 <div id="notif-overlay" onclick="closeNotif()" style="position:fixed;inset:0;background:rgba(0,0,0,.15);z-index:599;display:none"></div>
+
+<!-- ── Profile Modal ─────────────────────────────────────────── -->
+<div class="modal-overlay" id="profile-modal" onclick="closeProfileOnOverlay(event)">
+  <div class="modal">
+    <div class="modal-head">
+      <h2>My Profile</h2>
+      <button class="modal-close" onclick="closeProfile()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="profile-av-wrap">
+        <div class="profile-av-lg" id="pm-av">S</div>
+        <div style="font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:var(--ink)" id="pm-name">—</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:3px" id="pm-role">Student</div>
+      </div>
+      <div class="pi-row">
+        <div class="pi-icon">🆔</div>
+        <div><div class="pi-label">Student ID</div><div class="pi-value" id="pm-id">—</div></div>
+      </div>
+      <div class="pi-row">
+        <div class="pi-icon">🏫</div>
+        <div><div class="pi-label">Class</div><div class="pi-value" id="pm-class">—</div></div>
+      </div>
+      <div class="pi-row">
+        <div class="pi-icon">📧</div>
+        <div><div class="pi-label">Email</div><div class="pi-value" id="pm-email">—</div></div>
+      </div>
+      <div class="pi-row">
+        <div class="pi-icon">📊</div>
+        <div><div class="pi-label">Overall Average</div><div class="pi-value" id="pm-avg">—</div></div>
+      </div>
+      <div class="pi-row">
+        <div class="pi-icon">🎓</div>
+        <div><div class="pi-label">Grade</div><div class="pi-value" id="pm-grade">—</div></div>
+      </div>
+      <div class="pi-row">
+        <div class="pi-icon">📅</div>
+        <div><div class="pi-label">Attendance</div><div class="pi-value" id="pm-att">—</div></div>
+      </div>
+      <div class="pi-row">
+        <div class="pi-icon">🔑</div>
+        <div><div class="pi-label">Username</div><div class="pi-value" id="pm-username">—</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Change Password Modal ──────────────────────────────────── -->
+<div class="modal-overlay" id="pw-modal" onclick="closePwOnOverlay(event)">
+  <div class="modal">
+    <div class="modal-head">
+      <h2>Change Password</h2>
+      <button class="modal-close" onclick="closePw()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="msg-ok" id="pw-ok">✅ Password changed successfully!</div>
+      <div class="msg-err" id="pw-err"></div>
+      <div class="mfield">
+        <label>Current Password</label>
+        <input type="password" id="pw-current" placeholder="Enter your current password"/>
+      </div>
+      <div class="mfield">
+        <label>New Password</label>
+        <input type="password" id="pw-new" placeholder="Minimum 6 characters" oninput="checkPwStrength(this)"/>
+        <div class="pw-strength" id="pw-strength-bar" style="background:var(--border);width:0%"></div>
+        <div class="hint" id="pw-strength-label"></div>
+      </div>
+      <div class="mfield">
+        <label>Confirm New Password</label>
+        <input type="password" id="pw-confirm" placeholder="Re-enter new password"/>
+      </div>
+      <button class="mbtn" onclick="doChangePassword()" id="pw-btn">Update Password</button>
+    </div>
+  </div>
+</div>
 
 <main class="main">
 <!-- HOME -->
@@ -184,6 +349,28 @@ tr.row-flash td{animation:rflash .9s ease}
     </table></div>
   </div>
 </div>
+<!-- ATTENDANCE PAGE -->
+<div class="page" id="page-attendance">
+  <!-- Overall attendance hero -->
+  <div class="oa-card">
+    <div style="z-index:1">
+      <div class="oa-val" id="oa-val">—</div>
+      <div class="oa-lbl">Overall Attendance</div>
+    </div>
+    <div style="z-index:1;text-align:right">
+      <div class="oa-status" id="oa-status">—</div>
+      <div style="font-size:12px;color:rgba(255,255,255,.5);margin-top:6px">Minimum required: 75%</div>
+    </div>
+  </div>
+  <!-- Subject attendance donut cards -->
+  <div class="sa-grid" id="sa-grid"></div>
+  <!-- Bar chart -->
+  <div class="card">
+    <div class="ct">Subject-wise Attendance <span class="badge">Bar</span></div>
+    <canvas id="sa-bar-chart" height="200"></canvas>
+  </div>
+</div>
+
 </main>
 
 <script src="js/charts.js"></script>
@@ -195,6 +382,10 @@ const scls  = localStorage.getItem('userClass');
 if (!token || localStorage.getItem('role') !== 'student') window.location.href = '/';
 document.getElementById('sname').textContent = sname;
 document.getElementById('sav').textContent   = (sname || 'S')[0].toUpperCase();
+// Populate dropdown header
+const _initLetter = (sname || 'S')[0].toUpperCase();
+if (document.getElementById('pd-av'))   document.getElementById('pd-av').textContent   = _initLetter;
+if (document.getElementById('pd-name')) document.getElementById('pd-name').textContent = sname || 'Student';
 
 let vizData = null, activePage = 'home';
 let notifications = [];
@@ -228,6 +419,7 @@ socket.on('reconnect', () => {
 
 // Bell notification — arrives via personal room 'student:CS1001'
 socket.on('notification', (data) => {
+  console.log('📩 Notification received:', data);
   addNotification(
     data.icon    || '🔔',
     data.title   || 'Notification',
@@ -242,7 +434,8 @@ socket.on('marks_updated', async () => {
   if (activePage === 'home')    renderHome();
   if (activePage === 'marks')   renderMarks();
   if (activePage === 'charts')  renderCharts();
-  if (activePage === 'compare') renderCompare();
+  if (activePage === 'compare')    renderCompare();
+  if (activePage === 'attendance') renderAttendance();
   document.querySelectorAll('.stile').forEach(t => {
     t.classList.remove('flash'); void t.offsetWidth; t.classList.add('flash');
   });
@@ -369,7 +562,8 @@ function nav(p, el) {
   if (p === 'home')    renderHome();
   if (p === 'marks')   renderMarks();
   if (p === 'charts')  renderCharts();
-  if (p === 'compare') renderCompare();
+  if (p === 'compare')    renderCompare();
+  if (p === 'attendance') renderAttendance();
 }
 
 async function refreshViz() {
@@ -396,18 +590,28 @@ function renderHome() {
     document.getElementById('stiles').innerHTML = barData.map((d, i) => `
       <div class="stile">
         <div class="sn">${d.subject.split(' ')[0]}</div>
-        <div class="sv" style="color:${PALETTE[i]}">${d.average}</div>
+        <div class="sv" style="color:${subjectColor(d.subject)}">${d.average}</div>
         <div class="ss">/ 100</div>
       </div>`).join('');
 
     mkChart('h-line', {
       type: 'line',
-      data: { labels: EXAMS, datasets: lineData.map((d, i) => ({ label: d.label, data: d.data, borderColor: PALETTE[i], backgroundColor: PALETTE[i]+'18', tension: .35, fill: false, pointRadius: 4 })) },
+      data: { labels: EXAMS, datasets: lineData.map(d => ({ label: d.label, data: d.data, borderColor: subjectColor(d.label), backgroundColor: subjectColor(d.label)+'18', tension: .35, fill: false, pointRadius: 4 })) },
       options: { responsive: true, scales: { y: { min: 0, max: 100, grid: { color: '#f0ece6' } }, x: { grid: { display: false } } }, plugins: { legend: { position: 'bottom', labels: { font: { size: 10 } } } } }
     });
     mkChart('h-radar', {
       type: 'radar',
-      data: { labels: radarData.map(d => d.subject), datasets: [{ data: radarData.map(d => d.score), borderColor: '#3b5bdb', backgroundColor: 'rgba(59,91,219,.15)', pointBackgroundColor: '#3b5bdb', pointRadius: 4 }] },
+      data: {
+        labels: radarData.map(d => d.subject),
+        datasets: [{
+          data: radarData.map(d => d.score),
+          borderColor: '#9BB2DE',
+          backgroundColor: 'rgba(155,178,222,.2)',
+          pointBackgroundColor: radarData.map(d => subjectColor(d.subject)),
+          pointBorderColor: radarData.map(d => subjectColor(d.subject)),
+          pointRadius: 4
+        }]
+      },
       options: { responsive: true, scales: { r: { min: 0, max: 100, ticks: { display: false }, grid: { color: '#e2ddd6' } } }, plugins: { legend: { display: false } } }
     });
   } else {
@@ -447,9 +651,9 @@ function renderMarks() {
         <thead>
           <tr>
             <th>Subject</th>
-            <th>Unit Test 1</th>
+            <th>Minor 1</th>
             <th>Mid Term</th>
-            <th>Unit Test 2</th>
+            <th>Minor 2</th>
             <th>Final</th>
             <th>Average</th>
             <th>Grade</th>
@@ -467,9 +671,23 @@ function renderCharts() {
     showToast('No marks data available yet', 'warn');
     return;
   }
-  mkChart('c-line', { type:'line', data:{ labels:EXAMS, datasets:lineData.map((d,i)=>({ label:d.label, data:d.data, borderColor:PALETTE[i], backgroundColor:PALETTE[i]+'18', tension:.35, fill:false, pointRadius:5 })) }, options:{ responsive:true, scales:{ y:{ min:0, max:100, grid:{ color:'#f0ece6' } }, x:{ grid:{ display:false } } }, plugins:{ legend:{ position:'bottom' } } } });
-  mkChart('c-bar',  { type:'bar',  data:{ labels:barData.map(d=>d.subject.split(' ')[0]), datasets:[{ data:barData.map(d=>d.average), backgroundColor:PALETTE, borderRadius:8 }] }, options:{ responsive:true, plugins:{ legend:{ display:false } }, scales:{ y:{ min:0, max:100, grid:{ color:'#f0ece6' } }, x:{ grid:{ display:false } } } } });
-  mkChart('c-radar',{ type:'radar', data:{ labels:radarData.map(d=>d.subject), datasets:[{ data:radarData.map(d=>d.score), borderColor:'#3b5bdb', backgroundColor:'rgba(59,91,219,.15)', pointBackgroundColor:'#3b5bdb', pointRadius:5 }] }, options:{ responsive:true, scales:{ r:{ min:0, max:100, ticks:{ display:false }, grid:{ color:'#e2ddd6' } } }, plugins:{ legend:{ display:false } } } });
+  mkChart('c-line', { type:'line', data:{ labels:EXAMS, datasets:lineData.map(d=>({ label:d.label, data:d.data, borderColor:subjectColor(d.label), backgroundColor:subjectColor(d.label)+'18', tension:.35, fill:false, pointRadius:5 })) }, options:{ responsive:true, scales:{ y:{ min:0, max:100, grid:{ color:'#f0ece6' } }, x:{ grid:{ display:false } } }, plugins:{ legend:{ position:'bottom' } } } });
+  mkChart('c-bar',  { type:'bar',  data:{ labels:barData.map(d=>d.subject.split(' ')[0]), datasets:[{ data:barData.map(d=>d.average), backgroundColor:barData.map(d=>subjectColor(d.subject)), borderRadius:8 }] }, options:{ responsive:true, plugins:{ legend:{ display:false } }, scales:{ y:{ min:0, max:100, grid:{ color:'#f0ece6' } }, x:{ grid:{ display:false } } } } });
+  mkChart('c-radar',{
+    type:'radar',
+    data:{
+      labels:radarData.map(d=>d.subject),
+      datasets:[{
+        data:radarData.map(d=>d.score),
+        borderColor:'#9BB2DE',
+        backgroundColor:'rgba(155,178,222,.2)',
+        pointBackgroundColor:radarData.map(d=>subjectColor(d.subject)),
+        pointBorderColor:radarData.map(d=>subjectColor(d.subject)),
+        pointRadius:5
+      }]
+    },
+    options:{ responsive:true, scales:{ r:{ min:0, max:100, ticks:{ display:false }, grid:{ color:'#e2ddd6' } } }, plugins:{ legend:{ display:false } } }
+  });
 }
 
 async function renderCompare() {
@@ -505,6 +723,230 @@ async function renderCompare() {
     }).join('');
   } catch (e) { showToast('❌ ' + e.message, 'err'); }
 }
+
+// ── Profile Dropdown ─────────────────────────────────────────────
+function toggleProfileDropdown() {
+  const dd = document.getElementById('profile-dropdown');
+  dd.classList.toggle('open');
+  // Close when clicking outside
+  if (dd.classList.contains('open')) {
+    setTimeout(() => {
+      document.addEventListener('click', closeDropdownOutside, { once: true });
+    }, 10);
+  }
+}
+function closeDropdownOutside(e) {
+  const trigger = document.getElementById('profile-trigger');
+  const dd      = document.getElementById('profile-dropdown');
+  if (!trigger.contains(e.target) && !dd.contains(e.target)) {
+    dd.classList.remove('open');
+  }
+}
+
+// ── Profile Modal ─────────────────────────────────────────────────
+function openProfile() {
+  document.getElementById('profile-dropdown').classList.remove('open');
+  // Populate from vizData
+  const student = vizData ? vizData.student : null;
+  const avg     = vizData && vizData.barData && vizData.barData.length
+    ? Math.round((vizData.barData.reduce((s, d) => s + d.average, 0) / vizData.barData.length) * 10) / 10
+    : '—';
+
+  document.getElementById('pm-av').textContent       = (sname || 'S')[0].toUpperCase();
+  document.getElementById('pm-name').textContent     = sname || '—';
+  document.getElementById('pm-role').textContent     = 'Student · ' + (scls || '');
+  document.getElementById('pm-id').textContent       = sid  || '—';
+  document.getElementById('pm-class').textContent    = scls || '—';
+  document.getElementById('pm-email').textContent    = student ? (student.email || '—') : '—';
+  document.getElementById('pm-avg').textContent      = avg + (avg !== '—' ? '%' : '');
+  document.getElementById('pm-grade').textContent    = student ? (student.grade || '—') : '—';
+  document.getElementById('pm-att').textContent      = student ? (student.attendance + '%') : '—';
+  document.getElementById('pm-username').textContent = (sid || '').toLowerCase();
+
+  document.getElementById('profile-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeProfile() {
+  document.getElementById('profile-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeProfileOnOverlay(e) {
+  if (e.target === document.getElementById('profile-modal')) closeProfile();
+}
+
+// ── Change Password Modal ─────────────────────────────────────────
+function openChangePassword() {
+  document.getElementById('profile-dropdown').classList.remove('open');
+  // Reset fields
+  ['pw-current','pw-new','pw-confirm'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.value = '';
+  });
+  document.getElementById('pw-ok').classList.remove('show');
+  document.getElementById('pw-err').classList.remove('show');
+  document.getElementById('pw-strength-bar').style.width  = '0%';
+  document.getElementById('pw-strength-bar').style.background = 'var(--border)';
+  document.getElementById('pw-strength-label').textContent = '';
+  document.getElementById('pw-btn').textContent = 'Update Password';
+  document.getElementById('pw-btn').disabled    = false;
+
+  document.getElementById('pw-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => document.getElementById('pw-current').focus(), 100);
+}
+function closePw() {
+  document.getElementById('pw-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closePwOnOverlay(e) {
+  if (e.target === document.getElementById('pw-modal')) closePw();
+}
+
+// Password strength indicator
+function checkPwStrength(el) {
+  const val = el.value;
+  const bar = document.getElementById('pw-strength-bar');
+  const lbl = document.getElementById('pw-strength-label');
+  if (!val) { bar.style.width = '0%'; lbl.textContent = ''; return; }
+  let score = 0;
+  if (val.length >= 6)  score++;
+  if (val.length >= 10) score++;
+  if (/[A-Z]/.test(val)) score++;
+  if (/[0-9]/.test(val)) score++;
+  if (/[^A-Za-z0-9]/.test(val)) score++;
+  const levels = [
+    { pct: '20%', color: '#e03131', label: 'Too weak' },
+    { pct: '40%', color: '#f76707', label: 'Weak' },
+    { pct: '60%', color: '#f59f00', label: 'Fair' },
+    { pct: '80%', color: '#3b5bdb', label: 'Strong' },
+    { pct: '100%',color: '#2f9e44', label: 'Very strong' }
+  ];
+  const lvl = levels[Math.min(score - 1, 4)] || levels[0];
+  bar.style.width      = lvl.pct;
+  bar.style.background = lvl.color;
+  lbl.textContent      = lvl.label;
+  lbl.style.color      = lvl.color;
+}
+
+async function doChangePassword() {
+  const current = document.getElementById('pw-current').value;
+  const newPw   = document.getElementById('pw-new').value;
+  const confirm = document.getElementById('pw-confirm').value;
+  const okEl    = document.getElementById('pw-ok');
+  const errEl   = document.getElementById('pw-err');
+  const btn     = document.getElementById('pw-btn');
+
+  okEl.classList.remove('show');
+  errEl.classList.remove('show');
+
+  // Validate
+  if (!current)           { showPwErr('Please enter your current password'); return; }
+  if (!newPw)             { showPwErr('Please enter a new password'); return; }
+  if (newPw.length < 6)   { showPwErr('New password must be at least 6 characters'); return; }
+  if (newPw !== confirm)  { showPwErr('Passwords do not match'); return; }
+  if (current === newPw)  { showPwErr('New password must be different from current password'); return; }
+
+  btn.textContent = 'Updating…';
+  btn.disabled    = true;
+
+  try {
+    const res = await api('/api/auth/change-password', {
+      method: 'PUT',
+      body:   JSON.stringify({ currentPassword: current, newPassword: newPw })
+    });
+    okEl.classList.add('show');
+    ['pw-current','pw-new','pw-confirm'].forEach(id => {
+      const el = document.getElementById(id); if (el) el.value = '';
+    });
+    document.getElementById('pw-strength-bar').style.width = '0%';
+    document.getElementById('pw-strength-label').textContent = '';
+    btn.textContent = 'Update Password';
+    btn.disabled    = false;
+    // Auto-close after 2 seconds
+    setTimeout(closePw, 2000);
+  } catch (e) {
+    showPwErr(e.message || 'Failed to change password');
+    btn.textContent = 'Update Password';
+    btn.disabled    = false;
+  }
+}
+
+function showPwErr(msg) {
+  const el = document.getElementById('pw-err');
+  el.textContent = '❌ ' + msg;
+  el.classList.add('show');
+}
+
+// ── Render Attendance page ────────────────────────────────────────
+function renderAttendance() {
+  if (!vizData) return;
+  const { student, subjectAttendance } = vizData;
+  const oa = student.attendance || 0;
+
+  // Overall hero
+  document.getElementById('oa-val').textContent = oa + '%';
+  const statusEl = document.getElementById('oa-status');
+  if (oa >= 90)      { statusEl.textContent = '✅ Excellent'; statusEl.className = 'oa-status good'; }
+  else if (oa >= 75) { statusEl.textContent = '✔ Satisfactory'; statusEl.className = 'oa-status good'; }
+  else if (oa >= 60) { statusEl.textContent = '⚠️ At Risk'; statusEl.className = 'oa-status warn'; }
+  else               { statusEl.textContent = '🚨 Critical'; statusEl.className = 'oa-status bad'; }
+
+  const SUBJ = ['Mathematics','Physics','English','French','DSA'];
+  const sa    = subjectAttendance || {};
+
+  // Donut cards
+  document.getElementById('sa-grid').innerHTML = SUBJ.map((s, i) => {
+    const v   = sa[s] !== undefined ? sa[s] : 0;
+    const col = subjectColor(s);
+    const dash = v + ' ' + (100 - v);
+    let statusCls = 'good', statusTxt = '✅ Good';
+    if (v < 75)      { statusCls = 'low';  statusTxt = '🔴 Low'; }
+    else if (v < 90) { statusCls = 'avg';  statusTxt = '🟡 Average'; }
+    return `<div class="sa-card">
+      <div class="sa-subj">${s}</div>
+      <div class="sa-donut">
+        <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e2ddd6" stroke-width="3.2"/>
+          <circle cx="18" cy="18" r="15.9" fill="none" stroke="${col}" stroke-width="3.2"
+            stroke-dasharray="${dash}" stroke-dashoffset="0" stroke-linecap="round"/>
+        </svg>
+        <div class="sa-donut-label">${v}%</div>
+      </div>
+      <div class="sa-status ${statusCls}">${statusTxt}</div>
+    </div>`;
+  }).join('');
+
+  // Bar chart
+  const barVals = SUBJ.map(s => sa[s] !== undefined ? sa[s] : 0);
+  mkChart('sa-bar-chart', {
+    type: 'bar',
+    data: {
+      labels: SUBJ,
+      datasets: [{
+        label: 'Attendance %',
+        data: barVals,
+        backgroundColor: SUBJ.map(subjectColor),
+        borderRadius: 8
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { min: 0, max: 100, grid: { color: '#f0ece6' },
+             ticks: { callback: v => v + '%' } },
+        x: { grid: { display: false } }
+      }
+    }
+  });
+}
+
+// Live subject attendance update
+socket.on('subject_attendance_updated', async (d) => {
+  await refreshViz();
+  if (activePage === 'attendance') renderAttendance();
+  if (activePage === 'home')       renderHome();
+});
 
 // ── Init ──────────────────────────────────────────────────────────
 async function init() {

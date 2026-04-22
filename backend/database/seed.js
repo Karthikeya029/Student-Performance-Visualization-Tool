@@ -13,11 +13,11 @@ const { connectMongo }  = require('./mongoConnection');
 const { connectMySQL }  = require('./mysqlConnection');
 const User              = require('../models/mongo/User');
 const StudentProfile    = require('../models/mongo/StudentProfile');
-const { ExamMark, Attendance, ProcessedResult } = require('../models/mysql');
+const { ExamMark, Attendance, ProcessedResult, SubjectAttendance } = require('../models/mysql');
 
 const USERS_FILE    = path.join(__dirname, '../../database/users.json');
 const STUDENTS_FILE = path.join(__dirname, '../../database/students.json');
-const EXAMS         = ['Unit Test 1','Mid Term','Unit Test 2','Final'];
+const EXAMS         = ['Minor 1','Mid Term','Minor 2','Final'];
 
 function calcGrade(avg) {
   if (avg>=90) return 'A+'; if (avg>=80) return 'A'; if (avg>=70) return 'B';
@@ -107,6 +107,23 @@ async function seed() {
   });
   await ProcessedResult.bulkCreate(processedRows, { ignoreDuplicates: true });
   console.log(`✅ MySQL Processed Results: ${processedRows.length} rows inserted`);
+
+  // ── 6. Subject Attendance ────────────────────────────────────────
+  await SubjectAttendance.destroy({ where: {} });
+  const subjects = ['Mathematics','Physics','English','French','DSA'];
+  const subjAttRows = [];
+  rawStudents.forEach(s => {
+    const base = s.attendance || 85;
+    subjects.forEach(subj => {
+      const variation = Math.floor((Math.random() - 0.5) * 20);
+      const pct = Math.min(100, Math.max(40, base + variation));
+      subjAttRows.push({ studentId: s.id, subject: subj, percentage: Math.round(pct) });
+    });
+  });
+  for (let i = 0; i < subjAttRows.length; i += 500) {
+    await SubjectAttendance.bulkCreate(subjAttRows.slice(i, i+500), { ignoreDuplicates: true });
+  }
+  console.log(`✅ Subject Attendance: ${subjAttRows.length} rows seeded`);
 
   console.log('\n🎉 Seed complete! All 3 databases populated.\n');
   process.exit(0);

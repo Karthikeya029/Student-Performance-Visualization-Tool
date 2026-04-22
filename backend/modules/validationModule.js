@@ -23,7 +23,7 @@ function validateMark(raw) {
  */
 function validateMarksArray(arr) {
   if (!Array.isArray(arr)) return { ok: false, error: 'Marks must be an array' };
-  if (arr.length !== 4)    return { ok: false, error: `Expected 4 marks (Unit Test 1, Mid Term, Unit Test 2, Final), got ${arr.length}` };
+  if (arr.length !== 4)    return { ok: false, error: `Expected 4 marks (Minor 1, Mid Term, Minor 2, Final), got ${arr.length}` };
   const values = [];
   for (let i = 0; i < arr.length; i++) {
     const result = validateMark(arr[i]);
@@ -60,7 +60,7 @@ function validateStudentId(id) {
 /**
  * Validate subject name.
  */
-const VALID_SUBJECTS = ['Mathematics', 'Science', 'English', 'History', 'Computer Science'];
+const VALID_SUBJECTS = ['Mathematics', 'Physics', 'English', 'French', 'DSA']; 
 function validateSubject(subject) {
   if (!subject) return { ok: false, error: 'Subject is required' };
   if (!VALID_SUBJECTS.includes(subject))

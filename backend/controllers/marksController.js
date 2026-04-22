@@ -54,17 +54,15 @@ async function updateMarks(req, res) {
       ...livePayload
     });
 
-    // 5. Notify teacher if coordinator made the change
-    if (user.role === 'coordinator') {
-      io.to('teacher:' + subject).emit('subject_marks_updated', livePayload);
-      notif.notifyTeacher(io, subject, {
-        type:    'marks_updated',
-        icon:    '📝',
-        title:   `Marks updated — ${student.name} (${student.class})`,
-        message: `${subject} updated by ${updaterLabel}. Avg: ${avg}%`,
-        ...livePayload
-      });
-    }
+    // 5. Notify teacher (both when teacher or coordinator updates)
+    io.to('teacher:' + subject).emit('subject_marks_updated', livePayload);
+    notif.notifyTeacher(io, subject, {
+      type:    'marks_updated',
+      icon:    '📝',
+      title:   `Marks updated — ${student.name} (${student.class})`,
+      message: `${subject} updated by ${updaterLabel}. Avg: ${avg}%`,
+      ...livePayload
+    });
 
     // 6. Performance alert if avg < 60
     if (avg < 60) {

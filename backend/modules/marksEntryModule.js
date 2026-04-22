@@ -5,8 +5,8 @@
 const { updateSubjectMarks, getStudentById, getAllStudents } = require('./studentDataModule');
 const { validateMarksArray, validateSubject } = require('./validationModule');
 
-const SUBJECTS = ['Mathematics','Science','English','History','Computer Science'];
-const EXAMS    = ['Unit Test 1','Mid Term','Unit Test 2','Final'];
+const SUBJECTS = ['Mathematics','Physics','English','French','DSA'];
+const EXAMS    = ['Minor 1','Mid Term','Minor 2','Final'];
 
 async function teacherUpdateMarks(studentId, subject, teacherSubject, marksArray) {
   if (subject !== teacherSubject)
