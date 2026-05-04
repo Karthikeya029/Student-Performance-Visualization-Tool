@@ -65,6 +65,15 @@ npm start
 ```
 frontend/login.html
 ```
+## 🗄 Database Setup
+
+- Start MongoDB
+- Create MySQL database:
+  CREATE DATABASE edutrack_marks;
+
+   ## 📌 Note
+Sample data is pre-seeded for demo purposes.
+Use provided credentials to login.
 
 ---
 
