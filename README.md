@@ -69,7 +69,7 @@ frontend/login.html
 
 - Start MongoDB
 - Create MySQL database:
-  CREATE DATABASE edutrack_marks;
+- CREATE DATABASE edutrack_marks;
 
    ## 📌 Note
 Sample data is pre-seeded for demo purposes.
