@@ -14,14 +14,20 @@ const { connectMySQL }  = require('./mysqlConnection');
 const User              = require('../models/mongo/User');
 const StudentProfile    = require('../models/mongo/StudentProfile');
 const { ExamMark, Attendance, ProcessedResult, SubjectAttendance } = require('../models/mysql');
+const { EXAMS, averageMarks } = require('../modules/examConfig');
 
 const USERS_FILE    = path.join(__dirname, '../../database/users.json');
 const STUDENTS_FILE = path.join(__dirname, '../../database/students.json');
-const EXAMS         = ['Minor 1','Mid Term','Minor 2','Final'];
 
 function calcGrade(avg) {
   if (avg>=90) return 'A+'; if (avg>=80) return 'A'; if (avg>=70) return 'B';
   if (avg>=60) return 'C';  if (avg>=50) return 'D'; return 'F';
+}
+
+function calcOverallFromMarks(marks = {}) {
+  const subjectScores = Object.values(marks).map(arr => averageMarks(arr));
+  if (!subjectScores.length) return 0;
+  return Math.round((subjectScores.reduce((sum, score) => sum + score, 0) / subjectScores.length) * 10) / 10;
 }
 
 async function seed() {
@@ -49,14 +55,17 @@ async function seed() {
 
   // ── 2. MongoDB: Student Profiles ─────────────────────────────
   await StudentProfile.deleteMany({});
-  const profileDocs = rawStudents.map(s => ({
-    studentId:  s.id,
-    name:       s.name,
-    class:      s.class,
-    email:      s.email || `${s.id.toLowerCase()}@cs.edu`,
-    attendance: s.attendance || 100,
-    grade:      s.grade || 'N/A'
-  }));
+  const profileDocs = rawStudents.map(s => {
+    const overallAverage = calcOverallFromMarks(s.marks || {});
+    return {
+      studentId:  s.id,
+      name:       s.name,
+      class:      s.class,
+      email:      s.email || `${s.id.toLowerCase()}@cs.edu`,
+      attendance: s.attendance || 100,
+      grade:      calcGrade(overallAverage)
+    };
+  });
   await StudentProfile.insertMany(profileDocs);
   console.log(`✅ MongoDB Student Profiles: ${profileDocs.length} inserted`);
 
@@ -92,8 +101,8 @@ async function seed() {
     const subjectAverages = {};
     let total = 0, count = 0;
     for (const [subj, arr] of Object.entries(s.marks || {})) {
-      const avg = arr.reduce((a,b)=>a+b,0) / arr.length;
-      subjectAverages[subj] = Math.round(avg * 10) / 10;
+      const avg = averageMarks(arr);
+      subjectAverages[subj] = avg;
       total += avg; count++;
     }
     const overallAverage = count ? Math.round((total/count)*10)/10 : 0;

@@ -4,9 +4,8 @@
 // ─────────────────────────────────────────────────────────────────
 const { updateSubjectMarks, getStudentById, getAllStudents } = require('./studentDataModule');
 const { validateMarksArray, validateSubject } = require('./validationModule');
+const { EXAMS, averageMarks } = require('./examConfig');
 
-const SUBJECTS = ['Mathematics','Physics','English','French','DSA'];
-const EXAMS    = ['Minor 1','Mid Term','Minor 2','Final'];
 
 async function teacherUpdateMarks(studentId, subject, teacherSubject, marksArray) {
   if (subject !== teacherSubject)
@@ -33,9 +32,9 @@ async function getSubjectByClass(subject, cls) {
   const students = await getAllStudents(cls);
   return students.map(s => {
     const arr = s.marks[subject] || [0,0,0,0];
-    const avg = Math.round((arr.reduce((a,b)=>a+b,0)/arr.length)*10)/10;
+    const avg = averageMarks(arr);
     return { id: s.id, name: s.name, class: s.class, marks: arr, average: avg };
   });
 }
 
-module.exports = { teacherUpdateMarks, coordinatorUpdateMarks, getSubjectByClass, SUBJECTS, EXAMS };
+module.exports = { teacherUpdateMarks, coordinatorUpdateMarks, getSubjectByClass, EXAMS };

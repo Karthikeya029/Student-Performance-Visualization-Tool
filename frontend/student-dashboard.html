@@ -323,7 +323,7 @@ tr.row-flash td{animation:rflash .9s ease}
 <div class="page" id="page-charts">
   <div class="g2">
     <div class="card"><div class="ct">Exam-wise Scores <span class="badge">Line</span></div><canvas id="c-line" height="230"></canvas></div>
-    <div class="card"><div class="ct">Subject Averages <span class="badge">Bar</span></div><canvas id="c-bar" height="230"></canvas></div>
+    <div class="card"><div class="ct">Subject Wise Scores <span class="badge">Bar</span></div><canvas id="c-bar" height="230"></canvas></div>
   </div>
   <div class="card"><div class="ct">Final Exam Radar</div>
     <div style="max-width:380px;margin:0 auto"><canvas id="c-radar" height="300"></canvas></div>
@@ -344,7 +344,7 @@ tr.row-flash td{animation:rflash .9s ease}
   </div>
   <div class="card"><div class="ct">Class Leaderboard</div>
     <div class="tbl-wrap"><table id="rank-table">
-      <thead><tr><th>Rank</th><th>Name</th><th>Average</th><th>Grade</th></tr></thead>
+      <thead><tr><th>Rank</th><th>Name</th><th>Score</th><th>Grade</th></tr></thead>
       <tbody></tbody>
     </table></div>
   </div>
@@ -397,8 +397,8 @@ function gradeBadge(g) {
 }
 
 // ── Mark chip helper ──────────────────────────────────────────────
-function markChip(v) {
-  const cls = v >= 80 ? 'mc-hi' : v < 60 ? 'mc-lo' : 'mc-ok';
+function markChip(v, examIndex) {
+  const cls = markToneClass(v, examIndex, 'mc-hi', 'mc-ok', 'mc-lo');
   return `<span class="mc ${cls}">${v}</span>`;
 }
 
@@ -635,11 +635,11 @@ function renderMarks() {
 
   const rows = lineData.map(d => {
     const arr = d.data;
-    const avg = Math.round((arr.reduce((a, b) => a + b, 0) / arr.length) * 10) / 10;
+    const avg = averageMarks(arr);
     const grade = calcGrade(avg);
     return `<tr>
       <td><strong>${d.label}</strong></td>
-      ${arr.map(v => `<td>${markChip(v)}</td>`).join('')}
+      ${arr.map((v, i) => `<td>${markChip(v, i)}</td>`).join('')}
       <td><span class="avpill">${avg}</span></td>
       <td>${gradeBadge(grade)}</td>
     </tr>`;
@@ -655,7 +655,7 @@ function renderMarks() {
             <th>Mid Term</th>
             <th>Minor 2</th>
             <th>Final</th>
-            <th>Average</th>
+            <th>Weighted Score</th>
             <th>Grade</th>
           </tr>
         </thead>

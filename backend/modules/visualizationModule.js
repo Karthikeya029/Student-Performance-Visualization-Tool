@@ -3,7 +3,8 @@
 // ─────────────────────────────────────────────────────────────────
 const StudentProfile  = require('../models/mongo/StudentProfile');
 const { ExamMark, Attendance, SubjectAttendance, ProcessedResult } = require('../models/mysql');
-const { buildMarksMap, buildSubjectAttMap, calcGrade, EXAMS, SUBJECTS } = require('./studentDataModule');
+const { buildMarksMap, buildSubjectAttMap, calcGrade, EXAMS, SUBJECTS, averageMarks } = require('./studentDataModule');
+const { normalizeMark } = require('./examConfig');
 
 const CLASSES = ['CS1','CS2','CS3','CS4'];
 
@@ -32,7 +33,7 @@ async function getStudentVisualization(studentId) {
     lineData:  subjects.map(s => ({ label: s, data: marks[s] })),
     barData:   subjects.map(s => {
       const arr = marks[s];
-      return { subject: s, average: Math.round((arr.reduce((a,b)=>a+b,0)/arr.length)*10)/10 };
+      return { subject: s, average: averageMarks(arr) };
     }),
     radarData: subjects.map(s => ({ subject: s, score: marks[s][3] || 0 })),
     // Subject attendance for the Attendance page
@@ -70,7 +71,7 @@ async function getClassVisualization(cls) {
     for (const subj of SUBJECTS) {
       const arr = allMarks[sid]?.[subj];
       if (!arr) continue;
-      const avg = arr.reduce((a,b)=>a+b,0)/arr.length;
+      const avg = averageMarks(arr);
       subjectTotals[subj] = (subjectTotals[subj]||0) + avg;
       subjectCounts[subj] = (subjectCounts[subj]||0) + 1;
     }
@@ -101,7 +102,7 @@ async function getClassVisualization(cls) {
     for (const sid of ids) {
       for (const subj of SUBJECTS) {
         const arr = allMarks[sid]?.[subj];
-        if (arr) { total+=arr[ei]; cnt++; }
+        if (arr) { total += normalizeMark(arr[ei], ei); cnt++; }
       }
     }
     return { exam, average: cnt ? Math.round((total/cnt)*10)/10 : 0 };
@@ -146,7 +147,7 @@ async function getTeacherSubjectVisualization(subject) {
     let total=0, cnt=0;
     group.forEach(p => {
       const arr = subjectMarks[p.studentId];
-      if (arr) { total+=arr.reduce((a,b)=>a+b,0)/arr.length; cnt++; }
+      if (arr) { total += averageMarks(arr); cnt++; }
     });
     return { class: cls, average: cnt ? Math.round((total/cnt)*10)/10 : 0 };
   });
@@ -169,7 +170,7 @@ async function getTeacherSubjectVisualization(subject) {
       class: cls,
       data: EXAMS.map((_, ei) => {
         let total=0, cnt=0;
-        group.forEach(p => { const arr=subjectMarks[p.studentId]; if(arr){total+=arr[ei];cnt++;} });
+        group.forEach(p => { const arr=subjectMarks[p.studentId]; if(arr){total += normalizeMark(arr[ei], ei);cnt++;} });
         return cnt ? Math.round((total/cnt)*10)/10 : 0;
       })
     };
@@ -180,7 +181,7 @@ async function getTeacherSubjectVisualization(subject) {
   allProfiles.forEach(p => {
     const arr = subjectMarks[p.studentId];
     if (!arr) return;
-    const g = calcGrade(arr.reduce((a,b)=>a+b,0)/arr.length);
+    const g = calcGrade(averageMarks(arr));
     if (gradeDistribution[g]!==undefined) gradeDistribution[g]++;
   });
 

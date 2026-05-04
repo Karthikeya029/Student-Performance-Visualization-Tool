@@ -5,8 +5,8 @@
 // ─────────────────────────────────────────────────────────────────
 const StudentProfile  = require('../models/mongo/StudentProfile');
 const { ExamMark, Attendance, SubjectAttendance, ProcessedResult } = require('../models/mysql');
+const { EXAMS, EXAM_MAX_MARKS, averageMarks } = require('./examConfig');
 
-const EXAMS    = ['Minor 1','Mid Term','Minor 2','Final'];
 const SUBJECTS = ['Mathematics','Physics','English','French','DSA'];
 
 function calcGrade(avg) {
@@ -39,8 +39,8 @@ async function recomputeProcessed(studentId) {
   let total = 0, count = 0;
   for (const subj of subjects) {
     const arr = marks[subj];
-    const avg = arr.reduce((a,b)=>a+b,0) / arr.length;
-    subjectAverages[subj] = Math.round(avg * 10) / 10;
+    const avg = averageMarks(arr);
+    subjectAverages[subj] = avg;
     total += avg; count++;
   }
   const overallAverage = count ? Math.round((total/count)*10)/10 : 0;
@@ -198,7 +198,7 @@ async function getClassSummary(cls) {
 }
 
 async function computeOverall(marks) {
-  const avgs = Object.values(marks).map(arr => arr.reduce((a,b)=>a+b,0)/arr.length);
+  const avgs = Object.values(marks).map(arr => averageMarks(arr));
   if (!avgs.length) return 0;
   return Math.round((avgs.reduce((a,b)=>a+b,0)/avgs.length)*10)/10;
 }
@@ -207,5 +207,5 @@ module.exports = {
   getAllStudents, getStudentById, addStudent,
   updateAttendance, updateSubjectMarks, updateSubjectAttendance, deleteStudent, getClassSummary,
   recomputeProcessed, buildMarksMap, buildSubjectAttMap, computeOverall,
-  EXAMS, SUBJECTS, calcGrade
+  EXAMS, EXAM_MAX_MARKS, SUBJECTS, calcGrade, averageMarks
 };

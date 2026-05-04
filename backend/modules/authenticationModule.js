@@ -47,3 +47,13 @@ async function deleteStudentUser(studentId) {
 }
 
 module.exports = { loginUser, verifyToken, createStudentUser, deleteStudentUser };
+
+
+
+
+
+const token = jwt.sign(
+  { id: user._id.toString(), username: user.username, role: user.role },
+  JWT_SECRET,
+  { expiresIn: '8h' }
+);

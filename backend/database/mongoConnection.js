@@ -1,7 +1,6 @@
-// ─────────────────────────────────────────────────────────────────
 //  DATA LAYER 1 — MongoDB Connection
 //  Stores: User profiles, login credentials, roles
-// ─────────────────────────────────────────────────────────────────
+
 require('dotenv').config();
 const mongoose = require('mongoose');
 

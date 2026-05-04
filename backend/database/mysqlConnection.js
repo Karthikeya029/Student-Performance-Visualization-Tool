@@ -1,4 +1,3 @@
-// ─────────────────────────────────────────────────────────────────
 //  DATA LAYER 2 — MySQL Connection (Sequelize ORM)
 //  Stores: Exam marks, attendance records
 

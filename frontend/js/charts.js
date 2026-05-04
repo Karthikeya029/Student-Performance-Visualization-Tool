@@ -24,6 +24,8 @@ const SUBJECT_COLOR_MAP = {
   DSA:         '#66C7D8'
 };
 const EXAMS    = ['Minor 1','Mid Term','Minor 2','Final'];
+const EXAM_MAX_MARKS = [20, 30, 20, 100];
+const EXAM_WEIGHTS = [10, 30, 10, 50];
 
 const _charts = {};
 function mkChart(id, cfg) {
@@ -41,6 +43,46 @@ function gradeColor(g) {
     'D':'#EBCB6B',
     'F':'#F29AA2'
   }[g] || '#A3A3B3';
+}
+function getExamMaxMark(examIndex) {
+  return EXAM_MAX_MARKS[examIndex] ?? 100;
+}
+function getExamWeight(examIndex) {
+  return EXAM_WEIGHTS[examIndex] ?? 0;
+}
+function getExamLabel(examIndex) {
+  return EXAMS[examIndex] || ('Exam ' + (examIndex + 1));
+}
+function getExamIndexFromInput(el) {
+  const match = (el && el.id ? el.id : '').match(/^m(\d)$/);
+  return match ? Number(match[1]) : null;
+}
+function normalizeMark(mark, examIndex) {
+  const value = Number(mark) || 0;
+  const max = getExamMaxMark(examIndex);
+  return max > 0 ? (value / max) * 100 : 0;
+}
+function weightedContribution(mark, examIndex) {
+  return normalizeMark(mark, examIndex) * (getExamWeight(examIndex) / 100);
+}
+function averageMarks(marks) {
+  if (!Array.isArray(marks) || !marks.length) return 0;
+  const score = marks.reduce((sum, mark, index) => sum + weightedContribution(mark, index), 0);
+  return Math.round(score * 10) / 10;
+}
+function markToneClass(mark, examIndex, highClass, okClass, lowClass) {
+  const pct = normalizeMark(mark, examIndex);
+  return pct >= 80 ? highClass : pct < 60 ? lowClass : okClass;
+}
+function syncMarkInputMeta() {
+  for (let i = 0; i < EXAM_MAX_MARKS.length; i++) {
+    const el = document.getElementById('m' + i);
+    if (!el) continue;
+    const max = getExamMaxMark(i);
+    el.min = '0';
+    el.max = String(max);
+    el.placeholder = '0-' + max;
+  }
 }
 function subjectColor(subject) {
   return SUBJECT_COLOR_MAP[subject] || '#868e96';
@@ -124,7 +166,7 @@ function setLiveStatus(on) {
 
 // ════════════════════════════════════════════════════════════════
 //  INPUT VALIDATION
-//  Rules: whole integers 0–100 ONLY. No decimals, no negatives,
+//  Rules: whole integers only, within each exam's max mark.
 //         no special characters (-, +, e, E, ., etc.)
 // ════════════════════════════════════════════════════════════════
 
@@ -135,7 +177,7 @@ function blockBadKeys(e) {
   const blocked = ['-', '+', 'e', 'E', '.', ',', ' ', '/', '*', '#', '!', '@', '='];
   if (blocked.includes(e.key)) {
     e.preventDefault();
-    showToast('❌ Only whole numbers 0–100 allowed', 'err', 2000);
+    showToast('❌ Only whole numbers are allowed', 'err', 2000);
     return;
   }
   // Also block if pasting would make it non-numeric
@@ -217,7 +259,10 @@ function _validateNumber(el, label, min, max) {
 // ── Public: validate a single mark input ─────────────────────────
 // Returns { ok, value }
 function validateMarkInput(el) {
-  return _validateNumber(el, 'Mark', 0, 100);
+  const examIndex = getExamIndexFromInput(el);
+  const max = examIndex === null ? 100 : getExamMaxMark(examIndex);
+  const label = examIndex === null ? 'Mark' : getExamLabel(examIndex);
+  return _validateNumber(el, label, 0, max);
 }
 
 // ── Public: validate attendance input ────────────────────────────
@@ -236,16 +281,17 @@ function validateAllMarkInputs() {
   for (let i = 0; i < 4; i++) {
     const el = document.getElementById('m' + i);
     if (!el) continue;
-    const result = _validateNumber(el, 'Exam ' + (i+1), 0, 100);
+    const max = getExamMaxMark(i);
+    const result = _validateNumber(el, getExamLabel(i), 0, max);
     if (!result.ok) {
-      errors.push('Exam ' + (i+1) + ': must be a whole number 0–100');
+      errors.push(getExamLabel(i) + ': must be a whole number 0-' + max);
       ok = false;
     } else {
       values.push(result.value);
     }
   }
 
-  if (!ok) showToast('❌ Fix the highlighted marks (whole numbers 0–100 only)', 'err', 3500);
+  if (!ok) showToast('❌ Fix the highlighted marks using each exam\'s allowed range', 'err', 3500);
   return { ok, values, errors };
 }
 
@@ -266,6 +312,12 @@ document.addEventListener('paste', function(e) {
     if (id === 'ns-att')           validateAttendanceInput(el);
   }, 0);
 });
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', syncMarkInputMeta);
+} else {
+  syncMarkInputMeta();
+}
 
 // Inject shared styles once
 (function() {

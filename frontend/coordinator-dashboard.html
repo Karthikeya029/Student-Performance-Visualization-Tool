@@ -137,13 +137,13 @@ tr.row-flash td{animation:rflash .9s ease}
   <div class="err-banner" id="ov-err"></div>
   <div class="stats">
     <div class="sc blue"><div class="sl">Total Students</div><div class="sv" id="st-total">—</div><div class="ss">Enrolled</div></div>
-    <div class="sc grn"><div class="sl">Class Average</div><div class="sv" id="st-avg">—</div><div class="ss">Overall %</div></div>
+    <div class="sc grn"><div class="sl">Class Score</div><div class="sv" id="st-avg">—</div><div class="ss">Weighted overall %</div></div>
     <div class="sc org"><div class="sl">Top Student</div><div class="sv" id="st-top" style="font-size:16px">—</div><div class="ss" id="st-top-s">—</div></div>
     <div class="sc pur"><div class="sl">Avg Attendance</div><div class="sv" id="st-att">—</div><div class="ss">This term</div></div>
   </div>
   <div class="g31">
     <div class="card">
-      <div class="ct">Subject Averages <span class="badge">Bar</span><span class="ts" id="ov-ts"></span></div>
+      <div class="ct">Subject Weighted Scores <span class="badge">Bar</span><span class="ts" id="ov-ts"></span></div>
       <div id="cv-bar-wrap"><div class="spinner"><div class="spin"></div>Loading…</div></div>
       <canvas id="cv-bar" height="200" style="display:none"></canvas>
     </div>
@@ -163,7 +163,7 @@ tr.row-flash td{animation:rflash .9s ease}
       <div class="ct">Top 10 Students</div>
       <div id="top10-wrap"><div class="spinner"><div class="spin"></div>Loading…</div></div>
       <div class="tbl-wrap" style="display:none" id="top10-tbl">
-        <table id="top10"><thead><tr><th>#</th><th>Name</th><th>Avg</th><th>Grade</th></tr></thead><tbody></tbody></table>
+        <table id="top10"><thead><tr><th>#</th><th>Name</th><th>Score</th><th>Grade</th></tr></thead><tbody></tbody></table>
       </div>
     </div>
   </div>
@@ -196,7 +196,7 @@ tr.row-flash td{animation:rflash .9s ease}
     </div>
     <div id="stu-err" class="err-banner"></div>
     <div class="tbl-wrap"><table id="stu-table">
-      <thead><tr><th>ID</th><th>Name</th><th>Grade</th><th>Avg</th><th>Attendance</th><th>Actions</th></tr></thead>
+      <thead><tr><th>ID</th><th>Name</th><th>Grade</th><th>Score</th><th>Attendance</th><th>Actions</th></tr></thead>
       <tbody><tr><td colspan="6"><div class="spinner"><div class="spin"></div>Loading…</div></td></tr></tbody>
     </table></div>
     <div id="stu-count" style="font-size:12px;color:var(--muted);margin-top:10px"></div>
@@ -216,9 +216,9 @@ tr.row-flash td{animation:rflash .9s ease}
       </div>
     </div>
     <div class="mg">
-      <div class="mi"><label>Minor 1</label><input id="m0" type="number" min="0" max="100" onkeydown="blockBadKeys(event)" oninput="validateMarkInput(this)" onblur="validateMarkInput(this)"/></div>
-      <div class="mi"><label>Mid Term</label><input id="m1" type="number" min="0" max="100" onkeydown="blockBadKeys(event)" oninput="validateMarkInput(this)" onblur="validateMarkInput(this)"/></div>
-      <div class="mi"><label>Minor 2</label><input id="m2" type="number" min="0" max="100" onkeydown="blockBadKeys(event)" oninput="validateMarkInput(this)" onblur="validateMarkInput(this)"/></div>
+      <div class="mi"><label>Minor 1</label><input id="m0" type="number" min="0" max="20" placeholder="0-20" onkeydown="blockBadKeys(event)" oninput="validateMarkInput(this)" onblur="validateMarkInput(this)"/></div>
+      <div class="mi"><label>Mid Term</label><input id="m1" type="number" min="0" max="30" placeholder="0-30" onkeydown="blockBadKeys(event)" oninput="validateMarkInput(this)" onblur="validateMarkInput(this)"/></div>
+      <div class="mi"><label>Minor 2</label><input id="m2" type="number" min="0" max="20" placeholder="0-20" onkeydown="blockBadKeys(event)" oninput="validateMarkInput(this)" onblur="validateMarkInput(this)"/></div>
       <div class="mi"><label>Final Exam</label><input id="m3" type="number" min="0" max="100" onkeydown="blockBadKeys(event)" oninput="validateMarkInput(this)" onblur="validateMarkInput(this)"/></div>
     </div>
     <div id="mk-err" class="err-banner"></div>
@@ -237,7 +237,7 @@ tr.row-flash td{animation:rflash .9s ease}
   </div>
   <div class="g2">
     <div class="card"><div class="ct">Exam Progress <span class="badge">Line</span></div><canvas id="an-line" height="220"></canvas></div>
-    <div class="card"><div class="ct">Subject Averages <span class="badge">Bar</span></div><canvas id="an-bar" height="220"></canvas></div>
+    <div class="card"><div class="ct">Subject Weighted Scores <span class="badge">Bar</span></div><canvas id="an-bar" height="220"></canvas></div>
   </div>
   <div class="g2">
     <div class="card"><div class="ct">Radar</div><canvas id="an-radar" height="220"></canvas></div>
@@ -600,7 +600,7 @@ async function loadOverview() {
     document.getElementById('st-avg').textContent   = avgAll;
     document.getElementById('st-att').textContent   = avgAtt;
     document.getElementById('st-top').textContent   = sorted[0] ? sorted[0].name.split(' ')[0] : '—';
-    document.getElementById('st-top-s').textContent = sorted[0] ? sorted[0].overall + ' avg' : '';
+    document.getElementById('st-top-s').textContent = sorted[0] ? sorted[0].overall + ' score' : '';
     document.getElementById('ov-ts').textContent    = 'Updated ' + fmtTime();
 
     // Bar chart
@@ -751,6 +751,7 @@ async function loadMarks() {
     const marks = s.marks[subj] || [0, 0, 0, 0];
     mkLast = [...marks];
     mkLastKey = sid + '|' + subj;
+    syncMarkInputMeta();
     marks.forEach((v, i) => {
       const el = document.getElementById('m' + i);
       if (el) { el.value = v; el.style.borderColor = ''; }
@@ -770,10 +771,11 @@ async function saveMarks() {
   for (let i = 0; i < 4; i++) {
     const el = document.getElementById('m' + i);
     const raw = el ? el.value.trim() : '';
+    const max = getExamMaxMark(i);
     if (raw === '') { showToast('❌ All 4 marks must be filled in', 'err'); hasError = true; break; }
     const v = Number(raw);
-    if (isNaN(v) || v < 0 || v > 100) {
-      showToast('❌ Mark ' + (i+1) + ' must be a number between 0 and 100', 'err');
+    if (isNaN(v) || v < 0 || v > max) {
+      showToast('❌ ' + getExamLabel(i) + ' must be between 0 and ' + max, 'err');
       hasError = true; break;
     }
     marks.push(Math.round(v));

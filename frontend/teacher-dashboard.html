@@ -105,12 +105,12 @@ tr:last-child td{border-bottom:none}tr:hover td{background:rgba(47,158,68,.02)}
   <div class="ph"><h1 id="ov-title">Subject Overview</h1><p>Performance across all 4 classes</p></div>
   <div class="stats">
     <div class="sc grn"><div class="sl">Total Students</div><div class="sv" id="ov-total">—</div><div class="ss">Teaching</div></div>
-    <div class="sc blue"><div class="sl">Overall Avg</div><div class="sv" id="ov-avg">—</div><div class="ss">All classes</div></div>
+    <div class="sc blue"><div class="sl">Overall Score</div><div class="sv" id="ov-avg">—</div><div class="ss">Weighted across classes</div></div>
     <div class="sc org"><div class="sl">Best Class</div><div class="sv" id="ov-best" style="font-size:18px">—</div><div class="ss" id="ov-best-s">—</div></div>
     <div class="sc pur"><div class="sl">Pass Rate</div><div class="sv" id="ov-pass">—</div><div class="ss">Score ≥ 60</div></div>
   </div>
   <div class="g31">
-    <div class="card"><div class="ct">Class-wise Average <span class="badge">Bar</span></div><canvas id="ov-bar" height="200"></canvas></div>
+    <div class="card"><div class="ct">Class-wise Weighted Score <span class="badge">Bar</span></div><canvas id="ov-bar" height="200"></canvas></div>
     <div class="card"><div class="ct">Grade Distribution</div><canvas id="ov-donut" height="200"></canvas></div>
   </div>
   <div class="card"><div class="ct">Exam Trend per Class <span class="badge">Line</span></div><canvas id="ov-line" height="140"></canvas></div>
@@ -127,9 +127,9 @@ tr:last-child td{border-bottom:none}tr:hover td{background:rgba(47,158,68,.02)}
       📌 Editing marks for: <strong id="mk-lbl">—</strong>
     </div>
     <div class="mg">
-      <div class="mi"><label>Minor 1</label><input id="m0" type="number" min="0" max="100" oninput="validateMarkInput(this)" onblur="validateMarkInput(this)" onkeydown="blockInvalidMarkKeys(event)" placeholder="0–100"/></div>
-      <div class="mi"><label>Mid Term</label><input id="m1" type="number" min="0" max="100" oninput="validateMarkInput(this)" onblur="validateMarkInput(this)" onkeydown="blockInvalidMarkKeys(event)" placeholder="0–100"/></div>
-      <div class="mi"><label>Minor 2</label><input id="m2" type="number" min="0" max="100" oninput="validateMarkInput(this)" onblur="validateMarkInput(this)" onkeydown="blockInvalidMarkKeys(event)" placeholder="0–100"/></div>
+      <div class="mi"><label>Minor 1</label><input id="m0" type="number" min="0" max="20" oninput="validateMarkInput(this)" onblur="validateMarkInput(this)" onkeydown="blockInvalidMarkKeys(event)" placeholder="0-20"/></div>
+      <div class="mi"><label>Mid Term</label><input id="m1" type="number" min="0" max="30" oninput="validateMarkInput(this)" onblur="validateMarkInput(this)" onkeydown="blockInvalidMarkKeys(event)" placeholder="0-30"/></div>
+      <div class="mi"><label>Minor 2</label><input id="m2" type="number" min="0" max="20" oninput="validateMarkInput(this)" onblur="validateMarkInput(this)" onkeydown="blockInvalidMarkKeys(event)" placeholder="0-20"/></div>
       <div class="mi"><label>Final Exam</label><input id="m3" type="number" min="0" max="100" oninput="validateMarkInput(this)" onblur="validateMarkInput(this)" onkeydown="blockInvalidMarkKeys(event)" placeholder="0–100"/></div>
     </div>
     <div class="fa"><button class="btn bs" onclick="loadMarks()">↺ Load</button><button class="btn bp" onclick="saveMarks()">💾 Save</button></div>
@@ -148,7 +148,7 @@ tr:last-child td{border-bottom:none}tr:hover td{background:rgba(47,158,68,.02)}
     <div class="ct"><span>Students</span></div>
     <div class="search-row"><input id="sl-search" placeholder="🔍 Search…" oninput="filterSL()"/></div>
     <div class="tbl-wrap"><table id="sl-table">
-      <thead><tr><th>Rank</th><th>ID</th><th>Name</th><th>Class</th><th>Minor 1</th><th>Mid</th><th>Minor 2</th><th>Final</th><th>Avg</th></tr></thead>
+      <thead><tr><th>Rank</th><th>ID</th><th>Name</th><th>Class</th><th>Minor 1</th><th>Mid</th><th>Minor 2</th><th>Final</th><th>Score</th></tr></thead>
       <tbody></tbody>
     </table></div>
     <div id="sl-count" style="font-size:12px;color:var(--muted);margin-top:10px"></div>
@@ -160,11 +160,11 @@ tr:last-child td{border-bottom:none}tr:hover td{background:rgba(47,158,68,.02)}
     <div class="ff" style="max-width:280px"><label>Select Student</label><select id="an-stu" onchange="loadStudentAnalytics()"></select></div>
   </div>
   <div class="g2">
-    <div class="card"><div class="ct">Subject Average <span class="badge">Bar</span></div><canvas id="an-subj-avg" height="220"></canvas></div>
+    <div class="card"><div class="ct">Subject Weighted Score <span class="badge">Bar</span></div><canvas id="an-subj-avg" height="220"></canvas></div>
     <div class="card"><div class="ct">Exam Trend <span class="badge">Line</span></div><canvas id="an-line" height="220"></canvas></div>
   </div>
   <div class="g2">
-    <div class="card"><div class="ct">Exam Averages <span class="badge">Bar</span></div><canvas id="an-exam-bar" height="220"></canvas></div>
+    <div class="card"><div class="ct">Exam Marks <span class="badge">Bar</span></div><canvas id="an-exam-bar" height="220"></canvas></div>
     <div class="card"><div class="ct">Attendance <span class="badge">Bar</span></div><canvas id="an-att-bar" height="160"></canvas></div>
   </div>
 </div>
@@ -246,7 +246,7 @@ function addFeed(msg){
 }
 
 socket.on('subject_marks_updated',async(d)=>{
-  addFeed(`<strong>${d.studentName}</strong> (${d.class}) — avg ${d.avg}%`);
+  addFeed(`<strong>${d.studentName}</strong> (${d.class}) — score ${d.avg}%`);
   if(activePage==='overview') {
     loadOverview();
   }
@@ -408,13 +408,13 @@ function nav(p,el){
 async function loadOverview(){
   const [d,all]=await Promise.all([api('/api/marks/visualize/teacher/'+encodeURIComponent(teacherSubject)),api('/api/students')]);
   const total=all.length;
-  const pass=all.filter(s=>{const a=s.marks[teacherSubject];return a&&a.reduce((x,y)=>x+y,0)/a.length>=60;}).length;
+  const pass=all.filter(s=>{const a=s.marks[teacherSubject];return a&&averageMarks(a)>=60;}).length;
   const allAvg=d.classAverages.reduce((s,x)=>s+x.average,0)/d.classAverages.length;
   const best=d.classAverages.reduce((a,b)=>b.average>a.average?b:a);
   document.getElementById('ov-total').textContent=total;
   document.getElementById('ov-avg').textContent=allAvg.toFixed(1);
   document.getElementById('ov-best').textContent=best.class;
-  document.getElementById('ov-best-s').textContent=best.average+' avg';
+  document.getElementById('ov-best-s').textContent=best.average+' score';
   document.getElementById('ov-pass').textContent=Math.round(pass/total*100)+'%';
   mkChart('ov-bar',{type:'bar',data:{labels:d.classAverages.map(x=>x.class),datasets:[{data:d.classAverages.map(x=>x.average),backgroundColor:PALETTE.slice(0,4),borderRadius:8}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{y:{min:0,max:100,grid:{color:'#f0ece6'}},x:{grid:{display:false}}}}});
   const gd=d.gradeDistribution,gk=Object.keys(gd).filter(k=>gd[k]>0);
@@ -460,6 +460,7 @@ async function loadMarks(){
     const marks = s.marks[teacherSubject] || [0, 0, 0, 0];
     mkLast = [...marks];
     mkLastKey = sid + '|' + teacherSubject;
+    syncMarkInputMeta();
     marks.forEach((v, i) => {
       const el = document.getElementById('m' + i);
       if (el) { el.value = v; el.style.borderColor = ''; }
@@ -478,10 +479,11 @@ async function saveMarks(){
   for (let i = 0; i < 4; i++) {
     const el = document.getElementById('m' + i);
     const raw = el ? el.value.trim() : '';
+    const max = getExamMaxMark(i);
     if (raw === '') { showToast('❌ All 4 marks must be filled in', 'err'); hasError = true; break; }
     const v = Number(raw);
-    if (isNaN(v) || v < 0 || v > 100) {
-      showToast('❌ Mark ' + (i+1) + ' must be between 0 and 100', 'err');
+    if (isNaN(v) || v < 0 || v > max) {
+      showToast('❌ ' + getExamLabel(i) + ' must be between 0 and ' + max, 'err');
       hasError = true; break;
     }
     marks.push(Math.round(v));
@@ -518,7 +520,7 @@ async function loadSL(cls){
   const data=await api(cls?'/api/students?cls='+cls:'/api/students');
   slData=data.map(s=>{
     const arr=s.marks[teacherSubject]||[0,0,0,0];
-    return{...s,sm:arr,sa:Math.round((arr.reduce((a,b)=>a+b,0)/arr.length)*10)/10};
+    return{...s,sm:arr,sa:averageMarks(arr)};
   }).sort((a,b)=>b.sa-a.sa);
   filterSL();
 }
@@ -526,9 +528,9 @@ function filterSL(){
   const q=document.getElementById('sl-search').value.toLowerCase();
   const list=slData.filter(s=>!q||s.name.toLowerCase().includes(q)||s.id.toLowerCase().includes(q));
   document.getElementById('sl-count').textContent=list.length+' students';
-  const mc=v=>`<span class="mc ${v>=80?'hi':v<60?'lo':''}">${v}</span>`;
+  const mc=(v,i)=>`<span class="mc ${markToneClass(v, i, 'hi', '', 'lo')}">${v}</span>`;
   document.querySelector('#sl-table tbody').innerHTML=list.map((s,i)=>
-    `<tr id="slr-${s.id}"><td><strong>#${i+1}</strong></td><td><code style="font-size:11px">${s.id}</code></td><td>${s.name}</td><td><strong style="color:var(--blue)">${s.class}</strong></td>${s.sm.map(m=>`<td>${mc(m)}</td>`).join('')}<td><strong>${s.sa}</strong></td></tr>`
+    `<tr id="slr-${s.id}"><td><strong>#${i+1}</strong></td><td><code style="font-size:11px">${s.id}</code></td><td>${s.name}</td><td><strong style="color:var(--blue)">${s.class}</strong></td>${s.sm.map((m,mi)=>`<td>${mc(m,mi)}</td>`).join('')}<td><strong>${s.sa}</strong></td></tr>`
   ).join('');
 }
 function switchSL(cls,el){
@@ -554,7 +556,7 @@ async function loadStudentAnalytics() {
   try {
     const s = await api('/api/students/' + sid);
     const subjMarks = (s.marks && s.marks[teacherSubject]) ? s.marks[teacherSubject] : [0,0,0,0];
-    const subjAvg = subjMarks.length ? Math.round((subjMarks.reduce((a,b)=>a+b,0)/subjMarks.length)*10)/10 : 0;
+    const subjAvg = averageMarks(subjMarks);
     mkChart('an-subj-avg', {
       type:'bar',
       data:{ labels:[teacherSubject], datasets:[{ data:[subjAvg], backgroundColor:subjectColor(teacherSubject), borderRadius:7 }] },
